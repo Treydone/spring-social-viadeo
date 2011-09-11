@@ -1,0 +1,28 @@
+{
+   "id":"EjtftevbyiugaIfDfVizDgymxg",
+   "type":"USER",
+   "link":"http://www.viadeo.com/profile/0021g557w9j1iw4m",
+   "updated_time":"2011-05-02T14:23:43+02:00",
+   "name":"Vincent DEVILLERS",
+   "contact_count":146,
+   "gender":"M",
+   "nickname":"vincent.devillers1",
+   "first_name":"Vincent",
+   "last_name":"DEVILLERS",
+   "picture_small":"http://www.viadeo.com/servlet/photo?memberId=0021g557w9j1iw4m&ts=1302733734000&type=1&gender=2",
+   "picture_large":"http://www.viadeo.com/servlet/photo?memberId=0021g557w9j1iw4m&ts=1302733734000&type=0&gender=2",
+   "headline":"Ingenieur d'etudes et de developpement, Viadeo",
+   "introduction":"",
+   "interests":"Karate (2eme Dan), piano, natation, apnee libre, robotique",
+   "location":{
+      "city":"Garches",
+      "zipcode":"92",
+      "country":"France",
+      "area":"Ile-de-France",
+      "timezone":"(GMT+01:00) Bruxelles, Copenhague, Madrid, Paris",
+      "latitude":"",
+      "longitude":""
+   },
+   "language":"fr",
+   "distance":0
+}

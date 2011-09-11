@@ -1,0 +1,480 @@
+{
+   "id":"",
+   "type":"HOME NEWS",
+   "link":"http://www.viadeo.com/tableaudebord/accueil/",
+   "updated_time":"2011-07-18T20:42:15.133+02:00",
+   "name":"Vincent DEVILLERS",
+   "data":[
+      {
+         "id":"cVIvewhkadsnmqhnnmduIehDko",
+         "type":"",
+         "link":"",
+         "updated_time":"2011-07-18T20:39:43+02:00",
+         "name":"",
+         "from":{
+            "id":"mhIxlypadtbEshDxitIizhdlAg",
+            "type":"USER",
+            "link":"http://www.viadeo.com/profile/0021v1e4bjtkdcp0",
+            "updated_time":"2010-11-09T23:24:31+01:00",
+            "name":"Dan Serfaty",
+            "webid":"0021v1e4bjtkdcp0",
+            "contact_count":2212,
+            "gender":"M",
+            "nickname":"dan.serfaty",
+            "first_name":"Dan",
+            "last_name":"Serfaty",
+            "picture_small":"http://www.viadeo.com/servlet/photo?memberId=0021v1e4bjtkdcp0&ts=1256053009000&type=1&gender=2",
+            "picture_large":"http://www.viadeo.com/servlet/photo?memberId=0021v1e4bjtkdcp0&ts=1256053009000&type=0&gender=2",
+            "headline":"CEO, Viadeo",
+            "introduction":"Après l'obtention de mon diplôme HEC en 1987 (spécialisation Entrepreneur) et une parenthèse fort agréable de 2 ans en VSNE sur le Lac de Garde (Italie), la vie d'entrepreneur commence avec la reprise et le redressement d'une entreprise en difficulté dans le tourisme, suivie d'une cession à un groupe allemand 2 ans plus tard.\r\n\r\nEn parallèle, je co-fonde une société spécialisée dans la distribution de produits textile en provenance d'asie, que je cède 10 ans plus tard. \r\n\r\nAprès une courte pause, c'est alors le lancement d'Agregator en 2000 :  Club d'entrepreneurs mais aussi concept totalement nouveau dans le monde de la finance... ses membres sont en effet tous associés les uns aux autres par l'intermédiaire d'un véhicule financier qui leur apporte liquidité, rendement et diversification patrimoniale.\r\n\r\nC'est dans le contexte de ce Club qu'en juin 2004 nous avons lancé Viadeo.com (ex-Viaduc.com), plateforme de mise en relation professionnelle qui connaît un succès fulgurant: histoire en cours...\r\n\r\nNé en 1966 à Strasbourg - Marié 3 enfants\r\nTrilingue (Français-Anglais-Italien)",
+            "interests":"Pratique sportive régulière de sports de combat \r\nKick Boxing\r\nKrav Maga\r\nVolley Ball - ex international\r\nSnowboard\r\nKite Surf\r\nPassionné de lecture",
+            "location":{
+               "city":"San francisco",
+               "zipcode":"94123",
+               "country":"Etats-Unis",
+               "area":"Californie",
+               "timezone":"(GMT-08:00) Pacifique (Etats-unis et Canada)",
+               "latitude":"",
+               "longitude":""
+            },
+            "language":"fr",
+            "distance":1
+         },
+         "type":"NEWS ITEM",
+         "label":"Status : ",
+         "message":"Microsoft Launching a Social Network Called ‘Tulalip’? - SocialTimes.com http://viadeo.com/s/qpfzh",
+         "creation_date":"2011-07-18T20:39:43+02:00",
+         "comments":{
+            "count":0
+         },
+         "likes":{
+            "count":0
+         }
+      },
+      {
+         "id":"jcodjhyhcqvkDpmIVcOpucpmec",
+         "type":"",
+         "link":"",
+         "updated_time":"2011-07-18T20:39:12+02:00",
+         "name":"",
+         "from":{
+            "id":"mhIxlypadtbEshDxitIizhdlAg",
+            "type":"USER",
+            "link":"http://www.viadeo.com/profile/0021v1e4bjtkdcp0",
+            "updated_time":"2010-11-09T23:24:31+01:00",
+            "name":"Dan Serfaty",
+            "webid":"0021v1e4bjtkdcp0",
+            "contact_count":2212,
+            "gender":"M",
+            "nickname":"dan.serfaty",
+            "first_name":"Dan",
+            "last_name":"Serfaty",
+            "picture_small":"http://www.viadeo.com/servlet/photo?memberId=0021v1e4bjtkdcp0&ts=1256053009000&type=1&gender=2",
+            "picture_large":"http://www.viadeo.com/servlet/photo?memberId=0021v1e4bjtkdcp0&ts=1256053009000&type=0&gender=2",
+            "headline":"CEO, Viadeo",
+            "introduction":"Après l'obtention de mon diplôme HEC en 1987 (spécialisation Entrepreneur) et une parenthèse fort agréable de 2 ans en VSNE sur le Lac de Garde (Italie), la vie d'entrepreneur commence avec la reprise et le redressement d'une entreprise en difficulté dans le tourisme, suivie d'une cession à un groupe allemand 2 ans plus tard.\r\n\r\nEn parallèle, je co-fonde une société spécialisée dans la distribution de produits textile en provenance d'asie, que je cède 10 ans plus tard. \r\n\r\nAprès une courte pause, c'est alors le lancement d'Agregator en 2000 :  Club d'entrepreneurs mais aussi concept totalement nouveau dans le monde de la finance... ses membres sont en effet tous associés les uns aux autres par l'intermédiaire d'un véhicule financier qui leur apporte liquidité, rendement et diversification patrimoniale.\r\n\r\nC'est dans le contexte de ce Club qu'en juin 2004 nous avons lancé Viadeo.com (ex-Viaduc.com), plateforme de mise en relation professionnelle qui connaît un succès fulgurant: histoire en cours...\r\n\r\nNé en 1966 à Strasbourg - Marié 3 enfants\r\nTrilingue (Français-Anglais-Italien)",
+            "interests":"Pratique sportive régulière de sports de combat \r\nKick Boxing\r\nKrav Maga\r\nVolley Ball - ex international\r\nSnowboard\r\nKite Surf\r\nPassionné de lecture",
+            "location":{
+               "city":"San francisco",
+               "zipcode":"94123",
+               "country":"Etats-Unis",
+               "area":"Californie",
+               "timezone":"(GMT-08:00) Pacifique (Etats-unis et Canada)",
+               "latitude":"",
+               "longitude":""
+            },
+            "language":"fr",
+            "distance":1
+         },
+         "type":"NEWS ITEM",
+         "label":"Consulte ",
+         "message":"Microsoft Launching a Social Network Called ‘Tulalip'? - SocialTimes.com",
+         "infeed_link":"http://www.viadeo.com/shareit/redirect/?urlSharerId=0022eydxr9sgu5u9",
+         "creation_date":"2011-07-18T20:39:12+02:00",
+         "comments":{
+            "count":0
+         },
+         "likes":{
+            "count":0
+         }
+      },
+      {
+         "id":"qydgfgupsmqtzxxnghAwpxmrfs",
+         "type":"",
+         "link":"",
+         "updated_time":"2011-07-18T20:38:39+02:00",
+         "name":"",
+         "from":{
+            "id":"mhIxlypadtbEshDxitIizhdlAg",
+            "type":"USER",
+            "link":"http://www.viadeo.com/profile/0021v1e4bjtkdcp0",
+            "updated_time":"2010-11-09T23:24:31+01:00",
+            "name":"Dan Serfaty",
+            "webid":"0021v1e4bjtkdcp0",
+            "contact_count":2212,
+            "gender":"M",
+            "nickname":"dan.serfaty",
+            "first_name":"Dan",
+            "last_name":"Serfaty",
+            "picture_small":"http://www.viadeo.com/servlet/photo?memberId=0021v1e4bjtkdcp0&ts=1256053009000&type=1&gender=2",
+            "picture_large":"http://www.viadeo.com/servlet/photo?memberId=0021v1e4bjtkdcp0&ts=1256053009000&type=0&gender=2",
+            "headline":"CEO, Viadeo",
+            "introduction":"Après l'obtention de mon diplôme HEC en 1987 (spécialisation Entrepreneur) et une parenthèse fort agréable de 2 ans en VSNE sur le Lac de Garde (Italie), la vie d'entrepreneur commence avec la reprise et le redressement d'une entreprise en difficulté dans le tourisme, suivie d'une cession à un groupe allemand 2 ans plus tard.\r\n\r\nEn parallèle, je co-fonde une société spécialisée dans la distribution de produits textile en provenance d'asie, que je cède 10 ans plus tard. \r\n\r\nAprès une courte pause, c'est alors le lancement d'Agregator en 2000 :  Club d'entrepreneurs mais aussi concept totalement nouveau dans le monde de la finance... ses membres sont en effet tous associés les uns aux autres par l'intermédiaire d'un véhicule financier qui leur apporte liquidité, rendement et diversification patrimoniale.\r\n\r\nC'est dans le contexte de ce Club qu'en juin 2004 nous avons lancé Viadeo.com (ex-Viaduc.com), plateforme de mise en relation professionnelle qui connaît un succès fulgurant: histoire en cours...\r\n\r\nNé en 1966 à Strasbourg - Marié 3 enfants\r\nTrilingue (Français-Anglais-Italien)",
+            "interests":"Pratique sportive régulière de sports de combat \r\nKick Boxing\r\nKrav Maga\r\nVolley Ball - ex international\r\nSnowboard\r\nKite Surf\r\nPassionné de lecture",
+            "location":{
+               "city":"San francisco",
+               "zipcode":"94123",
+               "country":"Etats-Unis",
+               "area":"Californie",
+               "timezone":"(GMT-08:00) Pacifique (Etats-unis et Canada)",
+               "latitude":"",
+               "longitude":""
+            },
+            "language":"fr",
+            "distance":1
+         },
+         "type":"NEWS ITEM",
+         "label":"a un nouveau contact : ",
+         "message":"Giorgio Bertolo",
+         "infeed_link":"http://www.viadeo.com/recherche/profil/?memberId=002qd5log5occ4h",
+         "creation_date":"2011-07-18T20:38:39+02:00",
+         "comments":{
+            "count":0
+         },
+         "likes":{
+            "count":0
+         }
+      },
+      {
+         "id":"qtjbrvnObbciOpekVswVIvDfhO",
+         "type":"",
+         "link":"",
+         "updated_time":"2011-07-18T20:33:46+02:00",
+         "name":"",
+         "from":{
+            "id":"mhIxlypadtbEshDxitIizhdlAg",
+            "type":"USER",
+            "link":"http://www.viadeo.com/profile/0021v1e4bjtkdcp0",
+            "updated_time":"2010-11-09T23:24:31+01:00",
+            "name":"Dan Serfaty",
+            "webid":"0021v1e4bjtkdcp0",
+            "contact_count":2212,
+            "gender":"M",
+            "nickname":"dan.serfaty",
+            "first_name":"Dan",
+            "last_name":"Serfaty",
+            "picture_small":"http://www.viadeo.com/servlet/photo?memberId=0021v1e4bjtkdcp0&ts=1256053009000&type=1&gender=2",
+            "picture_large":"http://www.viadeo.com/servlet/photo?memberId=0021v1e4bjtkdcp0&ts=1256053009000&type=0&gender=2",
+            "headline":"CEO, Viadeo",
+            "introduction":"Après l'obtention de mon diplôme HEC en 1987 (spécialisation Entrepreneur) et une parenthèse fort agréable de 2 ans en VSNE sur le Lac de Garde (Italie), la vie d'entrepreneur commence avec la reprise et le redressement d'une entreprise en difficulté dans le tourisme, suivie d'une cession à un groupe allemand 2 ans plus tard.\r\n\r\nEn parallèle, je co-fonde une société spécialisée dans la distribution de produits textile en provenance d'asie, que je cède 10 ans plus tard. \r\n\r\nAprès une courte pause, c'est alors le lancement d'Agregator en 2000 :  Club d'entrepreneurs mais aussi concept totalement nouveau dans le monde de la finance... ses membres sont en effet tous associés les uns aux autres par l'intermédiaire d'un véhicule financier qui leur apporte liquidité, rendement et diversification patrimoniale.\r\n\r\nC'est dans le contexte de ce Club qu'en juin 2004 nous avons lancé Viadeo.com (ex-Viaduc.com), plateforme de mise en relation professionnelle qui connaît un succès fulgurant: histoire en cours...\r\n\r\nNé en 1966 à Strasbourg - Marié 3 enfants\r\nTrilingue (Français-Anglais-Italien)",
+            "interests":"Pratique sportive régulière de sports de combat \r\nKick Boxing\r\nKrav Maga\r\nVolley Ball - ex international\r\nSnowboard\r\nKite Surf\r\nPassionné de lecture",
+            "location":{
+               "city":"San francisco",
+               "zipcode":"94123",
+               "country":"Etats-Unis",
+               "area":"Californie",
+               "timezone":"(GMT-08:00) Pacifique (Etats-unis et Canada)",
+               "latitude":"",
+               "longitude":""
+            },
+            "language":"fr",
+            "distance":1
+         },
+         "type":"NEWS ITEM",
+         "label":"a un nouveau contact : ",
+         "message":"Jamie Riddell",
+         "infeed_link":"http://www.viadeo.com/recherche/profil/?memberId=00229qvqjcs5csa1",
+         "creation_date":"2011-07-18T20:33:46+02:00",
+         "comments":{
+            "count":0
+         },
+         "likes":{
+            "count":0
+         }
+      },
+      {
+         "id":"ddpEAgxAnhvnyVzpdnErildEio",
+         "type":"",
+         "link":"",
+         "updated_time":"2011-07-18T19:53:49+02:00",
+         "name":"",
+         "from":{
+            "id":"VVgveznqqvmtnvvdIqmEEhbAtw",
+            "type":"USER",
+            "link":"http://www.viadeo.com/profile/00224lw7wr2f179k",
+            "updated_time":"2011-06-21T14:58:06+02:00",
+            "name":"Ile-de-France SII",
+            "webid":"00224lw7wr2f179k",
+            "contact_count":845,
+            "gender":"M",
+            "nickname":"ile-de-france.sii",
+            "first_name":"Ile-de-France",
+            "last_name":"SII",
+            "picture_small":"http://www.viadeo.com/servlet/photo?memberId=00224lw7wr2f179k&ts=1240919991000&type=1&gender=2",
+            "picture_large":"http://www.viadeo.com/servlet/photo?memberId=00224lw7wr2f179k&ts=1240919991000&type=0&gender=2",
+            "headline":"SII, le partenaire technologique",
+            "introduction":"Créée en 1979, SII est une société de conseil et d’ingénierie qui apporte des solutions aux projets à valeur ajoutée technologique \r\ndes grandes entreprises.\r\n\r\n   - La R&D externalisée.\r\n   - L’intégration de systèmes.\r\n\r\nEn conception et étude, SII apporte des solutions à forte valeur ajoutée.\r\n\r\nRésolument technologique, SII est attachée à la qualité de son service : proche de ses clients grâce à son réseau d’agences locales,\r\nSII offre un suivi personnalisé et des solutions sur mesure.\r\nForte de sa culture d’entreprise, SII choisit de se développer par croissance interne.\r\n\r\nCulture d’entreprise, valorisation des potentiels, notre capital humain fait la réussite de SII !\r\nInformé, écouté, respecté, chacun peut s’exprimer pleinement et s’épanouir professionnellement. Pour nous, votre personnalité compte !\r\nSII a un recrutement très sélectif et sera près de vous pour vous faire évoluer et progresser.\r\n\r\nHaute tenue technologique, environnement stimulant et projets en adéquation avec vos compétences, SII vous offre un champ d’investigation performant dans une ambiance conviviale. Autonomie, responsabilisation, ouverture d’esprit et qualité de vie sont les maîtres mots de notre philosophie.\r\nVous avez toute latitude pour évoluer avec le sourire sous le signe de la réussite !\r\n\r\n\r\nSII s'engage sur 6 points.\r\n\r\n°La compétence :\r\nRésultat d’un processus de sélection rigoureux et d’actions de formation adaptées aux exigences technologiques, le professionnalisme\r\nde nos équipes pluridisciplinaires vous garantit une parfaite maîtrise de nos métiers.\r\n\r\n°L’écoute :\r\nVotre satisfaction dépend en premier lieu de la qualité de notre écoute. Pour comprendre vos besoins, nous sommes disponibles,\r\nattentifs à vos idées et à vos spécificités. Nous misons sur le dialogue et savons, également, être discrets.\r\n\r\n°Le conseil :\r\nPour répondre à vos besoins, SII procède à une expertise technique qui nous conduit à envisager les solutions les plus adaptées.\r\nCet accompagnement, lors d’observations sur site, d’entretiens et de réunions, confère à notre conseil la pertinence que vous êtes en droit \r\nd’attendre.\r\n\r\n°Les délais :\r\nNous respectons les délais sur lesquels nous nous sommes engagés, utilisant notre savoir-faire sur des méthodes de développement\r\nperformantes et éprouvées. SII mise sur des équipes particulièrement réactives afin de vous garantir le bon déroulement des missions \r\nque vous nous confiez.\r\n\r\n°L’avenir :\r\nEn permanence à la recherche de concepts novateurs, nous assurons une veille technologique qui nous permet de vous proposer\r\nles outils les plus récents. Cette ouverture se traduit par des actions de formation et répond à notre objectif de capitalisation de nos connaissances.\r\n\r\n°Le service :\r\nNous vous proposons des prestations conformes à vos exigences. Notre service s’inscrit dans la durée, notamment en matière de transfert\r\nde compétences et de garantie. Nous prenons l’engagement de vous apporter le meilleur de nous-même à tout moment.\r\n\r\n_____________________________________________________________________________________________________________________\r\n\r\nVous souhaitez postuler ?\r\n\r\nEnvoyer votre CV à notre équipe de recrutement : drh-idf@sii.fr\r\n\r\n______________________________________________________________________________________________________________________\r\n\r\nPour plus d'information sur le groupe SII :\r\nhttp://www.sii.fr",
+            "interests":"Recrutement, SII, Formation, Évolution de carrière, progression, écoute, suivi, esprit d'entreprise",
+            "location":{
+               "city":"Paris",
+               "zipcode":"75016",
+               "country":"France",
+               "area":"Ile-de-France",
+               "timezone":"(GMT+01:00) Bruxelles, Copenhague, Madrid, Paris",
+               "latitude":"",
+               "longitude":""
+            },
+            "language":"fr",
+            "distance":1
+         },
+         "type":"NEWS ITEM",
+         "label":"a un nouveau contact : ",
+         "message":"Romain GOUDARD",
+         "infeed_link":"http://www.viadeo.com/recherche/profil/?memberId=0021nbxmmh2n4g4t",
+         "creation_date":"2011-07-18T19:53:49+02:00",
+         "comments":{
+            "count":0
+         },
+         "likes":{
+            "count":0
+         }
+      },
+      {
+         "id":"qmiqycltVurdvmzApovcviyftO",
+         "type":"",
+         "link":"",
+         "updated_time":"2011-07-18T19:49:33+02:00",
+         "name":"",
+         "from":{
+            "id":"latreqczdxyrllsdraOpAcqIVw",
+            "type":"USER",
+            "link":"http://www.viadeo.com/profile/002urlypi0yx5y6",
+            "updated_time":"2011-06-08T17:02:03+02:00",
+            "name":"Alexandre Jubien",
+            "webid":"002urlypi0yx5y6",
+            "contact_count":344,
+            "gender":"M",
+            "nickname":"alexandre.jubien",
+            "first_name":"Alexandre",
+            "last_name":"Jubien",
+            "picture_small":"http://www.viadeo.com/servlet/photo?memberId=002urlypi0yx5y6&ts=1275393474000&type=1&gender=2",
+            "picture_large":"http://www.viadeo.com/servlet/photo?memberId=002urlypi0yx5y6&ts=1275393474000&type=0&gender=2",
+            "headline":"Responsable produit mobile, Viadeo",
+            "introduction":"Je suis expert en produits et services mobiles, notamment sur les problématiques de fragmentation/multi plate forme, ainsi que l'ergonomie.\r\n\r\nPour la conduite de projet et la gestion de mon équipe au quotidien, j'emploie principalement des méthodologies agiles (Xp, Scrum), pour lesquelles j'ai un très grand intérêt.\r\n\r\nJ'ai auparavant été en charge chez Deezer des développements sur mobiles multi plate formes : iPhone, Android, Blackberry, Samsung J2ME, Sony Ericsson J2ME, Nokia, ...\r\nDeezer a été élu Meilleur Service de Musique Mobile au Mobile World Congress 2010, le mobile étant la pierre angulaire des services payants Deezer Premium. Ces produits ont été choisis par Orange France comme offre de musique incluse dans les forfaits mobiles.",
+            "interests":"plongée, bodyboard, cuisine",
+            "location":{
+               "city":"Malakoff",
+               "zipcode":"92240",
+               "country":"France",
+               "area":"Ile-de-France",
+               "timezone":"(GMT+01:00) Bruxelles, Copenhague, Madrid, Paris",
+               "latitude":"",
+               "longitude":""
+            },
+            "language":"fr",
+            "distance":1
+         },
+         "type":"NEWS ITEM",
+         "label":"a un nouveau contact : ",
+         "message":"Amélie DANIN",
+         "infeed_link":"http://www.viadeo.com/recherche/profil/?memberId=0026098akhb6hf2",
+         "creation_date":"2011-07-18T19:49:33+02:00",
+         "comments":{
+            "count":0
+         },
+         "likes":{
+            "count":0
+         }
+      },
+      {
+         "id":"jxfxfcrffwbmyyewzcOgvAoqxc",
+         "type":"",
+         "link":"",
+         "updated_time":"2011-07-18T19:03:04+02:00",
+         "name":"",
+         "from":{
+            "id":"IjhrjagVvnuqDrgmOkpwfrAzmc",
+            "type":"USER",
+            "link":"http://www.viadeo.com/profile/0021asqnz51mx7wj",
+            "updated_time":"2011-02-10T12:38:33+01:00",
+            "name":"Guillaume Abel",
+            "webid":"0021asqnz51mx7wj",
+            "contact_count":323,
+            "gender":"",
+            "nickname":"guillaume.abel",
+            "first_name":"Guillaume",
+            "last_name":"Abel",
+            "picture_small":"http://www.viadeo.com/servlet/photo?memberId=0021asqnz51mx7wj&ts=1268761635000&type=1&gender=0",
+            "picture_large":"http://www.viadeo.com/servlet/photo?memberId=0021asqnz51mx7wj&ts=1268761635000&type=0&gender=0",
+            "headline":"Consultant Senior en Experience Utilisateur, Ekino (Groupe Fullsix)",
+            "introduction":"\"La meilleure manière de prédire le futur, c’est de l’inventer.\" - Alan Kay\r\n\r\n6 ans d'expérience en agence.\r\n\r\nExpertises\r\n»\tConseil et conception en dispositifs et interfaces innovantes. \r\n\tWeb / Richmedia / Mobile / Tactile / Social\r\n»\tUser experience design\r\n\to\tInteraction design / Architecture de l’information\r\n\to\tWireframing / Prototypage\r\n\to\tSpécification d’interface / design pattern\t\r\n\r\nAutre\r\n»\tGestion de projet Web\r\n»\tCoordination d’équipe pluridisciplinaire interne, \r\n\tfreelance et offshore\r\n»\tPlanification, suivi, recettage\r\n»\tBest practice : ergonomie, accessibilité, \r\n\tméthodes agiles (SCRUM), Webanalytics,  SEO\r\n\r\nActuellement Consultant Experience Utilisateur Senior @ FullSIX\r\n\r\n\r\nwww.abelg.com\r\nwww.twitter.com/guizzTwits\r\nwww.netvibes.com/guizzVibes",
+            "interests":"Webdesign \r\nCulture web \r\nMusique\r\nJeux vidéo\r\nCinéma\r\nBande dessinée\r\nTir à l’arc\r\nBadminton",
+            "location":{
+               "city":"Paris",
+               "zipcode":"75019",
+               "country":"France",
+               "area":"Ile-de-France",
+               "timezone":"(GMT+01:00) Bruxelles, Copenhague, Madrid, Paris",
+               "latitude":"",
+               "longitude":""
+            },
+            "language":"fr",
+            "distance":1
+         },
+         "type":"NEWS ITEM",
+         "label":"Status : ",
+         "message":"The #UX of #UserStories, Part 1 http://bit.ly/p6voN2 #Agility",
+         "creation_date":"2011-07-18T19:03:04+02:00",
+         "comments":{
+            "count":0
+         },
+         "likes":{
+            "count":0
+         }
+      },
+      {
+         "id":"qhylfaqdcevyIlwsDykoldzvsA",
+         "type":"",
+         "link":"",
+         "updated_time":"2011-07-18T18:49:05+02:00",
+         "name":"",
+         "from":{
+            "id":"vVtksqlVofwaexihOmsiErsfos",
+            "type":"USER",
+            "link":"http://www.viadeo.com/profile/002l2k6z8j2ax2s",
+            "updated_time":"2011-04-19T18:19:28+02:00",
+            "name":"Jazmin Fajardo",
+            "webid":"002l2k6z8j2ax2s",
+            "contact_count":338,
+            "gender":"F",
+            "nickname":"jazmin.fajardo",
+            "first_name":"Jazmin",
+            "last_name":"Fajardo",
+            "picture_small":"http://www.viadeo.com/servlet/photo?memberId=002l2k6z8j2ax2s&ts=1298931746000&type=1&gender=1",
+            "picture_large":"http://www.viadeo.com/servlet/photo?memberId=002l2k6z8j2ax2s&ts=1298931746000&type=0&gender=1",
+            "headline":"Marcomm Manager, Viadeo",
+            "introduction":"El principio básico de cualquier relación es la Comunicación y a través del ejercicio de mi desarrollo profesional tengo la fortuna de aplicar día a día diversas estrategias para establecer vínculos y relaciones profesionales basadas en élla.\r\n\r\nLa misión: generar alianzas efectivas, productivas, trascendentes y honestas que permiten a las personas y empresas establecer poderosas redes  de contacto que sirvan para innovar, crear sinergias o simplemente compartir conocimiento a través del medio más importante de comunicación en el mundo: Internet \r\n\r\nEn un planeta cada vez más conectado y participativo, mi objetivo y meta como profesional es generar y cultivar relaciones ganar-ganar a a través de la comunicación.",
+            "interests":"Las formas de comunicación que surgen dentro en Internet. Novelas de realismo mágico o épicas. La música de los Ochentas. La natación y los viajes; en general todas aquellas actividades que de pie para una buena conversación.",
+            "location":{
+               "city":"Mexico DF",
+               "zipcode":"03100",
+               "country":"Mexique",
+               "area":"Distrito Federal",
+               "timezone":"(GMT-06:00) Guadalajara, Mexico, Monterrey",
+               "latitude":"",
+               "longitude":""
+            },
+            "language":"fr",
+            "distance":1
+         },
+         "type":"NEWS ITEM",
+         "label":"Status : ",
+         "message":"Mañana martes  #ViadeoTour #Toluca invitación y registro s/ costo http://viadeo.com/s/2wa8U ",
+         "creation_date":"2011-07-18T18:49:05+02:00",
+         "comments":{
+            "count":0
+         },
+         "likes":{
+            "count":0
+         }
+      },
+      {
+         "id":"vrtdcIlcAfugrIDipjhersAqtg",
+         "type":"",
+         "link":"",
+         "updated_time":"2011-07-18T18:34:55+02:00",
+         "name":"",
+         "from":{
+            "id":"vVtksqlVofwaexihOmsiErsfos",
+            "type":"USER",
+            "link":"http://www.viadeo.com/profile/002l2k6z8j2ax2s",
+            "updated_time":"2011-04-19T18:19:28+02:00",
+            "name":"Jazmin Fajardo",
+            "webid":"002l2k6z8j2ax2s",
+            "contact_count":338,
+            "gender":"F",
+            "nickname":"jazmin.fajardo",
+            "first_name":"Jazmin",
+            "last_name":"Fajardo",
+            "picture_small":"http://www.viadeo.com/servlet/photo?memberId=002l2k6z8j2ax2s&ts=1298931746000&type=1&gender=1",
+            "picture_large":"http://www.viadeo.com/servlet/photo?memberId=002l2k6z8j2ax2s&ts=1298931746000&type=0&gender=1",
+            "headline":"Marcomm Manager, Viadeo",
+            "introduction":"El principio básico de cualquier relación es la Comunicación y a través del ejercicio de mi desarrollo profesional tengo la fortuna de aplicar día a día diversas estrategias para establecer vínculos y relaciones profesionales basadas en élla.\r\n\r\nLa misión: generar alianzas efectivas, productivas, trascendentes y honestas que permiten a las personas y empresas establecer poderosas redes  de contacto que sirvan para innovar, crear sinergias o simplemente compartir conocimiento a través del medio más importante de comunicación en el mundo: Internet \r\n\r\nEn un planeta cada vez más conectado y participativo, mi objetivo y meta como profesional es generar y cultivar relaciones ganar-ganar a a través de la comunicación.",
+            "interests":"Las formas de comunicación que surgen dentro en Internet. Novelas de realismo mágico o épicas. La música de los Ochentas. La natación y los viajes; en general todas aquellas actividades que de pie para una buena conversación.",
+            "location":{
+               "city":"Mexico DF",
+               "zipcode":"03100",
+               "country":"Mexique",
+               "area":"Distrito Federal",
+               "timezone":"(GMT-06:00) Guadalajara, Mexico, Monterrey",
+               "latitude":"",
+               "longitude":""
+            },
+            "language":"fr",
+            "distance":1
+         },
+         "type":"NEWS ITEM",
+         "label":"a un nouveau contact : ",
+         "message":"ITH Jorge Eliécer Toro",
+         "infeed_link":"http://www.viadeo.com/recherche/profil/?memberId=002121q1ghy5kyew",
+         "creation_date":"2011-07-18T18:34:55+02:00",
+         "comments":{
+            "count":0
+         },
+         "likes":{
+            "count":0
+         }
+      },
+      {
+         "id":"VDgAxjbxaEaemnblAiuvDjuoqA",
+         "type":"",
+         "link":"",
+         "updated_time":"2011-07-18T18:30:57+02:00",
+         "name":"",
+         "from":{
+            "id":"yxsbnbenEoeiOVOxuepIhVdero",
+            "type":"USER",
+            "link":"http://www.viadeo.com/profile/0021ylxwhcwt4tpx",
+            "updated_time":"2011-07-05T10:59:30+02:00",
+            "name":"Arnaud HUYNH",
+            "webid":"0021ylxwhcwt4tpx",
+            "contact_count":196,
+            "gender":"M",
+            "nickname":"arnaud.huynh",
+            "first_name":"Arnaud",
+            "last_name":"HUYNH",
+            "picture_small":"http://www.viadeo.com/servlet/photo?memberId=0021ylxwhcwt4tpx&ts=1305375181000&type=1&gender=2",
+            "picture_large":"http://www.viadeo.com/servlet/photo?memberId=0021ylxwhcwt4tpx&ts=1305375181000&type=0&gender=2",
+            "headline":"Ingénieur de développement Java/JEE, Viadeo",
+            "introduction":"",
+            "interests":"Cinema, Video Games, Internet Web 2.0, Novels, Football, Trips, Blogging, High Tech, Food, Sport",
+            "location":{
+               "city":"Drancy",
+               "zipcode":"93700",
+               "country":"France",
+               "area":"Ile-de-France",
+               "timezone":"(GMT+01:00) Bruxelles, Copenhague, Madrid, Paris",
+               "latitude":"",
+               "longitude":""
+            },
+            "language":"fr",
+            "distance":1
+         },
+         "type":"NEWS ITEM",
+         "label":"Consulte ",
+         "message":"En finir avec des process de recrutement biaisés et contestables : un psy témoigne | caroleblancot.com",
+         "infeed_link":"http://www.viadeo.com/shareit/redirect/?urlSharerId=0021itf972glm8km",
+         "creation_date":"2011-07-18T18:30:57+02:00",
+         "comments":{
+            "count":0
+         },
+         "likes":{
+            "count":0
+         }
+      }
+   ],
+   "paging":{
+      "previous":"",
+      "next":"http://api.viadeo.com/EjtftevbyiugaIfDfVizDgymxg/home_newsfeed?user_detail=full&limit=10&access_token=eba56e7feacd07e6b11302d240982cf8&page=2"
+   }
+}

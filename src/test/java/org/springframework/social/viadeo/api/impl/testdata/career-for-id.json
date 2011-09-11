@@ -1,0 +1,82 @@
+
+{
+   "id":"",
+   "type":"USER CAREER",
+   "link":"",
+   "updated_time":"2011-07-18T21:03:44.727+02:00",
+   "name":"Vincent DEVILLERS",
+   "data":[
+      {
+         "id":"eAdgAufEsoxvquAOkadnmOIcaw",
+         "type":"CAREER",
+         "link":"",
+         "updated_time":"2011-07-18T21:03:44.729+02:00",
+         "name":"",
+         "begin":2011,
+         "end":2011,
+         "position":"Ingénieur d'études et de développement",
+         "description":"",
+         "company_name":"Viadeo"
+      },
+      {
+         "id":"qiixtjynmfacyyfegAbbIgrxrA",
+         "type":"CAREER",
+         "link":"",
+         "updated_time":"2011-07-18T21:03:44.730+02:00",
+         "name":"",
+         "begin":2011,
+         "end":2011,
+         "position":"Ingénieur d'études et de développement",
+         "description":"Développements de composants du middleware et du back office Meetic\r\n- Cadrages et faisabilités techniques, chiffrages, audits d’architecture...\r\n\r\n// JEE, SPRING (CORE, MVC, JPA, JMX), JACKSON(JSON), JABBER(XMPP), ERLANG/OTP, CASTOR(XML), SLF4J/LOG4J, MYSQL/ORACLE, JUNIT4, MAVEN2//",
+         "company_name":"Meetic"
+      },
+      {
+         "id":"wyEunqyEhufvfruyIidtknAyDk",
+         "type":"CAREER",
+         "link":"",
+         "updated_time":"2011-07-18T21:03:44.730+02:00",
+         "name":"",
+         "begin":2010,
+         "end":2011,
+         "position":"Ingénieur d'études et de développement",
+         "description":"Refonte du portail Pages Jaunes/Ville en Directe: Plateforme JEE de type portail: informations locales (météo, cinéma, événements...), gestion des comptes, des produits de parutions...\r\n-Conception et modification de l’architecture technique\r\n-Réalisation de cadrages techniques et d‘études transverses (faisabilité, Proof Of Concept…)\r\n-Intégration de moteurs de recherche Solr et Pertimm\r\n-Méthodologie FULL AGILE: Stand Up Meeting, Rétrospectives,  MMF, découpage en User Stories, gestion du Backlog, intégration continue (Hudson), Pair Programming... \r\n-Intégration de services internes et externes à Pages Jaunes:\r\n->partenaires (Allociné, WSI, ViaFrance...)\r\n->identité et authentification\r\n->géolocalisation par IP\r\n->gestion des comptes mails\r\n->services de réseaux sociaux (Viadeo, Facebook...)\r\n\r\n\r\n\r\n// JAVA/J2EE, HIVEMIND, WEBSERVICES, HIBERNATE, SOLR, PERTIMM, STRUTS, GREENPEPPER, JMX, XSTREAM (XML), JUNIT4, DBUNIT, MAVEN2, TOMCAT, MYSQL //",
+         "company_name":"Pages Jaunes"
+      },
+      {
+         "id":"xbxEuzsotrwalnkvplVlomqbDO",
+         "type":"CAREER",
+         "link":"",
+         "updated_time":"2011-07-18T21:03:44.730+02:00",
+         "name":"",
+         "begin":2010,
+         "end":2010,
+         "position":"Ingénieur d'études et de développement",
+         "description":"Gestionnaire de tableaux de bord: plateforme J2EE pour la gestion de tableaux d'avancement de projets et d'objectifs annuels\r\n\r\n-Développement et support des composants de l’application :\r\n->Logique métier : ajout/modification des beans Spring liés au comportement du service, gestion des règles métiers...\r\n->IHM : modification d’écrans...\r\n->Données : Optimisations des requêtes SQL...\r\n\r\n->Intégration des services \r\n->Sécurité de l’application gérée par Spring Security\r\n\r\n-Tests unitaires et validation\r\n\r\n// JAVA/J2EE, SPRING (CORE, MVC, SECURITY), SQL SERVER, XML/XSD, ANT, TOMCAT //",
+         "company_name":"La Poste"
+      },
+      {
+         "id":"ldodAerdtpruVoDziiDebevufk",
+         "type":"CAREER",
+         "link":"",
+         "updated_time":"2011-07-18T21:03:44.730+02:00",
+         "name":"",
+         "begin":2009,
+         "end":2010,
+         "position":"Ingénieur d'études et de développement",
+         "description":"Family Tracker : Prototype de plateforme JEE de services de géolocalisation à destination des téléphones mobiles de types iPhone, Android et Nokia.\r\n-Analyse des besoins auprès des équipes d’Orange Labs\r\n-Rédaction du cahier des charges et des spécifications d’interfaces\r\n-Conception de l’architecture technique et fonctionnelle du service\r\n\r\n-Développement des composants de l’application :\r\n->Gestion des interfaces de connexion avec les téléphones\r\n->Intégration des services de notification (Apple Push Notification Service, OVI, SMS)\r\n->Services de calculs de proximité à partir de coordonnées GPS, optimisation algorithmique…\r\n->Sécurité de l’application enrichie par le provider\r\n\r\n-Tests unitaires et validation\r\n-Rédaction des manuels d’utilisateur et de déploiement\r\n-Déploiement du service sur une plateforme Unix PLATON Server\r\n\r\n// JEE, SPRING (CORE, MVC, HIBERNATE), LOG4J, MYSQL, JUNIT, JSON, MAVEN2, JONAS, MYSQL //",
+         "company_name":"Orange Labs"
+      },
+      {
+         "id":"ovppIwDvdhkheiDEOvlemaxrEk",
+         "type":"CAREER",
+         "link":"",
+         "updated_time":"2011-07-18T21:03:44.730+02:00",
+         "name":"",
+         "begin":2009,
+         "end":2009,
+         "position":"Ingénieur d'études et de développement",
+         "description":"Selfcare : Plateforme JEE de type Selfcare, solution de services clients en ligne : gestion des comptes, des produits Pro (mails, SMS, fax, hébergements …), prestations pour PME. \r\n-Etudes et modification des cahiers des charges\r\n-Rédaction des spécifications techniques et de contrats d’interfaces\r\n-Conception et modification de l’architecture technique et fonctionnelle\r\n-Modifications et corrections du code et du comportement global de l’application \r\n-Intégration de services internes et externes à France Télécom: \r\n->noms de domaines et hébergement (Nordnet) \r\n->identité et authentifcation (IDMP/WASSUP)\r\n->gestion des comptes mails, de l’envoi/réception de fax et de SMS  (ME+) \r\n->gestion des contacts utilisateurs (PIM)\r\n->sauvegarde des données utilisateurs  (PCBackup)\r\n->messagerie instantanée (chat) et transfert de fichier synchrone (IM)\r\n\r\nDéveloppement de composants propres à l’application sur les différentes couches de l’application :\r\n->Logique métier : ajout/modification d’EJBs liés au comportement du service (envois de mails, activation/résilisation/suspension de compte…), gestion des règles métiers…\r\n->IHM : amélioration de la sécurité sur les pages Web de l’application, modification d’écrans…\r\n->Données : Optimisations sur les requêtes générées par Hibernate, intégration de nouvelles méthodes d’accès aux bases…\r\n\r\n-Mise en place de scénarii de test et de validation de l’application (outil QualityCenter)\r\n-TMA en anglais pour une équipe de 6 personnes en Inde\r\n-Déploiement du service sur une plateforme Unix PLATON Server\r\n\r\n// JAVA/J2EE, SPRING WEBSERVICES, HIBERNATE, STRUTS2, EJB2, JUNIT, XML/XSD, MAVEN2, JONAS, MYSQL //",
+         "company_name":"France Télécom"
+      }
+   ]
+}

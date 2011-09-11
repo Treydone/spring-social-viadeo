@@ -1,0 +1,58 @@
+{
+   "id":"",
+   "type":"CONTACT CARDS",
+   "link":"",
+   "updated_time":"2011-07-24T18:36:23.079+02:00",
+   "name":"",
+   "data":[
+      {
+         "id":"ticctDfItsvkatamzkruyuxstnwOOIowEcyVghfhbluVfsElvmdk",
+         "type":"CONTACT CARD",
+         "link":"",
+         "updated_time":"2011-07-24T18:36:23.079+02:00",
+         "name":"",
+         "kind":"BUSINESS",
+         "shared":"ALL CONTACTS",
+         "company_adress":"",
+         "city":"Garches",
+         "postcode":"92",
+         "country":"France",
+         "emails":[
+            "vincentdevillers@hotmail.fr"
+         ],
+         "phones":[
+            {
+               "type":"MOBILE",
+               "country":"France",
+               "dialing":"+33",
+               "number":"0615053430"
+            }
+         ]
+      },
+      {
+         "id":"IqsmeqAbllyupOxwpkdkkdVtAndoxjcrntDhwvvmrInbmOVmIryk",
+         "type":"CONTACT CARD",
+         "link":"",
+         "updated_time":"2011-07-24T18:36:23.081+02:00",
+         "name":"",
+         "kind":"PERSO",
+         "shared":"ALL CONTACTS",
+         "company_adress":"",
+         "city":"Garches",
+         "postcode":"92",
+         "country":"France",
+         "region":"Ile-de-France",
+         "emails":[
+            "vincentdevillers@hotmail.fr"
+         ],
+         "phones":[
+            {
+               "type":"MOBILE",
+               "country":"France",
+               "dialing":"+33",
+               "number":"0615053430"
+            }
+         ]
+      }
+   ]
+}
