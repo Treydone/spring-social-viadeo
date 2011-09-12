@@ -5,6 +5,7 @@ import java.io.Serializable;
 /**
  * Model class containing a user's Viadeo profile information.
  * 
+ * @author Vincent Devillers
  */
 public class ViadeoProfile implements Serializable {
 

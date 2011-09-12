@@ -5,9 +5,10 @@ import java.util.List;
 
 import org.springframework.social.viadeo.api.ViadeoProfile;
 
-
 /**
  * A model class containing a list of a user's connections on Viadeo.
+ * 
+ * @author Vincent Devillers
  */
 public class Contacts implements Serializable {
 

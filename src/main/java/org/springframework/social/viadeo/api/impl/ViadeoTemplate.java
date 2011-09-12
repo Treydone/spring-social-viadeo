@@ -16,6 +16,20 @@ import org.springframework.social.viadeo.api.UserOperations;
 import org.springframework.social.viadeo.api.Viadeo;
 import org.springframework.social.viadeo.api.impl.json.ViadeoModule;
 
+/**
+ * <p>
+ * This is the central class for interacting with Viadeo.
+ * </p>
+ * <p>
+ * There are some operations, such as searching, that do not require OAuth
+ * authentication. In those cases, you may use a {@link ViadeoTemplate} that is
+ * created through the default constructor and without any OAuth details.
+ * Attempts to perform secured operations through such an instance, however,
+ * will result in {@link NotAuthorizedException} being thrown.
+ * </p>
+ * 
+ * @author Vincent Devillers
+ */
 public class ViadeoTemplate extends AbstractOAuth2ApiBinding implements Viadeo {
 
 	private UserOperations userOperations;
@@ -28,11 +42,11 @@ public class ViadeoTemplate extends AbstractOAuth2ApiBinding implements Viadeo {
 	 * Create a new instance of ViadeoTemplate. This constructor creates a new
 	 * ViadeoTemplate able to perform unauthenticated operations against
 	 * ViadeoTemplate's Graph API. Some operations do not require OAuth
-	 * authentication. For example, retrieving a specified user's profile does
-	 * not require authentication (although the data returned will be limited to
-	 * what is publicly available). A ViadeoTemplate created with this
-	 * constructor will support those operations. Those operations requiring
-	 * authentication will throw {@link NotAuthorizedException}.
+	 * authentication. For example, searching a job does not require
+	 * authentication (although the data returned will be limited to what is
+	 * publicly available). A ViadeoTemplate created with this constructor will
+	 * support those operations. Those operations requiring authentication will
+	 * throw {@link NotAuthorizedException}.
 	 */
 	public ViadeoTemplate() {
 		this(null);

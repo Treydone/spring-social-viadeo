@@ -16,10 +16,6 @@ abstract class AbstractViadeoOperations {
 
 	static final String GRAPH_API_URL = "https://api.viadeo.com/";
 
-	//	static final String GRAPH_API_URL = "http://www.viadeo.com/";
-
-	//	static final String GRAPH_API_URL = "http://api.apnacircle.com/";
-
 	static final String OBJECT_URL = GRAPH_API_URL + "{objectId}";
 
 	private final boolean isAuthorized;

@@ -14,27 +14,34 @@ import org.springframework.social.support.ClientHttpRequestFactorySelector;
 import org.springframework.web.client.RestTemplate;
 
 /**
- * Viadeo-specific extension of OAuth2Template to use a RestTemplate that recognizes form-encoded responses as
- * "application/x-www-form-urlencoded". Viadeo token responses are form-encoded results with a content type of
- * "application/x-www-form-urlencoded", which prevents the FormHttpMessageConverter registered by default from parsing
- * the results.
+ * Viadeo-specific extension of OAuth2Template to use a RestTemplate that
+ * recognizes form-encoded responses as "application/x-www-form-urlencoded".
+ * Viadeo token responses are form-encoded results with a content type of
+ * "application/x-www-form-urlencoded", which prevents the
+ * FormHttpMessageConverter registered by default from parsing the results.
+ * 
+ * @author Vincent Devillers
  */
 public class ViadeoOAuth2Template extends OAuth2Template {
 
 	public ViadeoOAuth2Template(String clientId, String clientSecret) {
-		super(clientId, clientSecret, "https://secure.viadeo.com/oauth-provider/authorize2",
+		super(clientId, clientSecret,
+				"https://secure.viadeo.com/oauth-provider/authorize2",
 				"https://secure.viadeo.com/oauth-provider/access_token2");
 	}
 
 	@Override
 	protected RestTemplate createRestTemplate() {
-		RestTemplate restTemplate = new RestTemplate(ClientHttpRequestFactorySelector.getRequestFactory());
-		List<HttpMessageConverter<?>> converters = new ArrayList<HttpMessageConverter<?>>(2);
+		RestTemplate restTemplate = new RestTemplate(
+				ClientHttpRequestFactorySelector.getRequestFactory());
+		List<HttpMessageConverter<?>> converters = new ArrayList<HttpMessageConverter<?>>(
+				2);
 		converters.add(new FormHttpMessageConverter());
 
 		AbstractHttpMessageConverter<?> jsonConverter = new MappingJacksonHttpMessageConverter();
 		List<MediaType> supportedMediaTypes = new ArrayList<MediaType>(3);
-		supportedMediaTypes.add(new MediaType("application", "json", Charset.forName("UTF-8")));
+		supportedMediaTypes.add(new MediaType("application", "json", Charset
+				.forName("UTF-8")));
 		supportedMediaTypes.add(MediaType.APPLICATION_JSON);
 		supportedMediaTypes.add(MediaType.APPLICATION_FORM_URLENCODED);
 		jsonConverter.setSupportedMediaTypes(supportedMediaTypes);

@@ -4,7 +4,11 @@ import org.springframework.social.oauth2.AbstractOAuth2ServiceProvider;
 import org.springframework.social.viadeo.api.Viadeo;
 import org.springframework.social.viadeo.api.impl.ViadeoTemplate;
 
-
+/**
+ * Viadeo ServiceProvider implementation.
+ * 
+ * @author Vincent Devillers
+ */
 public final class ViadeoServiceProvider extends
 		AbstractOAuth2ServiceProvider<Viadeo> {
 
