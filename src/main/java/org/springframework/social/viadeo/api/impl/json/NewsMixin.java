@@ -8,7 +8,6 @@ import org.codehaus.jackson.annotate.JsonProperty;
 import org.springframework.social.viadeo.api.ViadeoProfile;
 import org.springframework.social.viadeo.api.impl.Comments;
 
-
 /**
  * Annotated mixin to add Jackson annotations to News.
  */
@@ -25,5 +24,8 @@ abstract class NewsMixin {
 
 	@JsonProperty("comments")
 	Comments comments;
+
+	@JsonProperty("label")
+	String label;
 
 }

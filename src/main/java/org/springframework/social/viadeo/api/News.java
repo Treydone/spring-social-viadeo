@@ -5,7 +5,6 @@ import java.util.Date;
 
 import org.springframework.social.viadeo.api.impl.Comments;
 
-
 /**
  * Model class representing an entry in a feed.
  */
@@ -25,7 +24,9 @@ public class News implements Serializable {
 	private final Date creationDate;
 
 	private final Date updatedDate;
-	
+
+	private String label;
+
 	private Comments comments;
 
 	public News(String id, String message, ViadeoProfile from,
@@ -55,6 +56,14 @@ public class News implements Serializable {
 
 	public Date getUpdatedDate() {
 		return updatedDate;
+	}
+
+	public String getLabel() {
+		return label;
+	}
+
+	public void setLabel(String label) {
+		this.label = label;
 	}
 
 	public Comments getComments() {
