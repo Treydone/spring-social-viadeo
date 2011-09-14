@@ -14,23 +14,15 @@
 		<junit.version>4.8.2</junit.version>
 		<easymock.version>3.0</easymock.version>
 		<unitils.version>3.1</unitils.version>
+		
+		<github.maven.repository>file:///C:/maven-repository/</github.maven.repository>
 	</properties>
 
 	<distributionManagement>
 		<repository>
-			<id>maven-config-processor-plugin-repo-releases</id>
-			<name>Maven Repository for Config Processor Plugin (releases)</name>
-			<url>svn:https://spring-social-viadeo.googlecode.com/svn/maven-repo/releases
-			</url>
-			<uniqueVersion>false</uniqueVersion>
+			<id>maven-repository</id>
+			<url>${github.maven.repository}</url>
 		</repository>
-		<snapshotRepository>
-			<id>maven-config-processor-plugin-repo-snapshots</id>
-			<name>Maven Repository for Config Processor Plugin (snapshots)</name>
-			<url>svn:https://spring-social-viadeo.googlecode.com/svn/maven-repo/snapshots
-			</url>
-			<uniqueVersion>false</uniqueVersion>
-		</snapshotRepository>
 	</distributionManagement>
 
 	<dependencies>
@@ -125,20 +117,6 @@
 					<target>${java-version}</target>
 				</configuration>
 			</plugin>
-
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-deploy-plugin</artifactId>
-				<version>2.6</version>
-				<dependencies>
-					<dependency>
-						<groupId>com.google.code.maven-svn-wagon</groupId>
-						<artifactId>maven-svn-wagon</artifactId>
-						<version>1.4</version>
-					</dependency>
-				</dependencies>
-			</plugin>
-
 		</plugins>
 
 	</build>

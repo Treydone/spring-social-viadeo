@@ -1,5 +1,7 @@
 package org.springframework.social.viadeo.api.impl.json;
 
+import java.util.Date;
+
 import org.codehaus.jackson.annotate.JsonCreator;
 import org.codehaus.jackson.annotate.JsonIgnoreProperties;
 import org.codehaus.jackson.annotate.JsonProperty;
@@ -31,4 +33,13 @@ abstract class ViadeoProfileMixin {
 
 	@JsonProperty("picture_small")
 	String smallImageUrl;
+	
+	@JsonProperty("introduction")
+	String introduction;
+	
+	@JsonProperty("language")
+	String language;
+	
+	@JsonProperty("updated_time")
+	Date updatedTime;
 }
