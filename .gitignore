@@ -1,0 +1,11 @@
+# Ignore Eclipse configuration
+/.settings
+.project
+.classpath
+
+# Ignore generated files
+/target
+/bin
+*.class
+*~
+*.swp
