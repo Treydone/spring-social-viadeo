@@ -1,0 +1,26 @@
+Spring Social Viadeo
+====================
+Spring Social Viadeo is an extension to Spring Social to enable connectivity
+with the Viadeo API.
+Viadeo API : http://dev.viadeo.com/
+
+Authors
+-------
+Read AUTHORS
+
+License
+-------
+Spring Social Viadeo is released under Apache 2 license. See COPYING for a copy
+of the License.
+
+Helping
+-------
+Feel free to submit a pull request via Github 
+https://github.com/Treydone/spring-social-viadeo/pulls
+
+You may find answers by contacting Vincent Devillers via
+https://github.com/Treydone
+
+Documentation
+-------------
+Coming soon...
