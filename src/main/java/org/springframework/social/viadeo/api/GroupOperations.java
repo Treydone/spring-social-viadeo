@@ -15,21 +15,23 @@
 */
 package org.springframework.social.viadeo.api;
 
-import org.springframework.social.ApiBinding;
-import org.springframework.social.viadeo.api.impl.ViadeoTemplate;
+import java.util.List;
 
-/**
- * Interface specifying a basic set of operations for interacting with Viadeo. 
- * Implemented by {@link ViadeoTemplate}.
- * 
- * @author Vincent Devillers
- */
-public interface Viadeo extends ApiBinding {
+public interface GroupOperations {
 
-	UserOperations userOperations();
+	/**
+	 * Search a group on viadeo.
+	 * 
+	 * @param query a group on a keyword.
+	 * @return a list of groups
+	 */
+	List<Group> search(String query);
 
-	JobOperations jobOperations();
-
-	GroupOperations groupOperations();
-
+	/**
+	 * Retrieve the detail for a group.
+	 * 
+	 * @param objectId the id of the group
+	 * @return the detailled group
+	 */
+	Group getGroup(String objectId);
 }

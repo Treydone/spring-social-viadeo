@@ -26,6 +26,7 @@ import org.springframework.social.NotAuthorizedException;
 import org.springframework.social.oauth2.AbstractOAuth2ApiBinding;
 import org.springframework.social.support.ClientHttpRequestFactorySelector;
 import org.springframework.social.support.URIBuilder;
+import org.springframework.social.viadeo.api.GroupOperations;
 import org.springframework.social.viadeo.api.JobOperations;
 import org.springframework.social.viadeo.api.UserOperations;
 import org.springframework.social.viadeo.api.Viadeo;
@@ -50,6 +51,8 @@ public class ViadeoTemplate extends AbstractOAuth2ApiBinding implements Viadeo {
 	private UserOperations userOperations;
 
 	private JobOperations jobOperations;
+
+	private GroupOperations groupOperations;
 
 	private final String accessToken;
 
@@ -96,6 +99,7 @@ public class ViadeoTemplate extends AbstractOAuth2ApiBinding implements Viadeo {
 		// sub-apis
 		userOperations = new UserTemplate(this, isAuthorized());
 		jobOperations = new JobTemplate(this, isAuthorized());
+		groupOperations = new GroupTemplate(this, isAuthorized());
 	}
 
 	private void registerViadeoJsonModule() {
@@ -127,6 +131,10 @@ public class ViadeoTemplate extends AbstractOAuth2ApiBinding implements Viadeo {
 
 	public JobOperations jobOperations() {
 		return jobOperations;
+	}
+
+	public GroupOperations groupOperations() {
+		return groupOperations;
 	}
 
 }

@@ -13,23 +13,20 @@
 * See the License for the specific language governing permissions and
 * limitations under the License.
 */
-package org.springframework.social.viadeo.api;
+package org.springframework.social.viadeo.api.impl.json;
 
-import org.springframework.social.ApiBinding;
-import org.springframework.social.viadeo.api.impl.ViadeoTemplate;
+import java.util.List;
 
-/**
- * Interface specifying a basic set of operations for interacting with Viadeo. 
- * Implemented by {@link ViadeoTemplate}.
- * 
- * @author Vincent Devillers
- */
-public interface Viadeo extends ApiBinding {
+import org.codehaus.jackson.annotate.JsonCreator;
+import org.codehaus.jackson.annotate.JsonIgnoreProperties;
+import org.codehaus.jackson.annotate.JsonProperty;
+import org.springframework.social.viadeo.api.Group;
 
-	UserOperations userOperations();
 
-	JobOperations jobOperations();
+@JsonIgnoreProperties(ignoreUnknown = true)
+abstract class GroupsResultMixin {
 
-	GroupOperations groupOperations();
-
+	@JsonCreator
+	GroupsResultMixin(@JsonProperty("data") List<Group> groups) {
+	}
 }
