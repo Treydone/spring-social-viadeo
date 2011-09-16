@@ -109,4 +109,11 @@ public interface UserOperations {
 	 * @return the contact cards.
 	 */
 	List<ContactCards> getContactCards(String userId);
+
+	/**
+	 * Retrieve inbox messages of an authenticated member.
+	 * 
+	 * @return the inbox messages.
+	 */
+	List<InboxMessage> getInboxMessages();
 }

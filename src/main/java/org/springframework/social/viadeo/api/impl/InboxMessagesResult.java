@@ -13,25 +13,25 @@
 * See the License for the specific language governing permissions and
 * limitations under the License.
 */
-package org.springframework.social.viadeo.api;
+package org.springframework.social.viadeo.api.impl;
 
-import org.springframework.social.ApiBinding;
-import org.springframework.social.viadeo.api.impl.ViadeoTemplate;
+import java.io.Serializable;
+import java.util.List;
 
-/**
- * Interface specifying a basic set of operations for interacting with Viadeo. 
- * Implemented by {@link ViadeoTemplate}.
- * 
- * @author Vincent Devillers
- */
-public interface Viadeo extends ApiBinding {
+import org.springframework.social.viadeo.api.InboxMessage;
 
-	UserOperations userOperations();
+public class InboxMessagesResult implements Serializable {
 
-	JobOperations jobOperations();
+	private static final long serialVersionUID = 680503605687489167L;
 
-	GroupOperations groupOperations();
+	private final List<InboxMessage> inboxMessages;
 
-	InboxMessageOperations inboxMessageOperations();
+	public List<InboxMessage> getInboxMessages() {
+		return inboxMessages;
+	}
+
+	public InboxMessagesResult(List<InboxMessage> inboxMessages) {
+		this.inboxMessages = inboxMessages;
+	}
 
 }

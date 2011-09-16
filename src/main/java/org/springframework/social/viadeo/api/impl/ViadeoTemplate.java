@@ -27,6 +27,7 @@ import org.springframework.social.oauth2.AbstractOAuth2ApiBinding;
 import org.springframework.social.support.ClientHttpRequestFactorySelector;
 import org.springframework.social.support.URIBuilder;
 import org.springframework.social.viadeo.api.GroupOperations;
+import org.springframework.social.viadeo.api.InboxMessageOperations;
 import org.springframework.social.viadeo.api.JobOperations;
 import org.springframework.social.viadeo.api.UserOperations;
 import org.springframework.social.viadeo.api.Viadeo;
@@ -53,6 +54,8 @@ public class ViadeoTemplate extends AbstractOAuth2ApiBinding implements Viadeo {
 	private JobOperations jobOperations;
 
 	private GroupOperations groupOperations;
+
+	private InboxMessageOperations inboxMessageOperations;
 
 	private final String accessToken;
 
@@ -100,6 +103,7 @@ public class ViadeoTemplate extends AbstractOAuth2ApiBinding implements Viadeo {
 		userOperations = new UserTemplate(this, isAuthorized());
 		jobOperations = new JobTemplate(this, isAuthorized());
 		groupOperations = new GroupTemplate(this, isAuthorized());
+		inboxMessageOperations = new InboxMessageTemplate(this, isAuthorized());
 	}
 
 	private void registerViadeoJsonModule() {
@@ -125,16 +129,24 @@ public class ViadeoTemplate extends AbstractOAuth2ApiBinding implements Viadeo {
 				.fromUri(uri).queryParam("access_token", accessToken);
 	}
 
+	@Override
 	public UserOperations userOperations() {
 		return userOperations;
 	}
 
+	@Override
 	public JobOperations jobOperations() {
 		return jobOperations;
 	}
 
+	@Override
 	public GroupOperations groupOperations() {
 		return groupOperations;
+	}
+
+	@Override
+	public InboxMessageOperations inboxMessageOperations() {
+		return inboxMessageOperations;
 	}
 
 }

@@ -1,0 +1,72 @@
+{
+   "id":"pvtweOoAcdjciVejhoDylwEjpmdavkvfatuVlqbmpvpucdbhhcAf",
+   "type":"INBOX MESSAGE DETAIL",
+   "link":"http://www.viadeo.com/messages/detailsmessagerecu/?msgReceivedId=0021ahcgz6lyadff",
+   "updated_time":"2011-09-13T16:39:19+02:00",
+   "name":"",
+   "read":true,
+   "subject":"RE : Message de test",
+   "message":"Bonjour Stéfanie\n\nMerci pour ton message, voici ma réponse.\nVincent",
+   "from":{
+      "id":"EjtftevbyiugaIfDfVizDgymxg",
+      "type":"USER",
+      "link":"http://www.viadeo.com/profile/0021g557w9j1iw4m",
+      "updated_time":"2011-05-02T14:23:43+02:00",
+      "name":"Vincent DEVILLERS",
+      "contact_count":146,
+      "gender":"M",
+      "nickname":"vincent.devillers1",
+      "first_name":"Vincent",
+      "last_name":"DEVILLERS",
+      "picture_small":"http://www.viadeo.com/servlet/photo?memberId=0021g557w9j1iw4m&ts=1302733734000&type=1&gender=2",
+      "picture_large":"http://www.viadeo.com/servlet/photo?memberId=0021g557w9j1iw4m&ts=1302733734000&type=0&gender=2",
+      "headline":"Ingenieur d'etudes et de developpement, Viadeo",
+      "introduction":"",
+      "interests":"Karate (2eme Dan), piano, natation, apnee libre, robotique",
+      "location":{
+         "city":"Garches",
+         "zipcode":"92",
+         "country":"France",
+         "area":"Ile-de-France",
+         "timezone":"(GMT+01:00) Bruxelles, Copenhague, Madrid, Paris",
+         "latitude":"",
+         "longitude":""
+      },
+      "language":"fr",
+      "distance":0,
+      "is_premium":true,
+      "premium_since":"2010-06-05T00:00:00+02:00"
+   },
+   "to":[
+      {
+         "id":"kqebrOcVsfsfhnmxsgxnOAyxyw",
+         "type":"USER",
+         "link":"http://www.viadeo.com/profile/0021urfa0b2s44m5",
+         "updated_time":"2011-07-04T09:13:29+02:00",
+         "name":"Stéfanie Duprey",
+         "contact_count":107,
+         "gender":"F",
+         "nickname":"stefanie.duprey",
+         "first_name":"Stéfanie",
+         "last_name":"Duprey",
+         "has_picture":true,
+         "picture_small":"http://static1.viadeo-static.com/servlet/photo?memberId=0021urfa0b2s44m5&ts=1294323916000&type=1&gender=1",
+         "picture_large":"http://static2.viadeo-static.com/servlet/photo?memberId=0021urfa0b2s44m5&ts=1294323916000&type=0&gender=1",
+         "headline":"Responsable projets, Viadeo",
+         "introduction":"Ingénieur en informatique et spécialisée en génie logiciel, je m’oriente vers de l’expertise technique en nouvelles technologies, notamment en environnement Java/Web et en frameworks open sources.\r\n\r\nMon cursus d'ingénieur m'a permis d’acquérir des connaissances variées dans différents domaines tels que la conception de logiciels, les systèmes et réseaux, les bases de données, le Web et le développement objet. Cette polyvalence dans mon parcours me permet aujourd’hui de pouvoir m’adapter rapidement aux différentes techniques utilisées dans les projets auxquels je participe.\r\n\r\nMinutieuse et d’esprit curieux, je m’intéresse de près aux nouvelles technologies, notamment celles liées aux pratiques du génie logiciel qui tendent à améliorer la productivité (frameworks, convention over configuration, etc.) et la qualité des développements (agilité, TDD, intégration continue, etc).",
+         "interests":"",
+         "location":{
+            "city":"Paris",
+            "zipcode":"75009",
+            "country":"France",
+            "area":"Ile-de-France",
+            "timezone":"(GMT+01:00) Bruxelles, Copenhague, Madrid, Paris",
+            "latitude":"",
+            "longitude":""
+         },
+         "language":"fr",
+         "is_premium":true,
+         "premium_since":"2011-07-04T00:00:00+02:00"
+      }
+   ]
+}

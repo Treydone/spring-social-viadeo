@@ -35,6 +35,7 @@ import org.springframework.social.NotAuthorizedException;
 import org.springframework.social.support.URIBuilder;
 import org.springframework.social.viadeo.api.ContactCards;
 import org.springframework.social.viadeo.api.Experience;
+import org.springframework.social.viadeo.api.InboxMessage;
 import org.springframework.social.viadeo.api.News;
 import org.springframework.social.viadeo.api.Phone;
 import org.springframework.social.viadeo.api.ViadeoProfile;
@@ -406,6 +407,42 @@ public class UserTemplateTest extends AbstractViadeoApiTest {
 				.contains("vincentdevillers@hotmail.fr"));
 		assertTrue(cardPerso.getPhones().contains(
 				new Phone("MOBILE", "France", "+33", "0615053430")));
+
+		mockServer.verify();
+	}
+
+	@Test
+	public void getCurrentInboxMessages() {
+		mockServer
+				.expect(
+						requestTo(URIBuilder.fromUri(
+								"https://api.viadeo.com/me/inbox?access_token=ACCESS_TOKEN&user_detail=full&limit=50").build()))
+				.andExpect(method(GET))
+				.andRespond(withResponse(jsonResource("testdata/inbox-messages-for-me"), responseHeaders));
+
+		List<InboxMessage> inboxMessages = viadeo.userOperations().getInboxMessages();
+		assertNotNull(inboxMessages);
+		assertEquals(2, inboxMessages.size());
+
+		InboxMessage message = inboxMessages.get(0);
+		assertEquals("pvtweOoAcdjciVejhoDylwEjpmdavkvfatuVlqbmpvpucdbhhcAf", message.getId());
+		assertEquals("http://www.viadeo.com/messages/detailsmessagerecu/?msgReceivedId=0021ahcgz6lyadff", message.getLink());
+		assertEquals(Boolean.TRUE, message.getRead());
+		assertEquals("RE : Message de test", message.getSubject());
+		assertEquals("Bonjour Stéfanie\n\nMerci pour ton message, voici ma réponse.\nVincent",
+				message.getMessage());
+		assertEquals("EjtftevbyiugaIfDfVizDgymxg", message.getSender().getId());
+		assertEquals("Ile-de-France", message.getSender().getLocation().getArea());
+
+		message = inboxMessages.get(1);
+		assertEquals("cVVsvkzhhoIsguuVmVhmipblkkDjadxnoIfxkVADnnjmdwnEoDhf", message.getId());
+		assertEquals("http://www.viadeo.com/messages/detailsmessagerecu/?msgReceivedId=0021gbk5t5ob6lff", message.getLink());
+		assertEquals(Boolean.TRUE, message.getRead());
+		assertEquals("Salut !!", message.getSubject());
+		assertEquals("Salut,\n\nComment va? Ça se passe bien chez Viadeo? \n++ guillaume",
+				message.getMessage());
+		assertEquals("fuspVAkfvcOyOfyuekeOzvseDs", message.getSender().getId());
+		assertEquals("Ile-de-France", message.getSender().getLocation().getArea());
 
 		mockServer.verify();
 	}

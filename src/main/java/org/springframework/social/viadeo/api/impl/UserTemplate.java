@@ -21,6 +21,7 @@ import java.util.List;
 import org.springframework.social.viadeo.api.Career;
 import org.springframework.social.viadeo.api.ContactCards;
 import org.springframework.social.viadeo.api.Experience;
+import org.springframework.social.viadeo.api.InboxMessage;
 import org.springframework.social.viadeo.api.News;
 import org.springframework.social.viadeo.api.UserOperations;
 import org.springframework.social.viadeo.api.ViadeoProfile;
@@ -28,14 +29,6 @@ import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
 
 public class UserTemplate extends AbstractViadeoOperations implements UserOperations {
-
-	private static final String LIMIT = "limit";
-
-	private static final String FULL = "full";
-
-	private static final String ME = "me";
-
-	private static final String USER_DETAIL = "user_detail";
 
 	public UserTemplate(ViadeoTemplate viadeoTemplate, boolean isAuthorized) {
 		super(viadeoTemplate, isAuthorized);
@@ -117,5 +110,12 @@ public class UserTemplate extends AbstractViadeoOperations implements UserOperat
 	@Override
 	public List<ContactCards> getContactCards() {
 		return getContactCards(ME);
+	}
+
+	@Override
+	public List<InboxMessage> getInboxMessages() {
+		requireAuthorization();
+		URI uri = buildUri(ME + "/inbox").queryParam(USER_DETAIL, FULL).queryParam(LIMIT, "50").build();
+		return get(uri, InboxMessagesResult.class).getInboxMessages();
 	}
 }

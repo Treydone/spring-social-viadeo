@@ -29,6 +29,14 @@ import org.springframework.web.client.ResourceAccessException;
 
 abstract class AbstractViadeoOperations {
 
+	static final String LIMIT = "limit";
+
+	static final String FULL = "full";
+
+	static final String ME = "me";
+
+	static final String USER_DETAIL = "user_detail";
+
 	static final String GRAPH_API_URL = "https://api.viadeo.com/";
 
 	static final String OBJECT_URL = GRAPH_API_URL + "{objectId}";
