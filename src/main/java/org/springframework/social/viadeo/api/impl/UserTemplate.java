@@ -68,6 +68,19 @@ public class UserTemplate extends AbstractViadeoOperations implements UserOperat
 		URI uri = buildUri(userId + "/home_newsfeed").queryParam(USER_DETAIL, FULL).queryParam(LIMIT, "50").build();
 		return get(uri, Feed.class).getNews();
 	}
+	
+
+	@Override
+	public List<News> getUserFeed() {
+		requireAuthorization();
+		return getUserFeed(ME);
+	}
+
+	@Override
+	public List<News> getUserFeed(String userId) {
+		URI uri = buildUri(userId + "/newsfeed").queryParam(USER_DETAIL, FULL).queryParam(LIMIT, "50").build();
+		return get(uri, Feed.class).getNews();
+	}
 
 	@Override
 	public List<Experience> getExperiences() {

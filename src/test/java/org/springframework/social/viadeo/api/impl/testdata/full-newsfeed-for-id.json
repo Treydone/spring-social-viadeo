@@ -1,0 +1,1459 @@
+{
+   "id":"",
+   "type":"USER NEWS",
+   "link":"http://www.viadeo.com/profile/0021g557w9j1iw4m/fr/?currentab=mininews",
+   "updated_time":"2011-09-20T11:31:11+02:00",
+   "name":"Vincent DEVILLERS",
+   "data":[
+      {
+         "id":"eljsiDxIbftdatzstcujbxEqfc",
+         "type":"",
+         "link":"",
+         "updated_time":"2011-09-20T11:31:11+02:00",
+         "name":"",
+         "from":{
+            "id":"EjtftevbyiugaIfDfVizDgymxg",
+            "type":"USER",
+            "link":"http://www.viadeo.com/profile/0021g557w9j1iw4m",
+            "updated_time":"2011-05-02T12:23:43+02:00",
+            "name":"Vincent DEVILLERS"
+         },
+         "type":"NEWS ITEM",
+         "label":"a un nouveau contact : ",
+         "message":"Johanna ZIWES",
+         "infeed_link":"http://www.viadeo.com/recherche/profil/?memberId=0025rj10zfxur7y",
+         "creation_date":"2011-09-20T11:31:11+02:00",
+         "comments":{
+            "count":0
+         },
+         "likes":{
+            "count":0
+         }
+      },
+      {
+         "id":"mubherwtwkseawrqzIswfuhyfk",
+         "type":"",
+         "link":"",
+         "updated_time":"2011-09-13T09:45:36+02:00",
+         "name":"",
+         "from":{
+            "id":"EjtftevbyiugaIfDfVizDgymxg",
+            "type":"USER",
+            "link":"http://www.viadeo.com/profile/0021g557w9j1iw4m",
+            "updated_time":"2011-05-02T12:23:43+02:00",
+            "name":"Vincent DEVILLERS"
+         },
+         "type":"NEWS ITEM",
+         "label":"consulte ",
+         "message":"MacPlus : Android 5.0 va coller aux dents",
+         "infeed_link":"http://www.viadeo.com/shareit/redirect/?urlSharerId=0022eith9o72i73j",
+         "creation_date":"2011-09-13T09:45:36+02:00",
+         "comments":{
+            "count":0
+         },
+         "likes":{
+            "count":0
+         }
+      },
+      {
+         "id":"yjVIeIsqDOEgeuIbkaoxVjldIO",
+         "type":"",
+         "link":"",
+         "updated_time":"2011-09-09T09:49:12+02:00",
+         "name":"",
+         "from":{
+            "id":"EjtftevbyiugaIfDfVizDgymxg",
+            "type":"USER",
+            "link":"http://www.viadeo.com/profile/0021g557w9j1iw4m",
+            "updated_time":"2011-05-02T12:23:43+02:00",
+            "name":"Vincent DEVILLERS"
+         },
+         "type":"NEWS ITEM",
+         "label":"a un nouveau contact : ",
+         "message":"Malik Alayli",
+         "infeed_link":"http://www.viadeo.com/recherche/profil/?memberId=00220umade0vohj6",
+         "creation_date":"2011-09-09T09:49:12+02:00",
+         "comments":{
+            "count":0
+         },
+         "likes":{
+            "count":0
+         }
+      },
+      {
+         "id":"ipocudIApboAaonbqhkpVkrwEg",
+         "type":"",
+         "link":"",
+         "updated_time":"2011-09-08T11:51:19+02:00",
+         "name":"",
+         "from":{
+            "id":"EjtftevbyiugaIfDfVizDgymxg",
+            "type":"USER",
+            "link":"http://www.viadeo.com/profile/0021g557w9j1iw4m",
+            "updated_time":"2011-05-02T12:23:43+02:00",
+            "name":"Vincent DEVILLERS"
+         },
+         "type":"NEWS ITEM",
+         "label":"a un nouveau contact : ",
+         "message":"Anna Keroullé",
+         "infeed_link":"http://www.viadeo.com/recherche/profil/?memberId=0021oyrik0d3z1b",
+         "creation_date":"2011-09-08T11:51:19+02:00",
+         "comments":{
+            "count":0
+         },
+         "likes":{
+            "count":0
+         }
+      },
+      {
+         "id":"vigvIAzckobwawjDhozqdwtupA",
+         "type":"",
+         "link":"",
+         "updated_time":"2011-09-08T11:34:19+02:00",
+         "name":"",
+         "from":{
+            "id":"EjtftevbyiugaIfDfVizDgymxg",
+            "type":"USER",
+            "link":"http://www.viadeo.com/profile/0021g557w9j1iw4m",
+            "updated_time":"2011-05-02T12:23:43+02:00",
+            "name":"Vincent DEVILLERS"
+         },
+         "type":"NEWS ITEM",
+         "label":"a un nouveau contact : ",
+         "message":"Marjorie DEMORY",
+         "infeed_link":"http://www.viadeo.com/recherche/profil/?memberId=0021w1ytexhum6vg",
+         "creation_date":"2011-09-08T11:34:19+02:00",
+         "comments":{
+            "count":0
+         },
+         "likes":{
+            "count":0
+         }
+      },
+      {
+         "id":"rDcsnjibkuIOEaOpguIcrgboOk",
+         "type":"",
+         "link":"",
+         "updated_time":"2011-09-08T11:30:14+02:00",
+         "name":"",
+         "from":{
+            "id":"EjtftevbyiugaIfDfVizDgymxg",
+            "type":"USER",
+            "link":"http://www.viadeo.com/profile/0021g557w9j1iw4m",
+            "updated_time":"2011-05-02T12:23:43+02:00",
+            "name":"Vincent DEVILLERS"
+         },
+         "type":"NEWS ITEM",
+         "label":"a un nouveau contact : ",
+         "message":"Chen ZANG",
+         "infeed_link":"http://www.viadeo.com/recherche/profil/?memberId=00228xjaraznbspl",
+         "creation_date":"2011-09-08T11:30:14+02:00",
+         "comments":{
+            "count":0
+         },
+         "likes":{
+            "count":0
+         }
+      },
+      {
+         "id":"dOyuEmprtcEehxttupvsIiuftO",
+         "type":"",
+         "link":"",
+         "updated_time":"2011-09-08T11:13:41+02:00",
+         "name":"",
+         "from":{
+            "id":"EjtftevbyiugaIfDfVizDgymxg",
+            "type":"USER",
+            "link":"http://www.viadeo.com/profile/0021g557w9j1iw4m",
+            "updated_time":"2011-05-02T12:23:43+02:00",
+            "name":"Vincent DEVILLERS"
+         },
+         "type":"NEWS ITEM",
+         "label":"a un nouveau contact : ",
+         "message":"Catherine Pash",
+         "infeed_link":"http://www.viadeo.com/recherche/profil/?memberId=002tz2hl5eup31",
+         "creation_date":"2011-09-08T11:13:41+02:00",
+         "comments":{
+            "count":0
+         },
+         "likes":{
+            "count":0
+         }
+      },
+      {
+         "id":"vpcyfkqppVrryrInozOAvncmpk",
+         "type":"",
+         "link":"",
+         "updated_time":"2011-09-08T10:41:50+02:00",
+         "name":"",
+         "from":{
+            "id":"EjtftevbyiugaIfDfVizDgymxg",
+            "type":"USER",
+            "link":"http://www.viadeo.com/profile/0021g557w9j1iw4m",
+            "updated_time":"2011-05-02T12:23:43+02:00",
+            "name":"Vincent DEVILLERS"
+         },
+         "type":"NEWS ITEM",
+         "label":"a un nouveau contact : ",
+         "message":"Michel VAZ",
+         "infeed_link":"http://www.viadeo.com/recherche/profil/?memberId=0021bj49eogyzy0w",
+         "creation_date":"2011-09-08T10:41:50+02:00",
+         "comments":{
+            "count":0
+         },
+         "likes":{
+            "count":0
+         }
+      },
+      {
+         "id":"xxvfpowyzecbdglgdxlfutdVoA",
+         "type":"",
+         "link":"",
+         "updated_time":"2011-09-08T10:25:20+02:00",
+         "name":"",
+         "from":{
+            "id":"EjtftevbyiugaIfDfVizDgymxg",
+            "type":"USER",
+            "link":"http://www.viadeo.com/profile/0021g557w9j1iw4m",
+            "updated_time":"2011-05-02T12:23:43+02:00",
+            "name":"Vincent DEVILLERS"
+         },
+         "type":"NEWS ITEM",
+         "label":"a un nouveau contact : ",
+         "message":"Alexandre Nguyen",
+         "infeed_link":"http://www.viadeo.com/recherche/profil/?memberId=002151wrtcu0jfza",
+         "creation_date":"2011-09-08T10:25:20+02:00",
+         "comments":{
+            "count":0
+         },
+         "likes":{
+            "count":0
+         }
+      },
+      {
+         "id":"emtmvveesnVtbfeqIprdvyfgzw",
+         "type":"",
+         "link":"",
+         "updated_time":"2011-09-08T10:09:30+02:00",
+         "name":"",
+         "from":{
+            "id":"EjtftevbyiugaIfDfVizDgymxg",
+            "type":"USER",
+            "link":"http://www.viadeo.com/profile/0021g557w9j1iw4m",
+            "updated_time":"2011-05-02T12:23:43+02:00",
+            "name":"Vincent DEVILLERS"
+         },
+         "type":"NEWS ITEM",
+         "label":"a un nouveau contact : ",
+         "message":"Misel Brzulovic",
+         "infeed_link":"http://www.viadeo.com/recherche/profil/?memberId=0021nmh317ssldg8",
+         "creation_date":"2011-09-08T10:09:30+02:00",
+         "comments":{
+            "count":0
+         },
+         "likes":{
+            "count":0
+         }
+      },
+      {
+         "id":"mtcVinoOwqroqnzVVmbgcwjjkk",
+         "type":"",
+         "link":"",
+         "updated_time":"2011-09-08T09:58:38+02:00",
+         "name":"",
+         "from":{
+            "id":"EjtftevbyiugaIfDfVizDgymxg",
+            "type":"USER",
+            "link":"http://www.viadeo.com/profile/0021g557w9j1iw4m",
+            "updated_time":"2011-05-02T12:23:43+02:00",
+            "name":"Vincent DEVILLERS"
+         },
+         "type":"NEWS ITEM",
+         "label":"consulte ",
+         "message":"Viadeo Launches Developer Contest With $20,000 Prize",
+         "infeed_link":"http://www.viadeo.com/shareit/redirect/?urlSharerId=0021t5r6dih9vqnb",
+         "creation_date":"2011-09-07T09:33:06+02:00",
+         "comments":{
+            "count":1,
+            "data":[
+               {
+                  "id":"jrxxOftssDjvqEbkgEarihwpsxEVkDlxxmspqDwyVcspnfbVfvrA",
+                  "type":"NEWS ITEM COMMENT",
+                  "link":"",
+                  "updated_time":"2011-09-08T09:58:38+02:00",
+                  "name":"",
+                  "from":{
+                     "id":"ruDkVcirtbdngqzvhuclzzOlhc",
+                     "type":"USER",
+                     "link":"http://www.viadeo.com/profile/0029g48cnmmi9t7",
+                     "updated_time":"2010-12-01T10:21:36+01:00",
+                     "name":"Nabil ADOUANI"
+                  },
+                  "created_time":"2011-09-08T09:58:38+02:00",
+                  "message":"ça t'intéresse?",
+                  "privacy":"PUBLIC"
+               }
+            ]
+         },
+         "likes":{
+            "count":1,
+            "data":[
+               {
+                  "id":"ruDkVcirtbdngqzvhuclzzOlhc",
+                  "type":"USER",
+                  "link":"http://www.viadeo.com/profile/0029g48cnmmi9t7",
+                  "updated_time":"2010-12-01T10:21:36+01:00",
+                  "name":"Nabil ADOUANI"
+               }
+            ]
+         }
+      },
+      {
+         "id":"IdbjwahxopsyeobkDOvioImlmO",
+         "type":"",
+         "link":"",
+         "updated_time":"2011-09-08T09:40:07+02:00",
+         "name":"",
+         "from":{
+            "id":"EjtftevbyiugaIfDfVizDgymxg",
+            "type":"USER",
+            "link":"http://www.viadeo.com/profile/0021g557w9j1iw4m",
+            "updated_time":"2011-05-02T12:23:43+02:00",
+            "name":"Vincent DEVILLERS"
+         },
+         "type":"NEWS ITEM",
+         "label":"a un nouveau contact : ",
+         "message":"Guillaume Lavezzari",
+         "infeed_link":"http://www.viadeo.com/recherche/profil/?memberId=0026hanglwus9i1",
+         "creation_date":"2011-09-08T09:40:07+02:00",
+         "comments":{
+            "count":0
+         },
+         "likes":{
+            "count":0
+         }
+      },
+      {
+         "id":"yxqvwgeczDyDpIbEcbnIIVOjxg",
+         "type":"",
+         "link":"",
+         "updated_time":"2011-09-07T14:49:10+02:00",
+         "name":"",
+         "from":{
+            "id":"EjtftevbyiugaIfDfVizDgymxg",
+            "type":"USER",
+            "link":"http://www.viadeo.com/profile/0021g557w9j1iw4m",
+            "updated_time":"2011-05-02T12:23:43+02:00",
+            "name":"Vincent DEVILLERS"
+         },
+         "type":"NEWS ITEM",
+         "label":"a un nouveau contact : ",
+         "message":"Florian Convers",
+         "infeed_link":"http://www.viadeo.com/recherche/profil/?memberId=002fvzhxdo3bmr2",
+         "creation_date":"2011-09-07T14:49:10+02:00",
+         "comments":{
+            "count":0
+         },
+         "likes":{
+            "count":0
+         }
+      },
+      {
+         "id":"jevEEnlmkbDjhuecfcgEyzflmk",
+         "type":"",
+         "link":"",
+         "updated_time":"2011-09-07T14:10:39+02:00",
+         "name":"",
+         "from":{
+            "id":"EjtftevbyiugaIfDfVizDgymxg",
+            "type":"USER",
+            "link":"http://www.viadeo.com/profile/0021g557w9j1iw4m",
+            "updated_time":"2011-05-02T12:23:43+02:00",
+            "name":"Vincent DEVILLERS"
+         },
+         "type":"NEWS ITEM",
+         "label":"a un nouveau contact : ",
+         "message":"Sven Duzont'",
+         "infeed_link":"http://www.viadeo.com/recherche/profil/?memberId=002jft8nvpm1hkt",
+         "creation_date":"2011-09-07T14:10:39+02:00",
+         "comments":{
+            "count":0
+         },
+         "likes":{
+            "count":0
+         }
+      },
+      {
+         "id":"cVwitnVeOIzoowtiAhAkqgvobs",
+         "type":"",
+         "link":"",
+         "updated_time":"2011-09-07T10:28:12+02:00",
+         "name":"",
+         "from":{
+            "id":"EjtftevbyiugaIfDfVizDgymxg",
+            "type":"USER",
+            "link":"http://www.viadeo.com/profile/0021g557w9j1iw4m",
+            "updated_time":"2011-05-02T12:23:43+02:00",
+            "name":"Vincent DEVILLERS"
+         },
+         "type":"NEWS ITEM",
+         "label":"a un nouveau contact : ",
+         "message":"Timour Goliath Blary",
+         "infeed_link":"http://www.viadeo.com/recherche/profil/?memberId=002myolrn1nsgpj",
+         "creation_date":"2011-09-07T10:28:12+02:00",
+         "comments":{
+            "count":0
+         },
+         "likes":{
+            "count":0
+         }
+      },
+      {
+         "id":"aEqgojVqguigVizxaOfodnwcjo",
+         "type":"",
+         "link":"",
+         "updated_time":"2011-09-05T17:11:59+02:00",
+         "name":"",
+         "from":{
+            "id":"EjtftevbyiugaIfDfVizDgymxg",
+            "type":"USER",
+            "link":"http://www.viadeo.com/profile/0021g557w9j1iw4m",
+            "updated_time":"2011-05-02T12:23:43+02:00",
+            "name":"Vincent DEVILLERS"
+         },
+         "type":"NEWS ITEM",
+         "label":"consulte ",
+         "message":"German website creates two-click Like button, Facebook not amused | ZDNet",
+         "infeed_link":"http://www.viadeo.com/shareit/redirect/?urlSharerId=00223emxrzijen6h",
+         "creation_date":"2011-09-05T17:11:59+02:00",
+         "comments":{
+            "count":0
+         },
+         "likes":{
+            "count":0
+         }
+      },
+      {
+         "id":"docIiDrlbzxOcfdeEoxAopbIjw",
+         "type":"",
+         "link":"",
+         "updated_time":"2011-08-30T10:36:31+02:00",
+         "name":"",
+         "from":{
+            "id":"EjtftevbyiugaIfDfVizDgymxg",
+            "type":"USER",
+            "link":"http://www.viadeo.com/profile/0021g557w9j1iw4m",
+            "updated_time":"2011-05-02T12:23:43+02:00",
+            "name":"Vincent DEVILLERS"
+         },
+         "type":"NEWS ITEM",
+         "label":"consulte ",
+         "message":"LinkedIn CEO “fully expects” to build in-enterprise social networking tools | VentureBeat",
+         "infeed_link":"http://www.viadeo.com/shareit/redirect/?urlSharerId=002d2stofqx9m0q",
+         "creation_date":"2011-08-30T10:36:31+02:00",
+         "comments":{
+            "count":0
+         },
+         "likes":{
+            "count":0
+         }
+      },
+      {
+         "id":"exODjbrdtmhkkmwcOptrrEEDeg",
+         "type":"",
+         "link":"",
+         "updated_time":"2011-08-25T14:17:54+02:00",
+         "name":"",
+         "from":{
+            "id":"EjtftevbyiugaIfDfVizDgymxg",
+            "type":"USER",
+            "link":"http://www.viadeo.com/profile/0021g557w9j1iw4m",
+            "updated_time":"2011-05-02T12:23:43+02:00",
+            "name":"Vincent DEVILLERS"
+         },
+         "type":"NEWS ITEM",
+         "label":"a créé la page de l'évènement ",
+         "message":"test",
+         "infeed_link":"http://www.viadeo.com/fr/event/006sg4cmod8r21j/test",
+         "creation_date":"2011-08-25T14:17:54+02:00",
+         "comments":{
+            "count":0
+         },
+         "likes":{
+            "count":0
+         }
+      },
+      {
+         "id":"yIuvAyVvawhDAkvDcEzbkpwymO",
+         "type":"",
+         "link":"",
+         "updated_time":"2011-08-25T10:38:27+02:00",
+         "name":"",
+         "from":{
+            "id":"EjtftevbyiugaIfDfVizDgymxg",
+            "type":"USER",
+            "link":"http://www.viadeo.com/profile/0021g557w9j1iw4m",
+            "updated_time":"2011-05-02T12:23:43+02:00",
+            "name":"Vincent DEVILLERS"
+         },
+         "type":"NEWS ITEM",
+         "label":"a un nouveau contact : ",
+         "message":"Angélique Hurtrel",
+         "infeed_link":"http://www.viadeo.com/recherche/profil/?memberId=0021ytdkdp8939c1",
+         "creation_date":"2011-08-25T10:38:27+02:00",
+         "comments":{
+            "count":0
+         },
+         "likes":{
+            "count":0
+         }
+      },
+      {
+         "id":"dvIeOnEIumDriOsswumOaplVzw",
+         "type":"",
+         "link":"",
+         "updated_time":"2011-08-24T14:48:44+02:00",
+         "name":"",
+         "from":{
+            "id":"EjtftevbyiugaIfDfVizDgymxg",
+            "type":"USER",
+            "link":"http://www.viadeo.com/profile/0021g557w9j1iw4m",
+            "updated_time":"2011-05-02T12:23:43+02:00",
+            "name":"Vincent DEVILLERS"
+         },
+         "type":"NEWS ITEM",
+         "label":"consulte ",
+         "message":"45% Of Companies Use Twitter To Find Talent [INFOGRAPHIC] - AllTwitter",
+         "infeed_link":"http://www.viadeo.com/shareit/redirect/?urlSharerId=0027ikxguahtnbx",
+         "creation_date":"2011-08-24T14:48:44+02:00",
+         "comments":{
+            "count":0
+         },
+         "likes":{
+            "count":0
+         }
+      },
+      {
+         "id":"eVAeAjxiahOkkvrADzpxwVtVgg",
+         "type":"",
+         "link":"",
+         "updated_time":"2011-08-23T14:34:49+02:00",
+         "name":"",
+         "from":{
+            "id":"EjtftevbyiugaIfDfVizDgymxg",
+            "type":"USER",
+            "link":"http://www.viadeo.com/profile/0021g557w9j1iw4m",
+            "updated_time":"2011-05-02T12:23:43+02:00",
+            "name":"Vincent DEVILLERS"
+         },
+         "type":"NEWS ITEM",
+         "label":"consulte ",
+         "message":"Alerte sur l'emploi informatique 2011: bientôt la surchauffe des salaires et la pénurie ? - Opinions - ChannelInsider.fr",
+         "infeed_link":"http://www.viadeo.com/shareit/redirect/?urlSharerId=0021ddhsv7mq0tox",
+         "creation_date":"2011-08-23T14:34:49+02:00",
+         "comments":{
+            "count":0
+         },
+         "likes":{
+            "count":0
+         }
+      },
+      {
+         "id":"ujcqhqatqtxenwVuetdVbsDEfw",
+         "type":"",
+         "link":"",
+         "updated_time":"2011-08-23T09:49:49+02:00",
+         "name":"",
+         "from":{
+            "id":"EjtftevbyiugaIfDfVizDgymxg",
+            "type":"USER",
+            "link":"http://www.viadeo.com/profile/0021g557w9j1iw4m",
+            "updated_time":"2011-05-02T12:23:43+02:00",
+            "name":"Vincent DEVILLERS"
+         },
+         "type":"NEWS ITEM",
+         "label":"Status : ",
+         "message":"Post-It War: Ubisoft met la barre trèèèèès haut -> http://viadeo.com/s/x6x0o",
+         "creation_date":"2011-08-23T00:47:18+02:00",
+         "comments":{
+            "count":3,
+            "data":[
+               {
+                  "id":"usvEbVlyfaxpEAiguExlwymvxkatvtotDtimlIvVbsDkAIjdvbVA",
+                  "type":"NEWS ITEM COMMENT",
+                  "link":"",
+                  "updated_time":"2011-08-23T09:43:51+02:00",
+                  "name":"",
+                  "from":{
+                     "id":"EjtftevbyiugaIfDfVizDgymxg",
+                     "type":"USER",
+                     "link":"http://www.viadeo.com/profile/0021g557w9j1iw4m",
+                     "updated_time":"2011-05-02T12:23:43+02:00",
+                     "name":"Vincent DEVILLERS"
+                  },
+                  "created_time":"2011-08-23T09:43:51+02:00",
+                  "message":"A quand le stop-motion en post-it? :P",
+                  "privacy":"PUBLIC"
+               },
+               {
+                  "id":"usvEbVlyfaxpEAiguExlwymvxmjIenuIepgjaIyeVmcgnwjApick",
+                  "type":"NEWS ITEM COMMENT",
+                  "link":"",
+                  "updated_time":"2011-08-23T09:49:49+02:00",
+                  "name":"",
+                  "from":{
+                     "id":"IrbcOcxggIxOvquqgVApOfVctg",
+                     "type":"USER",
+                     "link":"http://www.viadeo.com/profile/00223lsvrnzeaf42",
+                     "updated_time":"2011-07-02T14:01:46+02:00",
+                     "name":"David Caramelo"
+                  },
+                  "created_time":"2011-08-23T09:49:49+02:00",
+                  "message":"On fait un Sonic GEANT ??? lol",
+                  "privacy":"PUBLIC"
+               }
+            ]
+         },
+         "likes":{
+            "count":3,
+            "data":[
+               {
+                  "id":"gEwnfuVuevkOffIvAibmkIEEkc",
+                  "type":"USER",
+                  "link":"http://www.viadeo.com/profile/0021z6qak8or34hj",
+                  "updated_time":"2010-07-07T21:02:42+02:00",
+                  "name":"Fabrice ECAILLE"
+               },
+               {
+                  "id":"jtDEjbDIkEcwrskfwxOohwIpmo",
+                  "type":"USER",
+                  "link":"http://www.viadeo.com/profile/0021fwd7pdjzuy8r",
+                  "updated_time":"2011-06-27T08:47:42+02:00",
+                  "name":"Waï-lun CHENG"
+               },
+               {
+                  "id":"IrbcOcxggIxOvquqgVApOfVctg",
+                  "type":"USER",
+                  "link":"http://www.viadeo.com/profile/00223lsvrnzeaf42",
+                  "updated_time":"2011-07-02T14:01:46+02:00",
+                  "name":"David Caramelo"
+               }
+            ]
+         }
+      },
+      {
+         "id":"mbrugOhamoixOIrxfzuuwfjqkc",
+         "type":"",
+         "link":"",
+         "updated_time":"2011-08-23T09:48:36+02:00",
+         "name":"",
+         "from":{
+            "id":"EjtftevbyiugaIfDfVizDgymxg",
+            "type":"USER",
+            "link":"http://www.viadeo.com/profile/0021g557w9j1iw4m",
+            "updated_time":"2011-05-02T12:23:43+02:00",
+            "name":"Vincent DEVILLERS"
+         },
+         "type":"NEWS ITEM",
+         "label":"Status : ",
+         "message":"Redis, the NoSQL Database ready-for-the-cloud sponsored by VMWare, can be used for graph representation -> http://viadeo.com/s/s1GJj",
+         "creation_date":"2011-08-23T09:48:36+02:00",
+         "comments":{
+            "count":0
+         },
+         "likes":{
+            "count":0
+         }
+      },
+      {
+         "id":"zxxmqlfxcvckpEgyndhmvmvqfk",
+         "type":"",
+         "link":"",
+         "updated_time":"2011-08-22T17:12:30+02:00",
+         "name":"",
+         "from":{
+            "id":"EjtftevbyiugaIfDfVizDgymxg",
+            "type":"USER",
+            "link":"http://www.viadeo.com/profile/0021g557w9j1iw4m",
+            "updated_time":"2011-05-02T12:23:43+02:00",
+            "name":"Vincent DEVILLERS"
+         },
+         "type":"NEWS ITEM",
+         "label":"consulte ",
+         "message":"Google + by the numbers [infogrpahic] | Digital Tomorrow Today",
+         "infeed_link":"http://www.viadeo.com/shareit/redirect/?urlSharerId=002202mqjazhwd8e",
+         "creation_date":"2011-08-22T17:12:30+02:00",
+         "comments":{
+            "count":0
+         },
+         "likes":{
+            "count":0
+         }
+      },
+      {
+         "id":"rOIuAkkIOykkepxEdrlmjprunA",
+         "type":"",
+         "link":"",
+         "updated_time":"2011-08-22T10:15:42+02:00",
+         "name":"",
+         "from":{
+            "id":"EjtftevbyiugaIfDfVizDgymxg",
+            "type":"USER",
+            "link":"http://www.viadeo.com/profile/0021g557w9j1iw4m",
+            "updated_time":"2011-05-02T12:23:43+02:00",
+            "name":"Vincent DEVILLERS"
+         },
+         "type":"NEWS ITEM",
+         "label":"consulte ",
+         "message":"Les 12 téléphones Android qui feront trembler l'iPhone 5 : iPhone 5 : obsolète avant même sa sortie ?",
+         "infeed_link":"http://www.viadeo.com/shareit/redirect/?urlSharerId=002e2j2rzmf0vux",
+         "creation_date":"2011-08-22T10:15:42+02:00",
+         "comments":{
+            "count":0
+         },
+         "likes":{
+            "count":0
+         }
+      },
+      {
+         "id":"hydgDbDaEmpbtdlOlioEhzhVjw",
+         "type":"",
+         "link":"",
+         "updated_time":"2011-08-08T20:22:00+02:00",
+         "name":"",
+         "from":{
+            "id":"EjtftevbyiugaIfDfVizDgymxg",
+            "type":"USER",
+            "link":"http://www.viadeo.com/profile/0021g557w9j1iw4m",
+            "updated_time":"2011-05-02T12:23:43+02:00",
+            "name":"Vincent DEVILLERS"
+         },
+         "type":"NEWS ITEM",
+         "label":"Status : ",
+         "message":"Going asynchrous with the Async Http Client from Ning  using the powerful Netty’s NIO framework: http://viadeo.com/s/xSV5o",
+         "creation_date":"2011-08-08T18:01:33+02:00",
+         "comments":{
+            "count":0
+         },
+         "likes":{
+            "count":1,
+            "data":[
+               {
+                  "id":"IrbcOcxggIxOvquqgVApOfVctg",
+                  "type":"USER",
+                  "link":"http://www.viadeo.com/profile/00223lsvrnzeaf42",
+                  "updated_time":"2011-07-02T14:01:46+02:00",
+                  "name":"David Caramelo"
+               }
+            ]
+         }
+      },
+      {
+         "id":"fbzgwiAftjImjAptzwefsprEdO",
+         "type":"",
+         "link":"",
+         "updated_time":"2011-08-03T14:20:38+02:00",
+         "name":"",
+         "from":{
+            "id":"EjtftevbyiugaIfDfVizDgymxg",
+            "type":"USER",
+            "link":"http://www.viadeo.com/profile/0021g557w9j1iw4m",
+            "updated_time":"2011-05-02T12:23:43+02:00",
+            "name":"Vincent DEVILLERS"
+         },
+         "type":"NEWS ITEM",
+         "label":"a un nouveau contact : ",
+         "message":"Damien Grosgeorge",
+         "infeed_link":"http://www.viadeo.com/recherche/profil/?memberId=002zgqmwsw19ohd",
+         "creation_date":"2011-08-03T14:20:38+02:00",
+         "comments":{
+            "count":0
+         },
+         "likes":{
+            "count":0
+         }
+      },
+      {
+         "id":"kbmszeauDnckIdgsueccDppikw",
+         "type":"",
+         "link":"",
+         "updated_time":"2011-08-03T09:44:17+02:00",
+         "name":"",
+         "from":{
+            "id":"EjtftevbyiugaIfDfVizDgymxg",
+            "type":"USER",
+            "link":"http://www.viadeo.com/profile/0021g557w9j1iw4m",
+            "updated_time":"2011-05-02T12:23:43+02:00",
+            "name":"Vincent DEVILLERS"
+         },
+         "type":"NEWS ITEM",
+         "label":"consulte ",
+         "message":"Viadeo Hackdays - a set on Flickr",
+         "infeed_link":"http://www.viadeo.com/shareit/redirect/?urlSharerId=002cpzs2x08mapc",
+         "creation_date":"2011-08-03T09:44:17+02:00",
+         "comments":{
+            "count":0
+         },
+         "likes":{
+            "count":0
+         }
+      },
+      {
+         "id":"noscsqwiwhxqhiyynOtIgAmugg",
+         "type":"",
+         "link":"",
+         "updated_time":"2011-08-02T15:21:47+02:00",
+         "name":"",
+         "from":{
+            "id":"EjtftevbyiugaIfDfVizDgymxg",
+            "type":"USER",
+            "link":"http://www.viadeo.com/profile/0021g557w9j1iw4m",
+            "updated_time":"2011-05-02T12:23:43+02:00",
+            "name":"Vincent DEVILLERS"
+         },
+         "type":"NEWS ITEM",
+         "label":"a un nouveau contact : ",
+         "message":"Rémi WIPLIEZ",
+         "infeed_link":"http://www.viadeo.com/recherche/profil/?memberId=0021qk3f9hqy9o47",
+         "creation_date":"2011-08-02T15:21:47+02:00",
+         "comments":{
+            "count":0
+         },
+         "likes":{
+            "count":0
+         }
+      },
+      {
+         "id":"bvpqjfvrrxwterpVVxqfybeVmw",
+         "type":"",
+         "link":"",
+         "updated_time":"2011-08-01T14:28:12+02:00",
+         "name":"",
+         "from":{
+            "id":"EjtftevbyiugaIfDfVizDgymxg",
+            "type":"USER",
+            "link":"http://www.viadeo.com/profile/0021g557w9j1iw4m",
+            "updated_time":"2011-05-02T12:23:43+02:00",
+            "name":"Vincent DEVILLERS"
+         },
+         "type":"NEWS ITEM",
+         "label":"consulte ",
+         "message":"POST-IT – Les open-space parisiens se déclarent la guerre | Big Browser",
+         "infeed_link":"http://www.viadeo.com/shareit/redirect/?urlSharerId=0022dhiitvwc9ooc",
+         "creation_date":"2011-08-01T14:28:12+02:00",
+         "comments":{
+            "count":0
+         },
+         "likes":{
+            "count":0
+         }
+      },
+      {
+         "id":"ojODjAEeugcdlAuVmremdDjcgw",
+         "type":"",
+         "link":"",
+         "updated_time":"2011-07-30T13:17:32+02:00",
+         "name":"",
+         "from":{
+            "id":"EjtftevbyiugaIfDfVizDgymxg",
+            "type":"USER",
+            "link":"http://www.viadeo.com/profile/0021g557w9j1iw4m",
+            "updated_time":"2011-05-02T12:23:43+02:00",
+            "name":"Vincent DEVILLERS"
+         },
+         "type":"NEWS ITEM",
+         "label":"consulte ",
+         "message":"Viadeo API",
+         "infeed_link":"http://www.viadeo.com/shareit/redirect/?urlSharerId=002hbprgg48f57s",
+         "creation_date":"2011-07-30T13:17:32+02:00",
+         "comments":{
+            "count":0
+         },
+         "likes":{
+            "count":0
+         }
+      },
+      {
+         "id":"lzIruwtszDhgIvDfwtkgaysIEO",
+         "type":"",
+         "link":"",
+         "updated_time":"2011-07-29T05:05:15+02:00",
+         "name":"",
+         "from":{
+            "id":"EjtftevbyiugaIfDfVizDgymxg",
+            "type":"USER",
+            "link":"http://www.viadeo.com/profile/0021g557w9j1iw4m",
+            "updated_time":"2011-05-02T12:23:43+02:00",
+            "name":"Vincent DEVILLERS"
+         },
+         "type":"NEWS ITEM",
+         "label":"consulte ",
+         "message":"Funny Source Code Comments - Java Code Geeks",
+         "infeed_link":"http://www.viadeo.com/shareit/redirect/?urlSharerId=0021qr409qsnambd",
+         "creation_date":"2011-07-29T05:05:15+02:00",
+         "comments":{
+            "count":0
+         },
+         "likes":{
+            "count":0
+         }
+      },
+      {
+         "id":"mIyOuAVsziomiiDDefwbVoIwpg",
+         "type":"",
+         "link":"",
+         "updated_time":"2011-07-27T15:17:28+02:00",
+         "name":"",
+         "from":{
+            "id":"EjtftevbyiugaIfDfVizDgymxg",
+            "type":"USER",
+            "link":"http://www.viadeo.com/profile/0021g557w9j1iw4m",
+            "updated_time":"2011-05-02T12:23:43+02:00",
+            "name":"Vincent DEVILLERS"
+         },
+         "type":"NEWS ITEM",
+         "label":"a un nouveau contact : ",
+         "message":"Emeline Zovic",
+         "infeed_link":"http://www.viadeo.com/recherche/profil/?memberId=002f5t8rj74zkhn",
+         "creation_date":"2011-07-27T15:17:28+02:00",
+         "comments":{
+            "count":0
+         },
+         "likes":{
+            "count":0
+         }
+      },
+      {
+         "id":"ayosozzAnilDefkEjeVjrrEdaA",
+         "type":"",
+         "link":"",
+         "updated_time":"2011-07-26T12:06:55+02:00",
+         "name":"",
+         "from":{
+            "id":"EjtftevbyiugaIfDfVizDgymxg",
+            "type":"USER",
+            "link":"http://www.viadeo.com/profile/0021g557w9j1iw4m",
+            "updated_time":"2011-05-02T12:23:43+02:00",
+            "name":"Vincent DEVILLERS"
+         },
+         "type":"NEWS ITEM",
+         "label":"Status : ",
+         "message":"Comment faire tenir 200 000 connexions HTTP simultanées sur 10 VMs? Je vous laisse le choix des armes... http://viadeo.com/s/8ZNRZ",
+         "creation_date":"2011-07-26T11:11:52+02:00",
+         "comments":{
+            "count":0
+         },
+         "likes":{
+            "count":1,
+            "data":[
+               {
+                  "id":"IrbcOcxggIxOvquqgVApOfVctg",
+                  "type":"USER",
+                  "link":"http://www.viadeo.com/profile/00223lsvrnzeaf42",
+                  "updated_time":"2011-07-02T14:01:46+02:00",
+                  "name":"David Caramelo"
+               }
+            ]
+         }
+      },
+      {
+         "id":"qIpnkoAslpDVaDyEExxsIjDfkO",
+         "type":"",
+         "link":"",
+         "updated_time":"2011-07-22T09:50:49+02:00",
+         "name":"",
+         "from":{
+            "id":"EjtftevbyiugaIfDfVizDgymxg",
+            "type":"USER",
+            "link":"http://www.viadeo.com/profile/0021g557w9j1iw4m",
+            "updated_time":"2011-05-02T12:23:43+02:00",
+            "name":"Vincent DEVILLERS"
+         },
+         "type":"NEWS ITEM",
+         "label":"consulte ",
+         "message":"52 chiffres intéressants à propos des médias sociaux (Facebook, Twitter…) | ilonet",
+         "infeed_link":"http://www.viadeo.com/shareit/redirect/?urlSharerId=002s04gwqy00847",
+         "creation_date":"2011-07-22T09:50:49+02:00",
+         "comments":{
+            "count":0
+         },
+         "likes":{
+            "count":0
+         }
+      },
+      {
+         "id":"zDtlfuvjEzIxllsnuhwzrEpAwk",
+         "type":"",
+         "link":"",
+         "updated_time":"2011-07-21T16:23:44+02:00",
+         "name":"",
+         "from":{
+            "id":"EjtftevbyiugaIfDfVizDgymxg",
+            "type":"USER",
+            "link":"http://www.viadeo.com/profile/0021g557w9j1iw4m",
+            "updated_time":"2011-05-02T12:23:43+02:00",
+            "name":"Vincent DEVILLERS"
+         },
+         "type":"NEWS ITEM",
+         "label":"a un nouveau contact : ",
+         "message":"Jérémy GOVI",
+         "infeed_link":"http://www.viadeo.com/recherche/profil/?memberId=002itoeshkzpgkr",
+         "creation_date":"2011-07-21T16:23:44+02:00",
+         "comments":{
+            "count":0
+         },
+         "likes":{
+            "count":0
+         }
+      },
+      {
+         "id":"osmbhloxmiAOgdsrnDcgpaAOkg",
+         "type":"",
+         "link":"",
+         "updated_time":"2011-07-21T14:56:59+02:00",
+         "name":"",
+         "from":{
+            "id":"EjtftevbyiugaIfDfVizDgymxg",
+            "type":"USER",
+            "link":"http://www.viadeo.com/profile/0021g557w9j1iw4m",
+            "updated_time":"2011-05-02T12:23:43+02:00",
+            "name":"Vincent DEVILLERS"
+         },
+         "type":"NEWS ITEM",
+         "label":"consulte ",
+         "message":"Funny Source Code Comments - Java Code Geeks",
+         "infeed_link":"http://www.viadeo.com/shareit/redirect/?urlSharerId=0021qr409qsnambd",
+         "creation_date":"2011-07-21T14:56:59+02:00",
+         "comments":{
+            "count":0
+         },
+         "likes":{
+            "count":0
+         }
+      },
+      {
+         "id":"lawIAasnlihwyuqzehIchehops",
+         "type":"",
+         "link":"",
+         "updated_time":"2011-07-20T18:03:43+02:00",
+         "name":"",
+         "from":{
+            "id":"EjtftevbyiugaIfDfVizDgymxg",
+            "type":"USER",
+            "link":"http://www.viadeo.com/profile/0021g557w9j1iw4m",
+            "updated_time":"2011-05-02T12:23:43+02:00",
+            "name":"Vincent DEVILLERS"
+         },
+         "type":"NEWS ITEM",
+         "label":"consulte ",
+         "message":"La guerre de post it continue entre #bnpparibas , viadeo, et ... on Twitpic",
+         "infeed_link":"http://www.viadeo.com/shareit/redirect/?urlSharerId=0028ricoqvffg",
+         "creation_date":"2011-07-20T17:37:53+02:00",
+         "comments":{
+            "count":0
+         },
+         "likes":{
+            "count":1,
+            "data":[
+               {
+                  "id":"nkeIjIwcdzOckxEcnOEuzvvzvO",
+                  "type":"USER",
+                  "link":"http://www.viadeo.com/profile/0021mgxypzsmlkvr",
+                  "updated_time":"2011-08-07T19:51:27+02:00",
+                  "name":"Thierry Lunati"
+               }
+            ]
+         }
+      },
+      {
+         "id":"mzxIvdoeuqwknifkjnsmsVuies",
+         "type":"",
+         "link":"",
+         "updated_time":"2011-07-20T12:31:58+02:00",
+         "name":"",
+         "from":{
+            "id":"EjtftevbyiugaIfDfVizDgymxg",
+            "type":"USER",
+            "link":"http://www.viadeo.com/profile/0021g557w9j1iw4m",
+            "updated_time":"2011-05-02T12:23:43+02:00",
+            "name":"Vincent DEVILLERS"
+         },
+         "type":"NEWS ITEM",
+         "label":"a rejoint le Hub ",
+         "message":"Spring User Group France",
+         "infeed_link":"http://www.viadeo.com/hu03/0022eijm2xsb29z0/spring-user-group-france",
+         "creation_date":"2011-07-20T12:31:58+02:00",
+         "comments":{
+            "count":0
+         },
+         "likes":{
+            "count":0
+         }
+      },
+      {
+         "id":"qyVjcbyjropjdxzEogrpEsyDmc",
+         "type":"",
+         "link":"",
+         "updated_time":"2011-07-20T09:33:07+02:00",
+         "name":"",
+         "from":{
+            "id":"EjtftevbyiugaIfDfVizDgymxg",
+            "type":"USER",
+            "link":"http://www.viadeo.com/profile/0021g557w9j1iw4m",
+            "updated_time":"2011-05-02T12:23:43+02:00",
+            "name":"Vincent DEVILLERS"
+         },
+         "type":"NEWS ITEM",
+         "label":"Status : ",
+         "message":"Maven 3 réduit le temps de vos builds en utilisant le multithread. C'est Hudson qui va être content!  http://viadeo.com/s/TOKwK",
+         "creation_date":"2011-07-13T16:31:20+02:00",
+         "comments":{
+            "count":5,
+            "data":[
+               {
+                  "id":"vqevmEDyiqDnsvxAVyhvfnDnwrmAutbEtgtrDxmgfcwufkwvDtAk",
+                  "type":"NEWS ITEM COMMENT",
+                  "link":"",
+                  "updated_time":"2011-07-19T21:44:34+02:00",
+                  "name":"",
+                  "from":{
+                     "id":"ejgimAyvApvejecdunfElOeoho",
+                     "type":"USER",
+                     "link":"http://www.viadeo.com/profile/00227n1i1peh299i",
+                     "updated_time":"2011-05-06T22:10:37+02:00",
+                     "name":"Noureddine Seddik"
+                  },
+                  "created_time":"2011-07-19T21:44:34+02:00",
+                  "message":"oui",
+                  "privacy":"PUBLIC"
+               },
+               {
+                  "id":"mzpxaxIlrAAbiozEDlmqarigwEyzhqomirlDvvqOEuwjbaajkIgA",
+                  "type":"NEWS ITEM COMMENT",
+                  "link":"",
+                  "updated_time":"2011-07-20T09:33:07+02:00",
+                  "name":"",
+                  "from":{
+                     "id":"EjtftevbyiugaIfDfVizDgymxg",
+                     "type":"USER",
+                     "link":"http://www.viadeo.com/profile/0021g557w9j1iw4m",
+                     "updated_time":"2011-05-02T12:23:43+02:00",
+                     "name":"Vincent DEVILLERS"
+                  },
+                  "created_time":"2011-07-20T09:33:07+02:00",
+                  "message":"August? Nice :D",
+                  "privacy":"PUBLIC"
+               }
+            ]
+         },
+         "likes":{
+            "count":7,
+            "data":[
+               {
+                  "id":"IrbcOcxggIxOvquqgVApOfVctg",
+                  "type":"USER",
+                  "link":"http://www.viadeo.com/profile/00223lsvrnzeaf42",
+                  "updated_time":"2011-07-02T14:01:46+02:00",
+                  "name":"David Caramelo"
+               },
+               {
+                  "id":"yxsbnbenEoeiOVOxuepIhVdero",
+                  "type":"USER",
+                  "link":"http://www.viadeo.com/profile/0021ylxwhcwt4tpx",
+                  "updated_time":"2011-07-05T08:59:30+02:00",
+                  "name":"Arnaud HUYNH"
+               },
+               {
+                  "id":"kqebrOcVsfsfhnmxsgxnOAyxyw",
+                  "type":"USER",
+                  "link":"http://www.viadeo.com/profile/0021urfa0b2s44m5",
+                  "updated_time":"2011-07-04T09:13:29+02:00",
+                  "name":"Stéfanie Duprey"
+               },
+               {
+                  "id":"ejgimAyvApvejecdunfElOeoho",
+                  "type":"USER",
+                  "link":"http://www.viadeo.com/profile/00227n1i1peh299i",
+                  "updated_time":"2011-05-06T22:10:37+02:00",
+                  "name":"Noureddine Seddik"
+               },
+               {
+                  "id":"vxkrppOageAeefzDiyAkrhwjpg",
+                  "type":"USER",
+                  "link":"http://www.viadeo.com/profile/002uybtxsb1f3ch",
+                  "updated_time":"2011-03-09T19:08:30+01:00",
+                  "name":"Patrick Sauts"
+               },
+               {
+                  "id":"pIxekxDbcsxrctyIIyydjDhpIO",
+                  "type":"USER",
+                  "link":"http://www.viadeo.com/profile/00216cmefms4kpt5",
+                  "updated_time":"2010-12-04T11:05:47+01:00",
+                  "name":"Nacéra Benfedda"
+               },
+               {
+                  "id":"boIpjmxzjfpvmlvtlhtncjzIds",
+                  "type":"USER",
+                  "link":"http://www.viadeo.com/profile/002dss9153udwxh",
+                  "updated_time":"2011-09-06T15:38:27+02:00",
+                  "name":"Gérard Nadane"
+               }
+            ]
+         }
+      },
+      {
+         "id":"efIpycusymxVgkcgpoghhmiuyc",
+         "type":"",
+         "link":"",
+         "updated_time":"2011-07-19T11:49:52+02:00",
+         "name":"",
+         "from":{
+            "id":"EjtftevbyiugaIfDfVizDgymxg",
+            "type":"USER",
+            "link":"http://www.viadeo.com/profile/0021g557w9j1iw4m",
+            "updated_time":"2011-05-02T12:23:43+02:00",
+            "name":"Vincent DEVILLERS"
+         },
+         "type":"NEWS ITEM",
+         "label":"consulte ",
+         "message":"Java 7 : les nouveautés côté sécurité",
+         "infeed_link":"http://www.viadeo.com/shareit/redirect/?urlSharerId=0021l2th2ni94qlg",
+         "creation_date":"2011-07-19T11:49:52+02:00",
+         "comments":{
+            "count":0
+         },
+         "likes":{
+            "count":0
+         }
+      },
+      {
+         "id":"EmlsqOpOuEarpdmgeEiwtvDOuw",
+         "type":"",
+         "link":"",
+         "updated_time":"2011-07-12T17:53:04+02:00",
+         "name":"",
+         "from":{
+            "id":"EjtftevbyiugaIfDfVizDgymxg",
+            "type":"USER",
+            "link":"http://www.viadeo.com/profile/0021g557w9j1iw4m",
+            "updated_time":"2011-05-02T12:23:43+02:00",
+            "name":"Vincent DEVILLERS"
+         },
+         "type":"NEWS ITEM",
+         "label":"a un nouveau contact : ",
+         "message":"Arnaud Allain",
+         "infeed_link":"http://www.viadeo.com/recherche/profil/?memberId=0021rkr5iz8aw70v",
+         "creation_date":"2011-07-12T17:53:04+02:00",
+         "comments":{
+            "count":0
+         },
+         "likes":{
+            "count":0
+         }
+      },
+      {
+         "id":"VpEclzhEAofIwsfpIOrbpcbsrO",
+         "type":"",
+         "link":"",
+         "updated_time":"2011-07-11T16:22:45+02:00",
+         "name":"",
+         "from":{
+            "id":"EjtftevbyiugaIfDfVizDgymxg",
+            "type":"USER",
+            "link":"http://www.viadeo.com/profile/0021g557w9j1iw4m",
+            "updated_time":"2011-05-02T12:23:43+02:00",
+            "name":"Vincent DEVILLERS"
+         },
+         "type":"NEWS ITEM",
+         "label":"consulte ",
+         "message":"Twitter à quoi cela sert-il ? La réponse en 1 seule image !",
+         "infeed_link":"http://www.viadeo.com/shareit/redirect/?urlSharerId=0021xh596xkss421",
+         "creation_date":"2011-07-11T16:22:45+02:00",
+         "comments":{
+            "count":0
+         },
+         "likes":{
+            "count":0
+         }
+      },
+      {
+         "id":"zmvtcmflgcnofwfvcerowlouuO",
+         "type":"",
+         "link":"",
+         "updated_time":"2011-07-11T15:23:51+02:00",
+         "name":"",
+         "from":{
+            "id":"EjtftevbyiugaIfDfVizDgymxg",
+            "type":"USER",
+            "link":"http://www.viadeo.com/profile/0021g557w9j1iw4m",
+            "updated_time":"2011-05-02T12:23:43+02:00",
+            "name":"Vincent DEVILLERS"
+         },
+         "type":"NEWS ITEM",
+         "label":"consulte ",
+         "message":"Le concours rémunéré, nouveau moteur des entreprises ? | Viadeo Blog",
+         "infeed_link":"http://www.viadeo.com/shareit/redirect/?urlSharerId=0021ma0e0fmh5y80",
+         "creation_date":"2011-07-11T15:23:51+02:00",
+         "comments":{
+            "count":0
+         },
+         "likes":{
+            "count":0
+         }
+      },
+      {
+         "id":"xnoomlDpODabnwItbDxhsDhemc",
+         "type":"",
+         "link":"",
+         "updated_time":"2011-07-11T12:15:45+02:00",
+         "name":"",
+         "from":{
+            "id":"EjtftevbyiugaIfDfVizDgymxg",
+            "type":"USER",
+            "link":"http://www.viadeo.com/profile/0021g557w9j1iw4m",
+            "updated_time":"2011-05-02T12:23:43+02:00",
+            "name":"Vincent DEVILLERS"
+         },
+         "type":"NEWS ITEM",
+         "label":"consulte ",
+         "message":"Le Cloud Computing permet aux petites entreprises de s'équiper en Business Intelligence | Bleent",
+         "infeed_link":"http://www.viadeo.com/shareit/redirect/?urlSharerId=002uswwdrz65r9d",
+         "creation_date":"2011-07-11T12:15:45+02:00",
+         "comments":{
+            "count":0
+         },
+         "likes":{
+            "count":0
+         }
+      },
+      {
+         "id":"fstnxgAeEbzmoEicoOrIdxOuyo",
+         "type":"",
+         "link":"",
+         "updated_time":"2011-07-07T17:18:41+02:00",
+         "name":"",
+         "from":{
+            "id":"EjtftevbyiugaIfDfVizDgymxg",
+            "type":"USER",
+            "link":"http://www.viadeo.com/profile/0021g557w9j1iw4m",
+            "updated_time":"2011-05-02T12:23:43+02:00",
+            "name":"Vincent DEVILLERS"
+         },
+         "type":"NEWS ITEM",
+         "label":"a un nouveau contact : ",
+         "message":"Hua Zhang",
+         "infeed_link":"http://www.viadeo.com/recherche/profil/?memberId=0021i5oo5ikqx6i5",
+         "creation_date":"2011-07-07T17:18:41+02:00",
+         "comments":{
+            "count":0
+         },
+         "likes":{
+            "count":0
+         }
+      },
+      {
+         "id":"ziqynrzcpxmEzmrltkrAxipreg",
+         "type":"",
+         "link":"",
+         "updated_time":"2011-07-07T09:40:15+02:00",
+         "name":"",
+         "from":{
+            "id":"EjtftevbyiugaIfDfVizDgymxg",
+            "type":"USER",
+            "link":"http://www.viadeo.com/profile/0021g557w9j1iw4m",
+            "updated_time":"2011-05-02T12:23:43+02:00",
+            "name":"Vincent DEVILLERS"
+         },
+         "type":"NEWS ITEM",
+         "label":"consulte ",
+         "message":"Viadeo Student Challenge",
+         "infeed_link":"http://www.viadeo.com/shareit/redirect/?urlSharerId=0021srbes7bz12xx",
+         "creation_date":"2011-07-07T09:40:15+02:00",
+         "comments":{
+            "count":0
+         },
+         "likes":{
+            "count":0
+         }
+      },
+      {
+         "id":"apxbwEdDOdaxnbhODadeciOkcw",
+         "type":"",
+         "link":"",
+         "updated_time":"2011-07-05T21:21:37+02:00",
+         "name":"",
+         "from":{
+            "id":"EjtftevbyiugaIfDfVizDgymxg",
+            "type":"USER",
+            "link":"http://www.viadeo.com/profile/0021g557w9j1iw4m",
+            "updated_time":"2011-05-02T12:23:43+02:00",
+            "name":"Vincent DEVILLERS"
+         },
+         "type":"NEWS ITEM",
+         "label":"a un nouveau contact : ",
+         "message":"Stéfanie Duprey",
+         "infeed_link":"http://www.viadeo.com/recherche/profil/?memberId=0021urfa0b2s44m5",
+         "creation_date":"2011-07-05T21:21:37+02:00",
+         "comments":{
+            "count":0
+         },
+         "likes":{
+            "count":0
+         }
+      },
+      {
+         "id":"gnxjmDdptwizxtqwtOnriebqcO",
+         "type":"",
+         "link":"",
+         "updated_time":"2011-07-05T15:46:35+02:00",
+         "name":"",
+         "from":{
+            "id":"EjtftevbyiugaIfDfVizDgymxg",
+            "type":"USER",
+            "link":"http://www.viadeo.com/profile/0021g557w9j1iw4m",
+            "updated_time":"2011-05-02T12:23:43+02:00",
+            "name":"Vincent DEVILLERS"
+         },
+         "type":"NEWS ITEM",
+         "label":"a un nouveau contact : ",
+         "message":"Sandy Chanroux",
+         "infeed_link":"http://www.viadeo.com/recherche/profil/?memberId=0022e0jc65ocy81",
+         "creation_date":"2011-07-05T15:46:35+02:00",
+         "comments":{
+            "count":0
+         },
+         "likes":{
+            "count":0
+         }
+      },
+      {
+         "id":"lnzVordOtitanrsfryxcgroalA",
+         "type":"",
+         "link":"",
+         "updated_time":"2011-07-05T15:46:29+02:00",
+         "name":"",
+         "from":{
+            "id":"EjtftevbyiugaIfDfVizDgymxg",
+            "type":"USER",
+            "link":"http://www.viadeo.com/profile/0021g557w9j1iw4m",
+            "updated_time":"2011-05-02T12:23:43+02:00",
+            "name":"Vincent DEVILLERS"
+         },
+         "type":"NEWS ITEM",
+         "label":"a un nouveau contact : ",
+         "message":"Zvi Goldfarb",
+         "infeed_link":"http://www.viadeo.com/recherche/profil/?memberId=0021elbnlygh7mmk",
+         "creation_date":"2011-07-05T15:46:29+02:00",
+         "comments":{
+            "count":0
+         },
+         "likes":{
+            "count":0
+         }
+      }
+   ],
+   "paging":{
+      "previous":"",
+      "next":""
+   }
+}

@@ -219,6 +219,50 @@ public class UserTemplateTest extends AbstractViadeoApiTest {
 		assertEquals(10, news.size());
 		mockServer.verify();
 	}
+	
+	@Test
+	public void getCurrentUserFeed() {
+		mockServer
+				.expect(requestTo(URIBuilder
+						.fromUri(
+								"https://api.viadeo.com/me/newsfeed?access_token=ACCESS_TOKEN&user_detail=full&limit=50")
+						.build()))
+				.andExpect(method(GET))
+				.andRespond(
+						withResponse(
+								jsonResource("testdata/full-newsfeed-for-me"),
+								responseHeaders));
+
+		List<News> news = viadeo.userOperations().getUserFeed();
+		assertNotNull(news);
+		assertEquals(50, news.size());
+		mockServer.verify();
+	}
+
+	@Test(expected = NotAuthorizedException.class)
+	public void getCurrentUserFeed_unauthorized() {
+		unauthorizedViadeo.userOperations().getUserFeed();
+	}
+
+	@Test
+	public void getUserFeedForId() {
+		mockServer
+				.expect(requestTo(URIBuilder
+						.fromUri(
+								"https://api.viadeo.com/EjtftevbyiugaIfDfVizDgymxg/newsfeed?access_token=ACCESS_TOKEN&user_detail=full&limit=50")
+						.build()))
+				.andExpect(method(GET))
+				.andRespond(
+						withResponse(
+								jsonResource("testdata/full-newsfeed-for-id"),
+								responseHeaders));
+
+		List<News> news = viadeo.userOperations().getUserFeed(
+				"EjtftevbyiugaIfDfVizDgymxg");
+		assertNotNull(news);
+		assertEquals(50, news.size());
+		mockServer.verify();
+	}
 
 	@Test
 	public void getCurrentExperiences() {
