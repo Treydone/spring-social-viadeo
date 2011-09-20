@@ -8,7 +8,8 @@
 
 	<properties>
 		<java-version>1.6</java-version>
-		<org.springframework-version>3.1.0.M2</org.springframework-version>
+		<spring.version>3.1.0.M2</spring.version>
+		<spring-social.version>1.0.0.RELEASE</spring-social.version>
 		<org.slf4j-version>1.6.1</org.slf4j-version>
 
 		<junit.version>4.8.2</junit.version>
@@ -31,7 +32,7 @@
 		<dependency>
 			<groupId>org.springframework.social</groupId>
 			<artifactId>spring-social-core</artifactId>
-			<version>${project.version}</version>
+			<version>${spring-social.version}</version>
 		</dependency>
 
 		<!-- Jackson JSON Mapper -->
@@ -87,13 +88,13 @@
 		<dependency>
 			<groupId>org.springframework.social</groupId>
 			<artifactId>spring-social-test</artifactId>
-			<version>${project.version}</version>
+			<version>${spring-social.version}</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-test</artifactId>
-			<version>${org.springframework-version}</version>
+			<version>${spring.version}</version>
 			<scope>test</scope>
 			<exclusions>
 				<exclusion>
