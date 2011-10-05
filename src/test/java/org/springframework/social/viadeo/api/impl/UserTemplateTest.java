@@ -1,18 +1,18 @@
 /*
-* Copyright 2011 the original author or authors.
-*
-* Licensed under the Apache License, Version 2.0 (the "License");
-* you may not use this file except in compliance with the License.
-* You may obtain a copy of the License at
-*
-* http://www.apache.org/licenses/LICENSE-2.0
-*
-* Unless required by applicable law or agreed to in writing, software
-* distributed under the License is distributed on an "AS IS" BASIS,
-* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-* See the License for the specific language governing permissions and
-* limitations under the License.
-*/
+ * Copyright 2011 the original author or authors.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 package org.springframework.social.viadeo.api.impl;
 
 import static org.junit.Assert.assertEquals;
@@ -33,9 +33,11 @@ import java.util.List;
 import org.junit.Test;
 import org.springframework.social.NotAuthorizedException;
 import org.springframework.social.support.URIBuilder;
+import org.springframework.social.viadeo.api.Comment;
 import org.springframework.social.viadeo.api.ContactCards;
 import org.springframework.social.viadeo.api.Experience;
 import org.springframework.social.viadeo.api.InboxMessage;
+import org.springframework.social.viadeo.api.Like;
 import org.springframework.social.viadeo.api.News;
 import org.springframework.social.viadeo.api.Phone;
 import org.springframework.social.viadeo.api.ViadeoProfile;
@@ -43,7 +45,7 @@ import org.springframework.social.viadeo.api.ViadeoProfile;
 public class UserTemplateTest extends AbstractViadeoApiTest {
 
 	private static final DateFormat sdf = new SimpleDateFormat(
-			"yyyy-MM-dd'T'HH:mm:ssZ");
+			"yyyy-MM-dd'T'HH:mm:ss");
 
 	@Test
 	public void getCurrentUser() throws ParseException {
@@ -177,7 +179,7 @@ public class UserTemplateTest extends AbstractViadeoApiTest {
 	}
 
 	@Test
-	public void getCurrentNewsFeed() {
+	public void getCurrentNewsFeed() throws ParseException {
 		mockServer
 				.expect(requestTo(URIBuilder
 						.fromUri(
@@ -192,6 +194,43 @@ public class UserTemplateTest extends AbstractViadeoApiTest {
 		List<News> news = viadeo.userOperations().getNewsFeed();
 		assertNotNull(news);
 		assertEquals(10, news.size());
+
+		News firstNews = news.get(0);
+		assertEquals("cVIvewhkadsnmqhnnmduIehDko", firstNews.getId());
+		assertEquals("http://viadeo.com", firstNews.getInfeedLink());
+		assertEquals(sdf.parse("2011-07-18T20:39:43+02:00"),
+				firstNews.getUpdatedTime());
+		assertEquals(sdf.parse("2011-07-18T20:39:43+02:00"),
+				firstNews.getCreatedTime());
+		assertEquals("Status : ", firstNews.getLabel());
+		assertEquals(
+				"Microsoft Launching a Social Network Called Tulalip? - SocialTimes.com http://viadeo.com/s/qpfzh",
+				firstNews.getMessage());
+		assertEquals(3, firstNews.getComments().getCount());
+		assertEquals(3, firstNews.getLikes().getCount());
+
+		Comment comment = firstNews.getComments().getComments().get(0);
+		assertEquals("usvEbVlyfaxpEAiguExlwymvxkatvtotDtimlIvVbsDkAIjdvbVA",
+				comment.getId());
+		assertEquals("NEWS ITEM COMMENT", comment.getType());
+		assertEquals(sdf.parse("2011-08-23T09:43:51+02:00"),
+				comment.getUpdatedTime());
+		assertEquals(sdf.parse("2011-08-23T09:43:51+02:0"),
+				comment.getCreatedTime());
+		assertEquals("A quand le stop-motion en post-it? :P",
+				comment.getMessage());
+		assertEquals("PUBLIC", comment.getPrivacy());
+
+		Like like = firstNews.getLikes().getLikes().get(0);
+		assertEquals("gEwnfuVuevkOffIvAibmkIEEkc",
+				like.getId());
+		assertEquals("USER", like.getType());
+		assertEquals(sdf.parse("2010-07-07T21:02:42+02:00"),
+				like.getUpdatedTime());
+		assertEquals("http://www.viadeo.com/profile/0021z6qak8or34hj",
+				like.getLink());
+		assertEquals("Fabrice ECAILLE", like.getName());
+
 		mockServer.verify();
 	}
 
@@ -219,7 +258,7 @@ public class UserTemplateTest extends AbstractViadeoApiTest {
 		assertEquals(10, news.size());
 		mockServer.verify();
 	}
-	
+
 	@Test
 	public void getCurrentUserFeed() {
 		mockServer
@@ -458,35 +497,50 @@ public class UserTemplateTest extends AbstractViadeoApiTest {
 	@Test
 	public void getCurrentInboxMessages() {
 		mockServer
-				.expect(
-						requestTo(URIBuilder.fromUri(
-								"https://api.viadeo.com/me/inbox?access_token=ACCESS_TOKEN&user_detail=full&limit=50").build()))
+				.expect(requestTo(URIBuilder
+						.fromUri(
+								"https://api.viadeo.com/me/inbox?access_token=ACCESS_TOKEN&user_detail=full&limit=50")
+						.build()))
 				.andExpect(method(GET))
-				.andRespond(withResponse(jsonResource("testdata/inbox-messages-for-me"), responseHeaders));
+				.andRespond(
+						withResponse(
+								jsonResource("testdata/inbox-messages-for-me"),
+								responseHeaders));
 
-		List<InboxMessage> inboxMessages = viadeo.userOperations().getInboxMessages();
+		List<InboxMessage> inboxMessages = viadeo.userOperations()
+				.getInboxMessages();
 		assertNotNull(inboxMessages);
 		assertEquals(2, inboxMessages.size());
 
 		InboxMessage message = inboxMessages.get(0);
-		assertEquals("pvtweOoAcdjciVejhoDylwEjpmdavkvfatuVlqbmpvpucdbhhcAf", message.getId());
-		assertEquals("http://www.viadeo.com/messages/detailsmessagerecu/?msgReceivedId=0021ahcgz6lyadff", message.getLink());
+		assertEquals("pvtweOoAcdjciVejhoDylwEjpmdavkvfatuVlqbmpvpucdbhhcAf",
+				message.getId());
+		assertEquals(
+				"http://www.viadeo.com/messages/detailsmessagerecu/?msgReceivedId=0021ahcgz6lyadff",
+				message.getLink());
 		assertEquals(Boolean.TRUE, message.getRead());
 		assertEquals("RE : Message de test", message.getSubject());
-		assertEquals("Bonjour Stéfanie\n\nMerci pour ton message, voici ma réponse.\nVincent",
+		assertEquals(
+				"Bonjour Stéfanie\n\nMerci pour ton message, voici ma réponse.\nVincent",
 				message.getMessage());
 		assertEquals("EjtftevbyiugaIfDfVizDgymxg", message.getSender().getId());
-		assertEquals("Ile-de-France", message.getSender().getLocation().getArea());
+		assertEquals("Ile-de-France", message.getSender().getLocation()
+				.getArea());
 
 		message = inboxMessages.get(1);
-		assertEquals("cVVsvkzhhoIsguuVmVhmipblkkDjadxnoIfxkVADnnjmdwnEoDhf", message.getId());
-		assertEquals("http://www.viadeo.com/messages/detailsmessagerecu/?msgReceivedId=0021gbk5t5ob6lff", message.getLink());
+		assertEquals("cVVsvkzhhoIsguuVmVhmipblkkDjadxnoIfxkVADnnjmdwnEoDhf",
+				message.getId());
+		assertEquals(
+				"http://www.viadeo.com/messages/detailsmessagerecu/?msgReceivedId=0021gbk5t5ob6lff",
+				message.getLink());
 		assertEquals(Boolean.TRUE, message.getRead());
 		assertEquals("Salut !!", message.getSubject());
-		assertEquals("Salut,\n\nComment va? Ça se passe bien chez Viadeo? \n++ guillaume",
+		assertEquals(
+				"Salut,\n\nComment va? Ça se passe bien chez Viadeo? \n++ guillaume",
 				message.getMessage());
 		assertEquals("fuspVAkfvcOyOfyuekeOzvseDs", message.getSender().getId());
-		assertEquals("Ile-de-France", message.getSender().getLocation().getArea());
+		assertEquals("Ile-de-France", message.getSender().getLocation()
+				.getArea());
 
 		mockServer.verify();
 	}

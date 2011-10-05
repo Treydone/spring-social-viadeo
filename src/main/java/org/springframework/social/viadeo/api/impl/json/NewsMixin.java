@@ -26,7 +26,7 @@ import org.springframework.social.viadeo.api.impl.Comments;
 /**
  * Annotated mixin to add Jackson annotations to News.
  */
-@JsonIgnoreProperties(ignoreUnknown = true)
+@JsonIgnoreProperties({ "name", "link" })
 abstract class NewsMixin {
 
 	@JsonCreator
@@ -42,5 +42,11 @@ abstract class NewsMixin {
 
 	@JsonProperty("label")
 	String label;
+	
+	@JsonProperty("infeed_link")
+	String infeedLink;
+	
+	@JsonProperty("type")
+	String type;
 
 }

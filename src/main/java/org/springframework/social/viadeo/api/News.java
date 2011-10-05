@@ -19,6 +19,7 @@ import java.io.Serializable;
 import java.util.Date;
 
 import org.springframework.social.viadeo.api.impl.Comments;
+import org.springframework.social.viadeo.api.impl.Likes;
 
 /**
  * Model class representing an entry in a feed.
@@ -36,21 +37,27 @@ public class News implements Serializable {
 
 	private final ViadeoProfile from;
 
-	private final Date creationDate;
+	private final Date createdTime;
 
-	private final Date updatedDate;
+	private final Date updatedTime;
 
 	private String label;
 
 	private Comments comments;
-
+	
+	private Likes likes;
+	
+	private String infeedLink;
+	
+	private String type;
+	
 	public News(String id, String message, ViadeoProfile from,
-			Date creationDate, Date updatedDate) {
+			Date createdTime, Date updatedTime) {
 		this.id = id;
 		this.message = message;
 		this.from = from;
-		this.creationDate = creationDate;
-		this.updatedDate = updatedDate;
+		this.createdTime = createdTime;
+		this.updatedTime = updatedTime;
 	}
 
 	public String getId() {
@@ -65,12 +72,12 @@ public class News implements Serializable {
 		return from;
 	}
 
-	public Date getCreationDate() {
-		return creationDate;
+	public Date getCreatedTime() {
+		return createdTime;
 	}
 
-	public Date getUpdatedDate() {
-		return updatedDate;
+	public Date getUpdatedTime() {
+		return updatedTime;
 	}
 
 	public String getLabel() {
@@ -88,4 +95,29 @@ public class News implements Serializable {
 	public void setComments(Comments comments) {
 		this.comments = comments;
 	}
+
+	public String getInfeedLink() {
+		return infeedLink;
+	}
+
+	public void setInfeedLink(String infeedLink) {
+		this.infeedLink = infeedLink;
+	}
+
+	public Likes getLikes() {
+		return likes;
+	}
+
+	public void setLikes(Likes likes) {
+		this.likes = likes;
+	}
+
+	public String getType() {
+		return type;
+	}
+
+	public void setType(String type) {
+		this.type = type;
+	}
+	
 }

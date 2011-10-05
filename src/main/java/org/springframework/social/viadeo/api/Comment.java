@@ -34,14 +34,20 @@ public class Comment implements Serializable{
 	
 	private final ViadeoProfile from;
 	
-	private final Date createdDate;
+	private final Date createdTime;
+	
+	private Date updatedTime;
+	
+	private String privacy;
+	
+	private String type;
 
 	public Comment(String id, String message, ViadeoProfile from,
-			Date createdDate) {
+			Date createdTime) {
 		this.id = id;
 		this.message = message;
 		this.from = from;
-		this.createdDate = createdDate;
+		this.createdTime = createdTime;
 	}
 
 	public String getId() {
@@ -56,8 +62,36 @@ public class Comment implements Serializable{
 		return from;
 	}
 
-	public Date getCreatedDate() {
-		return createdDate;
+	public Date getCreatedTime() {
+		return createdTime;
+	}
+
+	public Date getUpdatedTime() {
+		return updatedTime;
+	}
+
+	public String getPrivacy() {
+		return privacy;
+	}
+
+	public String getType() {
+		return type;
+	}
+
+	public void setType(String type) {
+		this.type = type;
+	}
+
+	public static long getSerialversionuid() {
+		return serialVersionUID;
+	}
+
+	public void setUpdatedTime(Date updatedTime) {
+		this.updatedTime = updatedTime;
+	}
+
+	public void setPrivacy(String privacy) {
+		this.privacy = privacy;
 	}
 	
 }

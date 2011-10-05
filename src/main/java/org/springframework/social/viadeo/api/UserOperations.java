@@ -53,7 +53,7 @@ public interface UserOperations {
 	List<ViadeoProfile> getContacts(String userId);
 
 	/**
-	 * Retrieve a member’s newsfeed i.e. a list of updates from a member’s
+	 * Retrieve a member's newsfeed i.e. a list of updates from a member's
 	 * professional contacts for the authenticated user.
 	 * 
 	 * @return
@@ -61,7 +61,7 @@ public interface UserOperations {
 	List<News> getNewsFeed();
 
 	/**
-	 * Retrieve a member’s newsfeed i.e. a list of updates from a member’s
+	 * Retrieve a member's newsfeed i.e. a list of updates from a member's
 	 * professional contacts for a given user.
 	 * 
 	 * @param userId
@@ -70,7 +70,7 @@ public interface UserOperations {
 	List<News> getNewsFeed(String userId);
 
 	/**
-	 * Retrieve a list of a member’s newsfeed updates for the authenticated
+	 * Retrieve a list of a member's newsfeed updates for the authenticated
 	 * user.
 	 * 
 	 * @return
@@ -78,7 +78,7 @@ public interface UserOperations {
 	List<News> getUserFeed();
 
 	/**
-	 * Retrieve a list of a member’s newsfeed updates for a given user.
+	 * Retrieve a list of a member's newsfeed updates for a given user.
 	 * 
 	 * @param userId
 	 * @return
