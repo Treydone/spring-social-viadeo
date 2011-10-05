@@ -44,17 +44,12 @@ import org.springframework.social.viadeo.api.ViadeoProfile;
 
 public class UserTemplateTest extends AbstractViadeoApiTest {
 
-	private static final DateFormat sdf = new SimpleDateFormat(
-			"yyyy-MM-dd'T'HH:mm:ss");
+	private static final DateFormat sdf = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss");
 
 	@Test
 	public void getCurrentUser() throws ParseException {
-		mockServer
-				.expect(requestTo("https://api.viadeo.com/me?access_token=ACCESS_TOKEN"))
-				.andExpect(method(GET))
-				.andRespond(
-						withResponse(jsonResource("testdata/full-profile-me"),
-								responseHeaders));
+		mockServer.expect(requestTo("https://api.viadeo.com/me?access_token=ACCESS_TOKEN")).andExpect(method(GET))
+				.andRespond(withResponse(jsonResource("testdata/full-profile-me"), responseHeaders));
 
 		ViadeoProfile profile = viadeo.userOperations().getUserProfile();
 		assertEquals("EjtftevbyiugaIfDfVizDgymxg", profile.getId());
@@ -62,25 +57,19 @@ public class UserTemplateTest extends AbstractViadeoApiTest {
 		assertEquals("Vincent", profile.getFirstName());
 		assertEquals("DEVILLERS", profile.getLastName());
 		assertEquals("vincent.devillers1", profile.getNickName());
-		assertEquals("http://www.viadeo.com/profile/0021g557w9j1iw4m",
-				profile.getProfileUrl());
+		assertEquals("http://www.viadeo.com/profile/0021g557w9j1iw4m", profile.getProfileUrl());
 		assertEquals(Long.valueOf(146), profile.getContactCount());
-		assertEquals(
-				"Karate (2eme Dan), piano, natation, apnee libre, robotique",
-				profile.getInterests());
-		assertEquals("Ingenieur d'etudes et de developpement, Viadeo",
-				profile.getHeadline());
+		assertEquals("Karate (2eme Dan), piano, natation, apnee libre, robotique", profile.getInterests());
+		assertEquals("Ingenieur d'etudes et de developpement, Viadeo", profile.getHeadline());
 		assertEquals("", profile.getIntroduction());
 		assertEquals("fr", profile.getLanguage());
-		assertEquals(sdf.parse("2011-05-02T14:23:43+0200"),
-				profile.getUpdatedTime());
+		assertEquals(sdf.parse("2011-05-02T14:23:43+0200"), profile.getUpdatedTime());
 
 		assertEquals("Garches", profile.getLocation().getCity());
 		assertEquals("92", profile.getLocation().getZipcode());
 		assertEquals("France", profile.getLocation().getCountry());
 		assertEquals("Ile-de-France", profile.getLocation().getArea());
-		assertEquals("(GMT+01:00) Bruxelles, Copenhague, Madrid, Paris",
-				profile.getLocation().getTimezone());
+		assertEquals("(GMT+01:00) Bruxelles, Copenhague, Madrid, Paris", profile.getLocation().getTimezone());
 		assertEquals("", profile.getLocation().getLatitude());
 		assertEquals("", profile.getLocation().getLongitude());
 
@@ -94,40 +83,28 @@ public class UserTemplateTest extends AbstractViadeoApiTest {
 
 	@Test
 	public void getUserProfileById() throws ParseException {
-		mockServer
-				.expect(requestTo("https://api.viadeo.com/EjtftevbyiugaIfDfVizDgymxg?access_token=ACCESS_TOKEN"))
-				.andExpect(method(GET))
-				.andRespond(
-						withResponse(
-								jsonResource("testdata/full-profile-by-id"),
-								responseHeaders));
+		unauthorizedMockServer.expect(requestTo("https://api.viadeo.com/EjtftevbyiugaIfDfVizDgymxg")).andExpect(method(GET))
+				.andRespond(withResponse(jsonResource("testdata/full-profile-by-id"), responseHeaders));
 
-		ViadeoProfile profile = viadeo.userOperations().getUserProfile(
-				"EjtftevbyiugaIfDfVizDgymxg");
+		ViadeoProfile profile = unauthorizedViadeo.userOperations().getUserProfile("EjtftevbyiugaIfDfVizDgymxg");
 		assertEquals("EjtftevbyiugaIfDfVizDgymxg", profile.getId());
 		assertEquals("M", profile.getGender());
 		assertEquals("Vincent", profile.getFirstName());
 		assertEquals("DEVILLERS", profile.getLastName());
 		assertEquals("vincent.devillers1", profile.getNickName());
-		assertEquals("http://www.viadeo.com/profile/0021g557w9j1iw4m",
-				profile.getProfileUrl());
+		assertEquals("http://www.viadeo.com/profile/0021g557w9j1iw4m", profile.getProfileUrl());
 		assertEquals(Long.valueOf(146), profile.getContactCount());
-		assertEquals(
-				"Karate (2eme Dan), piano, natation, apnee libre, robotique",
-				profile.getInterests());
-		assertEquals("Ingenieur d'etudes et de developpement, Viadeo",
-				profile.getHeadline());
+		assertEquals("Karate (2eme Dan), piano, natation, apnee libre, robotique", profile.getInterests());
+		assertEquals("Ingenieur d'etudes et de developpement, Viadeo", profile.getHeadline());
 		assertEquals("", profile.getIntroduction());
 		assertEquals("fr", profile.getLanguage());
-		assertEquals(sdf.parse("2011-05-02T14:23:43+0200"),
-				profile.getUpdatedTime());
+		assertEquals(sdf.parse("2011-05-02T14:23:43+0200"), profile.getUpdatedTime());
 
 		assertEquals("Garches", profile.getLocation().getCity());
 		assertEquals("92", profile.getLocation().getZipcode());
 		assertEquals("France", profile.getLocation().getCountry());
 		assertEquals("Ile-de-France", profile.getLocation().getArea());
-		assertEquals("(GMT+01:00) Bruxelles, Copenhague, Madrid, Paris",
-				profile.getLocation().getTimezone());
+		assertEquals("(GMT+01:00) Bruxelles, Copenhague, Madrid, Paris", profile.getLocation().getTimezone());
 		assertEquals("", profile.getLocation().getLatitude());
 		assertEquals("", profile.getLocation().getLongitude());
 
@@ -136,16 +113,8 @@ public class UserTemplateTest extends AbstractViadeoApiTest {
 
 	@Test
 	public void getCurrentContacts() {
-		mockServer
-				.expect(requestTo(URIBuilder
-						.fromUri(
-								"https://api.viadeo.com/me/contacts?access_token=ACCESS_TOKEN&user_detail=full&limit=20")
-						.build()))
-				.andExpect(method(GET))
-				.andRespond(
-						withResponse(
-								jsonResource("testdata/full-contacts-for-me"),
-								responseHeaders));
+		mockServer.expect(requestTo(URIBuilder.fromUri("https://api.viadeo.com/me/contacts?access_token=ACCESS_TOKEN&user_detail=full&limit=20").build())).andExpect(method(GET))
+				.andRespond(withResponse(jsonResource("testdata/full-contacts-for-me"), responseHeaders));
 
 		List<ViadeoProfile> contacts = viadeo.userOperations().getContacts();
 		assertNotNull(contacts);
@@ -160,36 +129,24 @@ public class UserTemplateTest extends AbstractViadeoApiTest {
 
 	@Test
 	public void getContactsForId() {
-		mockServer
-				.expect(requestTo(URIBuilder
-						.fromUri(
-								"https://api.viadeo.com/EjtftevbyiugaIfDfVizDgymxg/contacts?access_token=ACCESS_TOKEN&user_detail=full&limit=20")
-						.build()))
-				.andExpect(method(GET))
-				.andRespond(
-						withResponse(
-								jsonResource("testdata/full-contacts-for-id"),
-								responseHeaders));
+		mockServer.expect(requestTo(URIBuilder.fromUri("https://api.viadeo.com/EjtftevbyiugaIfDfVizDgymxg/contacts?access_token=ACCESS_TOKEN&user_detail=full&limit=20").build()))
+				.andExpect(method(GET)).andRespond(withResponse(jsonResource("testdata/full-contacts-for-id"), responseHeaders));
 
-		List<ViadeoProfile> contacts = viadeo.userOperations().getContacts(
-				"EjtftevbyiugaIfDfVizDgymxg");
+		List<ViadeoProfile> contacts = viadeo.userOperations().getContacts("EjtftevbyiugaIfDfVizDgymxg");
 		assertNotNull(contacts);
 		assertEquals(20, contacts.size());
 		mockServer.verify();
 	}
+	
+	@Test(expected = NotAuthorizedException.class)
+	public void getContactsForId_unauthorized() {
+		unauthorizedViadeo.userOperations().getContacts("EjtftevbyiugaIfDfVizDgymxg");
+	}
 
 	@Test
 	public void getCurrentNewsFeed() throws ParseException {
-		mockServer
-				.expect(requestTo(URIBuilder
-						.fromUri(
-								"https://api.viadeo.com/me/home_newsfeed?access_token=ACCESS_TOKEN&user_detail=full&limit=50")
-						.build()))
-				.andExpect(method(GET))
-				.andRespond(
-						withResponse(
-								jsonResource("testdata/full-home_newsfeed-for-me"),
-								responseHeaders));
+		mockServer.expect(requestTo(URIBuilder.fromUri("https://api.viadeo.com/me/home_newsfeed?access_token=ACCESS_TOKEN&user_detail=full&limit=50").build())).andExpect(method(GET))
+				.andRespond(withResponse(jsonResource("testdata/full-home_newsfeed-for-me"), responseHeaders));
 
 		List<News> news = viadeo.userOperations().getNewsFeed();
 		assertNotNull(news);
@@ -198,37 +155,26 @@ public class UserTemplateTest extends AbstractViadeoApiTest {
 		News firstNews = news.get(0);
 		assertEquals("cVIvewhkadsnmqhnnmduIehDko", firstNews.getId());
 		assertEquals("http://viadeo.com", firstNews.getInfeedLink());
-		assertEquals(sdf.parse("2011-07-18T20:39:43+02:00"),
-				firstNews.getUpdatedTime());
-		assertEquals(sdf.parse("2011-07-18T20:39:43+02:00"),
-				firstNews.getCreatedTime());
+		assertEquals(sdf.parse("2011-07-18T20:39:43+02:00"), firstNews.getUpdatedTime());
+		assertEquals(sdf.parse("2011-07-18T20:39:43+02:00"), firstNews.getCreatedTime());
 		assertEquals("Status : ", firstNews.getLabel());
-		assertEquals(
-				"Microsoft Launching a Social Network Called Tulalip? - SocialTimes.com http://viadeo.com/s/qpfzh",
-				firstNews.getMessage());
+		assertEquals("Microsoft Launching a Social Network Called Tulalip? - SocialTimes.com http://viadeo.com/s/qpfzh", firstNews.getMessage());
 		assertEquals(3, firstNews.getComments().getCount());
 		assertEquals(3, firstNews.getLikes().getCount());
 
 		Comment comment = firstNews.getComments().getComments().get(0);
-		assertEquals("usvEbVlyfaxpEAiguExlwymvxkatvtotDtimlIvVbsDkAIjdvbVA",
-				comment.getId());
+		assertEquals("usvEbVlyfaxpEAiguExlwymvxkatvtotDtimlIvVbsDkAIjdvbVA", comment.getId());
 		assertEquals("NEWS ITEM COMMENT", comment.getType());
-		assertEquals(sdf.parse("2011-08-23T09:43:51+02:00"),
-				comment.getUpdatedTime());
-		assertEquals(sdf.parse("2011-08-23T09:43:51+02:0"),
-				comment.getCreatedTime());
-		assertEquals("A quand le stop-motion en post-it? :P",
-				comment.getMessage());
+		assertEquals(sdf.parse("2011-08-23T09:43:51+02:00"), comment.getUpdatedTime());
+		assertEquals(sdf.parse("2011-08-23T09:43:51+02:0"), comment.getCreatedTime());
+		assertEquals("A quand le stop-motion en post-it? :P", comment.getMessage());
 		assertEquals("PUBLIC", comment.getPrivacy());
 
 		Like like = firstNews.getLikes().getLikes().get(0);
-		assertEquals("gEwnfuVuevkOffIvAibmkIEEkc",
-				like.getId());
+		assertEquals("gEwnfuVuevkOffIvAibmkIEEkc", like.getId());
 		assertEquals("USER", like.getType());
-		assertEquals(sdf.parse("2010-07-07T21:02:42+02:00"),
-				like.getUpdatedTime());
-		assertEquals("http://www.viadeo.com/profile/0021z6qak8or34hj",
-				like.getLink());
+		assertEquals(sdf.parse("2010-07-07T21:02:42+02:00"), like.getUpdatedTime());
+		assertEquals("http://www.viadeo.com/profile/0021z6qak8or34hj", like.getLink());
 		assertEquals("Fabrice ECAILLE", like.getName());
 
 		mockServer.verify();
@@ -241,36 +187,25 @@ public class UserTemplateTest extends AbstractViadeoApiTest {
 
 	@Test
 	public void getNewsFeedForId() {
-		mockServer
-				.expect(requestTo(URIBuilder
-						.fromUri(
-								"https://api.viadeo.com/EjtftevbyiugaIfDfVizDgymxg/home_newsfeed?access_token=ACCESS_TOKEN&user_detail=full&limit=50")
-						.build()))
-				.andExpect(method(GET))
-				.andRespond(
-						withResponse(
-								jsonResource("testdata/full-home_newsfeed-for-id"),
-								responseHeaders));
+		mockServer.expect(requestTo(URIBuilder.fromUri("https://api.viadeo.com/EjtftevbyiugaIfDfVizDgymxg/home_newsfeed?access_token=ACCESS_TOKEN&user_detail=full&limit=50").build()))
+				.andExpect(method(GET)).andRespond(withResponse(jsonResource("testdata/full-home_newsfeed-for-id"), responseHeaders));
 
-		List<News> news = viadeo.userOperations().getNewsFeed(
-				"EjtftevbyiugaIfDfVizDgymxg");
+		List<News> news = viadeo.userOperations().getNewsFeed("EjtftevbyiugaIfDfVizDgymxg");
 		assertNotNull(news);
 		assertEquals(10, news.size());
 		mockServer.verify();
 	}
+	
+	@Test(expected = NotAuthorizedException.class)
+	public void getNewsFeedForId_unauthorized() {
+		unauthorizedViadeo.userOperations().getNewsFeed("EjtftevbyiugaIfDfVizDgymxg");
+	}
+
 
 	@Test
 	public void getCurrentUserFeed() {
-		mockServer
-				.expect(requestTo(URIBuilder
-						.fromUri(
-								"https://api.viadeo.com/me/newsfeed?access_token=ACCESS_TOKEN&user_detail=full&limit=50")
-						.build()))
-				.andExpect(method(GET))
-				.andRespond(
-						withResponse(
-								jsonResource("testdata/full-newsfeed-for-me"),
-								responseHeaders));
+		mockServer.expect(requestTo(URIBuilder.fromUri("https://api.viadeo.com/me/newsfeed?access_token=ACCESS_TOKEN&user_detail=full&limit=50").build())).andExpect(method(GET))
+				.andRespond(withResponse(jsonResource("testdata/full-newsfeed-for-me"), responseHeaders));
 
 		List<News> news = viadeo.userOperations().getUserFeed();
 		assertNotNull(news);
@@ -285,35 +220,24 @@ public class UserTemplateTest extends AbstractViadeoApiTest {
 
 	@Test
 	public void getUserFeedForId() {
-		mockServer
-				.expect(requestTo(URIBuilder
-						.fromUri(
-								"https://api.viadeo.com/EjtftevbyiugaIfDfVizDgymxg/newsfeed?access_token=ACCESS_TOKEN&user_detail=full&limit=50")
-						.build()))
-				.andExpect(method(GET))
-				.andRespond(
-						withResponse(
-								jsonResource("testdata/full-newsfeed-for-id"),
-								responseHeaders));
+		mockServer.expect(requestTo(URIBuilder.fromUri("https://api.viadeo.com/EjtftevbyiugaIfDfVizDgymxg/newsfeed?access_token=ACCESS_TOKEN&user_detail=full&limit=50").build()))
+				.andExpect(method(GET)).andRespond(withResponse(jsonResource("testdata/full-newsfeed-for-id"), responseHeaders));
 
-		List<News> news = viadeo.userOperations().getUserFeed(
-				"EjtftevbyiugaIfDfVizDgymxg");
+		List<News> news = viadeo.userOperations().getUserFeed("EjtftevbyiugaIfDfVizDgymxg");
 		assertNotNull(news);
 		assertEquals(50, news.size());
 		mockServer.verify();
 	}
 
+	@Test(expected = NotAuthorizedException.class)
+	public void getUserFeedForId_unauthorized() {
+		unauthorizedViadeo.userOperations().getUserFeed("EjtftevbyiugaIfDfVizDgymxg");
+	}
+
 	@Test
 	public void getCurrentExperiences() {
-		mockServer
-				.expect(requestTo(URIBuilder
-						.fromUri(
-								"https://api.viadeo.com/me/career?access_token=ACCESS_TOKEN&user_detail=full")
-						.build()))
-				.andExpect(method(GET))
-				.andRespond(
-						withResponse(jsonResource("testdata/career-for-me"),
-								responseHeaders));
+		mockServer.expect(requestTo(URIBuilder.fromUri("https://api.viadeo.com/me/career?access_token=ACCESS_TOKEN&user_detail=full").build())).andExpect(method(GET))
+				.andRespond(withResponse(jsonResource("testdata/career-for-me"), responseHeaders));
 
 		List<Experience> experiences = viadeo.userOperations().getExperiences();
 		assertNotNull(experiences);
@@ -328,21 +252,18 @@ public class UserTemplateTest extends AbstractViadeoApiTest {
 
 	@Test
 	public void getExperiencesForId() {
-		mockServer
-				.expect(requestTo(URIBuilder
-						.fromUri(
-								"https://api.viadeo.com/EjtftevbyiugaIfDfVizDgymxg/career?access_token=ACCESS_TOKEN&user_detail=full")
-						.build()))
-				.andExpect(method(GET))
-				.andRespond(
-						withResponse(jsonResource("testdata/career-for-id"),
-								responseHeaders));
+		mockServer.expect(requestTo(URIBuilder.fromUri("https://api.viadeo.com/EjtftevbyiugaIfDfVizDgymxg/career?access_token=ACCESS_TOKEN&user_detail=full").build()))
+				.andExpect(method(GET)).andRespond(withResponse(jsonResource("testdata/career-for-id"), responseHeaders));
 
-		List<Experience> experiences = viadeo.userOperations().getExperiences(
-				"EjtftevbyiugaIfDfVizDgymxg");
+		List<Experience> experiences = viadeo.userOperations().getExperiences("EjtftevbyiugaIfDfVizDgymxg");
 		assertNotNull(experiences);
 		assertEquals(6, experiences.size());
 		mockServer.verify();
+	}
+
+	@Test(expected = NotAuthorizedException.class)
+	public void getExperiencesForId_unauthorized() {
+		unauthorizedViadeo.userOperations().getExperiences("EjtftevbyiugaIfDfVizDgymxg");
 	}
 
 	@Test(expected = NotAuthorizedException.class)
@@ -352,24 +273,28 @@ public class UserTemplateTest extends AbstractViadeoApiTest {
 
 	@Test(expected = IllegalArgumentException.class)
 	public void updateStatus_statusTooLong() {
-		viadeo.userOperations()
-				.updateStatus(
-						"Veeeeeeeeeeeeeeeeeeeeeerrrrrrrrrrryyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy"
-								+ " looooooooooooooooooooooooooooonnnnnnnnnnnnngggggg "
-								+ "staaaaaaaaatuuuuuuuuuuuuuuuuuusssssssssssss");
+		viadeo.userOperations().updateStatus(
+				"Veeeeeeeeeeeeeeeeeeeeeerrrrrrrrrrryyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy" + " looooooooooooooooooooooooooooonnnnnnnnnnnnngggggg "
+						+ "staaaaaaaaatuuuuuuuuuuuuuuuuuusssssssssssss");
 	}
 
 	@Test
 	public void updateStatus() {
-		mockServer
-				.expect(requestTo(URIBuilder
-						.fromUri(
-								"https://api.viadeo.com/status?access_token=ACCESS_TOKEN")
-						.build())).andExpect(method(POST))
-				.andExpect(body("message=Mon+nouveau+status"))
-				.andRespond(withResponse("STATUS SENT", responseHeaders));
+		mockServer.expect(requestTo(URIBuilder.fromUri("https://api.viadeo.com/status?access_token=ACCESS_TOKEN").build())).andExpect(method(POST))
+				.andExpect(body("message=Mon+nouveau+status")).andRespond(withResponse("STATUS SENT", responseHeaders));
 
 		viadeo.userOperations().updateStatus("Mon nouveau status");
+		mockServer.verify();
+	}
+
+	@Test
+	public void search() {
+		mockServer.expect(requestTo(URIBuilder.fromUri("https://api.viadeo.com/search/users?access_token=ACCESS_TOKEN&user_detail=full&keyword=Vincent+DEVILLERS&limit=50").build()))
+				.andExpect(method(GET)).andRespond(withResponse(jsonResource("testdata/search-contacts"), responseHeaders));
+
+		List<ViadeoProfile> contacts = viadeo.userOperations().search("Vincent DEVILLERS");
+		assertNotNull(contacts);
+		assertEquals(50, contacts.size());
 		mockServer.verify();
 	}
 
@@ -377,23 +302,35 @@ public class UserTemplateTest extends AbstractViadeoApiTest {
 	public void search_unauthorized() {
 		unauthorizedViadeo.userOperations().search("Vincent DEVILLERS");
 	}
-
+	
 	@Test
-	public void search() {
-		mockServer
-				.expect(requestTo(URIBuilder
-						.fromUri(
-								"https://api.viadeo.com/search/users?access_token=ACCESS_TOKEN&user_detail=full&keyword=Vincent+DEVILLERS&limit=50")
-						.build()))
-				.andExpect(method(GET))
-				.andRespond(
-						withResponse(jsonResource("testdata/search-contacts"),
-								responseHeaders));
+	public void getCurrentContactCards() {
+		mockServer.expect(requestTo(URIBuilder.fromUri("https://api.viadeo.com/me/contact_cards?access_token=ACCESS_TOKEN").build())).andExpect(method(GET))
+				.andRespond(withResponse(jsonResource("testdata/contact-cards-for-me"), responseHeaders));
 
-		List<ViadeoProfile> contacts = viadeo.userOperations().search(
-				"Vincent DEVILLERS");
-		assertNotNull(contacts);
-		assertEquals(50, contacts.size());
+		List<ContactCards> contactCards = viadeo.userOperations().getContactCards();
+		assertNotNull(contactCards);
+		assertEquals(2, contactCards.size());
+
+		ContactCards cardBusiness = contactCards.get(0);
+		assertEquals("ticctDfItsvkatamzkruyuxstnwOOIowEcyVghfhbluVfsElvmdk", cardBusiness.getId());
+		assertEquals("BUSINESS", cardBusiness.getKind());
+		assertEquals("Garches", cardBusiness.getCity());
+		assertEquals("92", cardBusiness.getPostcode());
+		assertEquals("France", cardBusiness.getCountry());
+		assertTrue(cardBusiness.getEmails().contains("vincentdevillers@hotmail.fr"));
+		assertTrue(cardBusiness.getPhones().contains(new Phone("MOBILE", "France", "+33", "0615053430")));
+
+		ContactCards cardPerso = contactCards.get(1);
+		assertEquals("IqsmeqAbllyupOxwpkdkkdVtAndoxjcrntDhwvvmrInbmOVmIryk", cardPerso.getId());
+		assertEquals("PERSO", cardPerso.getKind());
+		assertEquals("Garches", cardPerso.getCity());
+		assertEquals("92", cardPerso.getPostcode());
+		assertEquals("France", cardPerso.getCountry());
+		assertEquals("Ile-de-France", cardPerso.getRegion());
+		assertTrue(cardPerso.getEmails().contains("vincentdevillers@hotmail.fr"));
+		assertTrue(cardPerso.getPhones().contains(new Phone("MOBILE", "France", "+33", "0615053430")));
+
 		mockServer.verify();
 	}
 
@@ -401,146 +338,69 @@ public class UserTemplateTest extends AbstractViadeoApiTest {
 	public void getCurrentContactCard_unauthorized() {
 		unauthorizedViadeo.userOperations().getContactCards();
 	}
-
+	
 	@Test
-	public void getCurrentContactCards() {
-		mockServer
-				.expect(requestTo(URIBuilder
-						.fromUri(
-								"https://api.viadeo.com/me/contact_cards?access_token=ACCESS_TOKEN")
-						.build()))
-				.andExpect(method(GET))
-				.andRespond(
-						withResponse(
-								jsonResource("testdata/contact-cards-for-me"),
-								responseHeaders));
+	public void getContactCardsForId() {
+		mockServer.expect(requestTo(URIBuilder.fromUri("https://api.viadeo.com/EjtftevbyiugaIfDfVizDgymxg/contact_cards?access_token=ACCESS_TOKEN").build())).andExpect(method(GET))
+				.andRespond(withResponse(jsonResource("testdata/contact-cards-for-id"), responseHeaders));
 
-		List<ContactCards> contactCards = viadeo.userOperations()
-				.getContactCards();
+		List<ContactCards> contactCards = viadeo.userOperations().getContactCards("EjtftevbyiugaIfDfVizDgymxg");
 		assertNotNull(contactCards);
 		assertEquals(2, contactCards.size());
 
 		ContactCards cardBusiness = contactCards.get(0);
-		assertEquals("ticctDfItsvkatamzkruyuxstnwOOIowEcyVghfhbluVfsElvmdk",
-				cardBusiness.getId());
+		assertEquals("ticctDfItsvkatamzkruyuxstnwOOIowEcyVghfhbluVfsElvmdk", cardBusiness.getId());
 		assertEquals("BUSINESS", cardBusiness.getKind());
 		assertEquals("Garches", cardBusiness.getCity());
 		assertEquals("92", cardBusiness.getPostcode());
 		assertEquals("France", cardBusiness.getCountry());
-		assertTrue(cardBusiness.getEmails().contains(
-				"vincentdevillers@hotmail.fr"));
-		assertTrue(cardBusiness.getPhones().contains(
-				new Phone("MOBILE", "France", "+33", "0615053430")));
+		assertTrue(cardBusiness.getEmails().contains("vincentdevillers@hotmail.fr"));
+		assertTrue(cardBusiness.getPhones().contains(new Phone("MOBILE", "France", "+33", "0615053430")));
 
 		ContactCards cardPerso = contactCards.get(1);
-		assertEquals("IqsmeqAbllyupOxwpkdkkdVtAndoxjcrntDhwvvmrInbmOVmIryk",
-				cardPerso.getId());
+		assertEquals("IqsmeqAbllyupOxwpkdkkdVtAndoxjcrntDhwvvmrInbmOVmIryk", cardPerso.getId());
 		assertEquals("PERSO", cardPerso.getKind());
 		assertEquals("Garches", cardPerso.getCity());
 		assertEquals("92", cardPerso.getPostcode());
 		assertEquals("France", cardPerso.getCountry());
 		assertEquals("Ile-de-France", cardPerso.getRegion());
-		assertTrue(cardPerso.getEmails()
-				.contains("vincentdevillers@hotmail.fr"));
-		assertTrue(cardPerso.getPhones().contains(
-				new Phone("MOBILE", "France", "+33", "0615053430")));
+		assertTrue(cardPerso.getEmails().contains("vincentdevillers@hotmail.fr"));
+		assertTrue(cardPerso.getPhones().contains(new Phone("MOBILE", "France", "+33", "0615053430")));
 
 		mockServer.verify();
 	}
-
-	@Test
-	public void getContactCardsForId() {
-		mockServer
-				.expect(requestTo(URIBuilder
-						.fromUri(
-								"https://api.viadeo.com/EjtftevbyiugaIfDfVizDgymxg/contact_cards?access_token=ACCESS_TOKEN")
-						.build()))
-				.andExpect(method(GET))
-				.andRespond(
-						withResponse(
-								jsonResource("testdata/contact-cards-for-id"),
-								responseHeaders));
-
-		List<ContactCards> contactCards = viadeo.userOperations()
-				.getContactCards("EjtftevbyiugaIfDfVizDgymxg");
-		assertNotNull(contactCards);
-		assertEquals(2, contactCards.size());
-
-		ContactCards cardBusiness = contactCards.get(0);
-		assertEquals("ticctDfItsvkatamzkruyuxstnwOOIowEcyVghfhbluVfsElvmdk",
-				cardBusiness.getId());
-		assertEquals("BUSINESS", cardBusiness.getKind());
-		assertEquals("Garches", cardBusiness.getCity());
-		assertEquals("92", cardBusiness.getPostcode());
-		assertEquals("France", cardBusiness.getCountry());
-		assertTrue(cardBusiness.getEmails().contains(
-				"vincentdevillers@hotmail.fr"));
-		assertTrue(cardBusiness.getPhones().contains(
-				new Phone("MOBILE", "France", "+33", "0615053430")));
-
-		ContactCards cardPerso = contactCards.get(1);
-		assertEquals("IqsmeqAbllyupOxwpkdkkdVtAndoxjcrntDhwvvmrInbmOVmIryk",
-				cardPerso.getId());
-		assertEquals("PERSO", cardPerso.getKind());
-		assertEquals("Garches", cardPerso.getCity());
-		assertEquals("92", cardPerso.getPostcode());
-		assertEquals("France", cardPerso.getCountry());
-		assertEquals("Ile-de-France", cardPerso.getRegion());
-		assertTrue(cardPerso.getEmails()
-				.contains("vincentdevillers@hotmail.fr"));
-		assertTrue(cardPerso.getPhones().contains(
-				new Phone("MOBILE", "France", "+33", "0615053430")));
-
-		mockServer.verify();
+	
+	@Test(expected = NotAuthorizedException.class)
+	public void getContactCardsForId_unauthorized() {
+		unauthorizedViadeo.userOperations().getContactCards("EjtftevbyiugaIfDfVizDgymxg");
 	}
 
 	@Test
 	public void getCurrentInboxMessages() {
-		mockServer
-				.expect(requestTo(URIBuilder
-						.fromUri(
-								"https://api.viadeo.com/me/inbox?access_token=ACCESS_TOKEN&user_detail=full&limit=50")
-						.build()))
-				.andExpect(method(GET))
-				.andRespond(
-						withResponse(
-								jsonResource("testdata/inbox-messages-for-me"),
-								responseHeaders));
+		mockServer.expect(requestTo(URIBuilder.fromUri("https://api.viadeo.com/me/inbox?access_token=ACCESS_TOKEN&user_detail=full&limit=50").build())).andExpect(method(GET))
+				.andRespond(withResponse(jsonResource("testdata/inbox-messages-for-me"), responseHeaders));
 
-		List<InboxMessage> inboxMessages = viadeo.userOperations()
-				.getInboxMessages();
+		List<InboxMessage> inboxMessages = viadeo.userOperations().getInboxMessages();
 		assertNotNull(inboxMessages);
 		assertEquals(2, inboxMessages.size());
 
 		InboxMessage message = inboxMessages.get(0);
-		assertEquals("pvtweOoAcdjciVejhoDylwEjpmdavkvfatuVlqbmpvpucdbhhcAf",
-				message.getId());
-		assertEquals(
-				"http://www.viadeo.com/messages/detailsmessagerecu/?msgReceivedId=0021ahcgz6lyadff",
-				message.getLink());
+		assertEquals("pvtweOoAcdjciVejhoDylwEjpmdavkvfatuVlqbmpvpucdbhhcAf", message.getId());
+		assertEquals("http://www.viadeo.com/messages/detailsmessagerecu/?msgReceivedId=0021ahcgz6lyadff", message.getLink());
 		assertEquals(Boolean.TRUE, message.getRead());
 		assertEquals("RE : Message de test", message.getSubject());
-		assertEquals(
-				"Bonjour Stéfanie\n\nMerci pour ton message, voici ma réponse.\nVincent",
-				message.getMessage());
+		assertEquals("Bonjour Stéfanie\n\nMerci pour ton message, voici ma réponse.\nVincent", message.getMessage());
 		assertEquals("EjtftevbyiugaIfDfVizDgymxg", message.getSender().getId());
-		assertEquals("Ile-de-France", message.getSender().getLocation()
-				.getArea());
+		assertEquals("Ile-de-France", message.getSender().getLocation().getArea());
 
 		message = inboxMessages.get(1);
-		assertEquals("cVVsvkzhhoIsguuVmVhmipblkkDjadxnoIfxkVADnnjmdwnEoDhf",
-				message.getId());
-		assertEquals(
-				"http://www.viadeo.com/messages/detailsmessagerecu/?msgReceivedId=0021gbk5t5ob6lff",
-				message.getLink());
+		assertEquals("cVVsvkzhhoIsguuVmVhmipblkkDjadxnoIfxkVADnnjmdwnEoDhf", message.getId());
+		assertEquals("http://www.viadeo.com/messages/detailsmessagerecu/?msgReceivedId=0021gbk5t5ob6lff", message.getLink());
 		assertEquals(Boolean.TRUE, message.getRead());
 		assertEquals("Salut !!", message.getSubject());
-		assertEquals(
-				"Salut,\n\nComment va? Ça se passe bien chez Viadeo? \n++ guillaume",
-				message.getMessage());
+		assertEquals("Salut,\n\nComment va? Ça se passe bien chez Viadeo? \n++ guillaume", message.getMessage());
 		assertEquals("fuspVAkfvcOyOfyuekeOzvseDs", message.getSender().getId());
-		assertEquals("Ile-de-France", message.getSender().getLocation()
-				.getArea());
+		assertEquals("Ile-de-France", message.getSender().getLocation().getArea());
 
 		mockServer.verify();
 	}

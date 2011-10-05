@@ -16,8 +16,7 @@ public class IntegrationTests {
 	public static void beforeClass() {
 		String token = System.getProperty("token");
 		if (StringUtils.isBlank(token)) {
-			throw new IllegalArgumentException(
-					"You must define the property 'token' when launching this test!");
+			throw new IllegalArgumentException("You must define the property 'token' when launching this test!");
 		}
 		template = new ViadeoTemplate(token);
 	}
@@ -34,17 +33,14 @@ public class IntegrationTests {
 		assertEquals("Homer", profile.getFirstName());
 		assertEquals("Simpson", profile.getLastName());
 		assertEquals("omer.simpson3", profile.getNickName());
-		assertEquals("http://www.viadeo.com/profile/002ax59lzianvnt",
-				profile.getProfileUrl());
+		assertEquals("http://www.viadeo.com/profile/002ax59lzianvnt", profile.getProfileUrl());
 		assertEquals(Long.valueOf(0), profile.getContactCount());
 
 		// Pro
 		assertEquals("", profile.getIntroduction());
 		assertEquals("", profile.getInterests());
 		assertEquals("fr", profile.getLanguage());
-		assertEquals(
-				"Inspecteur de la sécurité, Centrale nucléaire de Springfield",
-				profile.getHeadline());
+		assertEquals("Inspecteur de la sécurité, Centrale nucléaire de Springfield", profile.getHeadline());
 
 		// Location
 		assertEquals("Springfield", profile.getLocation().getCity());

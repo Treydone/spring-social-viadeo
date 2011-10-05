@@ -47,24 +47,24 @@ public class UserTemplate extends AbstractViadeoOperations implements UserOperat
 
 	@Override
 	public List<ViadeoProfile> getContacts() {
-		requireAuthorization();
 		return getContacts(ME);
 	}
 
 	@Override
 	public List<ViadeoProfile> getContacts(String userId) {
+		requireAuthorization();
 		URI uri = buildUri(userId + "/contacts").queryParam(USER_DETAIL, FULL).queryParam(LIMIT, "20").build();
 		return get(uri, Contacts.class).getContacts();
 	}
 
 	@Override
 	public List<News> getNewsFeed() {
-		requireAuthorization();
 		return getNewsFeed(ME);
 	}
 
 	@Override
 	public List<News> getNewsFeed(String userId) {
+		requireAuthorization();
 		URI uri = buildUri(userId + "/home_newsfeed").queryParam(USER_DETAIL, FULL).queryParam(LIMIT, "50").build();
 		return get(uri, Feed.class).getNews();
 	}
@@ -72,24 +72,24 @@ public class UserTemplate extends AbstractViadeoOperations implements UserOperat
 
 	@Override
 	public List<News> getUserFeed() {
-		requireAuthorization();
 		return getUserFeed(ME);
 	}
 
 	@Override
 	public List<News> getUserFeed(String userId) {
+		requireAuthorization();
 		URI uri = buildUri(userId + "/newsfeed").queryParam(USER_DETAIL, FULL).queryParam(LIMIT, "50").build();
 		return get(uri, Feed.class).getNews();
 	}
 
 	@Override
 	public List<Experience> getExperiences() {
-		requireAuthorization();
 		return getExperiences(ME);
 	}
 
 	@Override
 	public List<Experience> getExperiences(String userId) {
+		requireAuthorization();
 		URI uri = buildUri(userId + "/career").queryParam(USER_DETAIL, FULL).build();
 		return get(uri, Career.class).getExperiences();
 	}

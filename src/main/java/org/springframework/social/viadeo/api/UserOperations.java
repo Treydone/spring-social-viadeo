@@ -17,11 +17,14 @@ package org.springframework.social.viadeo.api;
 
 import java.util.List;
 
+import org.springframework.social.MissingAuthorizationException;
+
 public interface UserOperations {
 
 	/**
 	 * Retrieve the profile for the authenticated user.
 	 * 
+	 * @throws MissingAuthorizationException if ViadeoTemplate was not created with an access token.
 	 * @return the user's profile information.
 	 */
 	ViadeoProfile getUserProfile();
@@ -29,8 +32,7 @@ public interface UserOperations {
 	/**
 	 * Retrieve the profile for the specified user.
 	 * 
-	 * @param userId
-	 *            the Viadeo user ID to retrieve profile data for.
+	 * @param userId the Viadeo user ID to retrieve profile data for.
 	 * @return the user's profile information.
 	 */
 	ViadeoProfile getUserProfile(String userId);
@@ -38,31 +40,30 @@ public interface UserOperations {
 	/**
 	 * Retrieve a list of custom contacs lists belonging to the specified user.
 	 * 
+	 * @throws MissingAuthorizationException if ViadeoTemplate was not created with an access token.
 	 * @return a list of contacts
 	 */
 	List<ViadeoProfile> getContacts();
 
 	/**
-	 * Retrieve a list of custom friend lists belonging to the authenticated
-	 * user.
+	 * Retrieve a list of custom friend lists belonging to the authenticated user.
 	 * 
-	 * @param userId
-	 *            the user's ID
+	 * @param userId the user's ID
+	 * @throws MissingAuthorizationException if ViadeoTemplate was not created with an access token.
 	 * @return a list of contacts
 	 */
 	List<ViadeoProfile> getContacts(String userId);
 
 	/**
-	 * Retrieve a member's newsfeed i.e. a list of updates from a member's
-	 * professional contacts for the authenticated user.
+	 * Retrieve a member's newsfeed i.e. a list of updates from a member's professional contacts for the authenticated user.
 	 * 
+	 * @throws MissingAuthorizationException if ViadeoTemplate was not created with an access token.
 	 * @return
 	 */
 	List<News> getNewsFeed();
 
 	/**
-	 * Retrieve a member's newsfeed i.e. a list of updates from a member's
-	 * professional contacts for a given user.
+	 * Retrieve a member's newsfeed i.e. a list of updates from a member's professional contacts for a given user.
 	 * 
 	 * @param userId
 	 * @return
@@ -70,9 +71,9 @@ public interface UserOperations {
 	List<News> getNewsFeed(String userId);
 
 	/**
-	 * Retrieve a list of a member's newsfeed updates for the authenticated
-	 * user.
+	 * Retrieve a list of a member's newsfeed updates for the authenticated user.
 	 * 
+	 * @throws MissingAuthorizationException if ViadeoTemplate was not created with an access token.
 	 * @return
 	 */
 	List<News> getUserFeed();
@@ -80,6 +81,7 @@ public interface UserOperations {
 	/**
 	 * Retrieve a list of a member's newsfeed updates for a given user.
 	 * 
+	 * @throws MissingAuthorizationException if ViadeoTemplate was not created with an access token.
 	 * @param userId
 	 * @return
 	 */
@@ -88,6 +90,7 @@ public interface UserOperations {
 	/**
 	 * Retrieve experiences for a given user.
 	 * 
+	 * @throws MissingAuthorizationException if ViadeoTemplate was not created with an access token.
 	 * @return
 	 */
 	List<Experience> getExperiences();
@@ -95,6 +98,7 @@ public interface UserOperations {
 	/**
 	 * Retrieve experiences for the authenticated user.
 	 * 
+	 * @throws MissingAuthorizationException if ViadeoTemplate was not created with an access token.
 	 * @param userId
 	 * @return
 	 */
@@ -103,6 +107,7 @@ public interface UserOperations {
 	/**
 	 * Edit the status of the current user.
 	 * 
+	 * @throws MissingAuthorizationException if ViadeoTemplate was not created with an access token.
 	 * @param status
 	 */
 	void updateStatus(String status);
@@ -117,6 +122,7 @@ public interface UserOperations {
 	/**
 	 * Retrieve the visit cards of the current user.
 	 * 
+	 * @throws MissingAuthorizationException if ViadeoTemplate was not created with an access token.
 	 * @return the contact cards.
 	 */
 	List<ContactCards> getContactCards();
@@ -124,6 +130,7 @@ public interface UserOperations {
 	/**
 	 * Retrieve the visit cards of a given user.
 	 * 
+	 * @throws MissingAuthorizationException if ViadeoTemplate was not created with an access token.
 	 * @return the contact cards.
 	 */
 	List<ContactCards> getContactCards(String userId);
@@ -131,6 +138,7 @@ public interface UserOperations {
 	/**
 	 * Retrieve inbox messages of an authenticated member.
 	 * 
+	 * @throws MissingAuthorizationException if ViadeoTemplate was not created with an access token.
 	 * @return the inbox messages.
 	 */
 	List<InboxMessage> getInboxMessages();

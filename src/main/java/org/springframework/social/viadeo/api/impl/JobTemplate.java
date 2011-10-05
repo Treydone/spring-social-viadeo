@@ -29,14 +29,12 @@ public class JobTemplate extends AbstractViadeoOperations implements
 	}
 
 	public List<Job> search(String query) {
-		requireAuthorization();
 		URI uri = buildUri("search/jobs").queryParam("q", query).queryParam(
 				"limit", "50").build();
 		return get(uri, JobsResult.class).getJobs();
 	}
 
 	public Job getJob(String objectId) {
-		requireAuthorization();
 		return get(objectId, Job.class);
 	}
 }
