@@ -19,6 +19,7 @@ import org.codehaus.jackson.Version;
 import org.codehaus.jackson.map.module.SimpleModule;
 import org.springframework.social.viadeo.api.Career;
 import org.springframework.social.viadeo.api.Comment;
+import org.springframework.social.viadeo.api.Company;
 import org.springframework.social.viadeo.api.ContactCards;
 import org.springframework.social.viadeo.api.Experience;
 import org.springframework.social.viadeo.api.Group;
@@ -65,6 +66,7 @@ public class ViadeoModule extends SimpleModule {
 		context.setMixInAnnotations(Like.class, LikeMixin.class);
 		context.setMixInAnnotations(Likes.class, LikesMixin.class);
 		context.setMixInAnnotations(Job.class, JobMixin.class);
+		context.setMixInAnnotations(Company.class, CompanyMixin.class);
 		context.setMixInAnnotations(JobsResult.class, JobsResultMixin.class);
 		context.setMixInAnnotations(Phone.class, PhoneMixin.class);
 		context.setMixInAnnotations(ContactCards.class, ContactCardsMixin.class);

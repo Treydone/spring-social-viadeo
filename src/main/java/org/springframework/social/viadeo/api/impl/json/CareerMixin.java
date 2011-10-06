@@ -15,6 +15,7 @@
 */
 package org.springframework.social.viadeo.api.impl.json;
 
+import java.util.Date;
 import java.util.List;
 
 import org.codehaus.jackson.annotate.JsonCreator;
@@ -25,10 +26,13 @@ import org.springframework.social.viadeo.api.Experience;
 /**
  * Annotated mixin to add Jackson annotations to Career.
  */
-@JsonIgnoreProperties(ignoreUnknown = true)
+@JsonIgnoreProperties({ "id", "type", "name", "link" })
 abstract class CareerMixin {
 
 	@JsonCreator
 	CareerMixin(@JsonProperty("data") List<Experience> experiences) {
 	}
+	
+	@JsonProperty("updated_time")
+	Date updatedTime;
 }

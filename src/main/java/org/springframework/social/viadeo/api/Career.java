@@ -16,6 +16,7 @@
 package org.springframework.social.viadeo.api;
 
 import java.io.Serializable;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -29,6 +30,8 @@ public class Career implements Serializable{
 	private static final long serialVersionUID = -4448688201536453749L;
 
 	private final List<Experience> experiences;
+	
+	private Date updatedTime;
 
 	public Career(List<Experience> experiences) {
 		this.experiences = experiences;
@@ -36,6 +39,14 @@ public class Career implements Serializable{
 
 	public List<Experience> getExperiences() {
 		return experiences;
+	}
+
+	public Date getUpdatedTime() {
+		return updatedTime;
+	}
+
+	public void setUpdatedTime(Date updatedTime) {
+		this.updatedTime = updatedTime;
 	}
 	
 }

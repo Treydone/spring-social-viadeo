@@ -16,13 +16,11 @@
 package org.springframework.social.viadeo.api.impl.json;
 
 import org.codehaus.jackson.annotate.JsonCreator;
-import org.codehaus.jackson.annotate.JsonIgnoreProperties;
 import org.codehaus.jackson.annotate.JsonProperty;
 
 /**
  * Annotated mixin to add Jackson annotations to Location.
  */
-@JsonIgnoreProperties(ignoreUnknown = true)
 abstract class LocationMixin {
 
 	@JsonCreator

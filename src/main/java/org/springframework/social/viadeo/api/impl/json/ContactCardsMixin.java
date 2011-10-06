@@ -15,6 +15,7 @@
 */
 package org.springframework.social.viadeo.api.impl.json;
 
+import java.util.Date;
 import java.util.List;
 
 import org.codehaus.jackson.annotate.JsonCreator;
@@ -25,7 +26,7 @@ import org.springframework.social.viadeo.api.Phone;
 /**
  * Annotated mixin to add Jackson annotations to ContactCards.
  */
-@JsonIgnoreProperties(ignoreUnknown = true)
+@JsonIgnoreProperties({ "link", "name", "type" })
 abstract class ContactCardsMixin {
 
 	@JsonCreator
@@ -52,5 +53,17 @@ abstract class ContactCardsMixin {
 
 	@JsonProperty("phones")
 	List<Phone> phones;
+	
+	@JsonProperty("updated_time")
+	Date updatedTime;
+	
+	@JsonProperty("shared")
+	String shared;
+	
+	@JsonProperty("company_adress")
+	String companyAdress;
+	
+	@JsonProperty("websites")
+	List<String> websites;
 
 }

@@ -16,6 +16,7 @@
 package org.springframework.social.viadeo.api;
 
 import java.io.Serializable;
+import java.util.Date;
 
 /**
  * Model class representing an experience in the career of a member.
@@ -38,7 +39,9 @@ public class Experience implements Serializable{
 	private Integer beginYear;
 	
 	private Integer endYear;
-
+	
+	private Date updatedTime;
+	
 	public Experience(String id, String position, String description,
 			String companyName) {
 		this.id = id;
@@ -77,5 +80,13 @@ public class Experience implements Serializable{
 
 	public String getCompanyName() {
 		return companyName;
+	}
+
+	public Date getUpdatedTime() {
+		return updatedTime;
+	}
+
+	public void setUpdatedTime(Date updatedTime) {
+		this.updatedTime = updatedTime;
 	}
 }

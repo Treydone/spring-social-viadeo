@@ -40,8 +40,6 @@ public class Comment implements Serializable{
 	
 	private String privacy;
 	
-	private String type;
-
 	public Comment(String id, String message, ViadeoProfile from,
 			Date createdTime) {
 		this.id = id;
@@ -72,14 +70,6 @@ public class Comment implements Serializable{
 
 	public String getPrivacy() {
 		return privacy;
-	}
-
-	public String getType() {
-		return type;
-	}
-
-	public void setType(String type) {
-		this.type = type;
 	}
 
 	public static long getSerialversionuid() {

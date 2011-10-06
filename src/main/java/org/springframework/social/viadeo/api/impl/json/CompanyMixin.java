@@ -15,29 +15,34 @@
  */
 package org.springframework.social.viadeo.api.impl.json;
 
-import java.util.Date;
-
 import org.codehaus.jackson.annotate.JsonCreator;
-import org.codehaus.jackson.annotate.JsonIgnoreProperties;
 import org.codehaus.jackson.annotate.JsonProperty;
-import org.springframework.social.viadeo.api.ViadeoProfile;
 
 /**
- * Annotated mixin to add Jackson annotations to Comment.
+ * Annotated mixin to add Jackson annotations to Company.
  */
-@JsonIgnoreProperties({ "link", "name", "type" })
-abstract class CommentMixin {
+abstract class CompanyMixin {
 
 	@JsonCreator
-	CommentMixin(@JsonProperty("id") String id,
-			@JsonProperty("message") String message,
-			@JsonProperty("from") ViadeoProfile from,
-			@JsonProperty("created_time") Date createdTime) {
+	CompanyMixin(@JsonProperty("name") String name) {
 	}
-
-	@JsonProperty("privacy")
-	String privacy;
-
-	@JsonProperty("updated_time")
-	Date updatedTime;
+	
+	@JsonProperty("description") 
+	String description;
+	
+	@JsonProperty("phone") 
+	String phone;
+	
+	@JsonProperty("fax") 
+	String fax;
+	
+	@JsonProperty("industry") 
+	String industry;
+	
+	@JsonProperty("size") 
+	String size;
+	
+	@JsonProperty("website") 
+	String website;
+	
 }

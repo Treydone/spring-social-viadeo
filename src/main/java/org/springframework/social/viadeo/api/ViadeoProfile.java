@@ -59,6 +59,14 @@ public class ViadeoProfile implements Serializable {
 	private Date updatedTime;
 	
 	private Location location;
+	
+	private int distance;
+	
+	private boolean hasPicture;
+	
+	private boolean isPremium;
+	
+	private Date premiumSince;
 
 	public ViadeoProfile(String id, String gender, String firstName,
 			String lastName, String nickName, String profileUrl,
@@ -172,4 +180,38 @@ public class ViadeoProfile implements Serializable {
 	public void setLocation(Location location) {
 		this.location = location;
 	}
+
+	public int getDistance() {
+		return distance;
+	}
+
+	public void setDistance(int distance) {
+		this.distance = distance;
+	}
+
+	public boolean isHasPicture() {
+		return hasPicture;
+	}
+
+	public void setHasPicture(boolean hasPicture) {
+		this.hasPicture = hasPicture;
+	}
+
+	public boolean isPremium() {
+		return isPremium;
+	}
+
+	public void setPremium(boolean isPremium) {
+		this.isPremium = isPremium;
+	}
+
+	public Date getPremiumSince() {
+		return premiumSince;
+	}
+
+	public void setPremiumSince(Date premiumSince) {
+		this.premiumSince = premiumSince;
+	}
+	
+	
 }

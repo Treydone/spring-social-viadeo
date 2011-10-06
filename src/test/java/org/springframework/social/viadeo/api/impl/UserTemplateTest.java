@@ -164,7 +164,6 @@ public class UserTemplateTest extends AbstractViadeoApiTest {
 
 		Comment comment = firstNews.getComments().getComments().get(0);
 		assertEquals("usvEbVlyfaxpEAiguExlwymvxkatvtotDtimlIvVbsDkAIjdvbVA", comment.getId());
-		assertEquals("NEWS ITEM COMMENT", comment.getType());
 		assertEquals(sdf.parse("2011-08-23T09:43:51+02:00"), comment.getUpdatedTime());
 		assertEquals(sdf.parse("2011-08-23T09:43:51+02:0"), comment.getCreatedTime());
 		assertEquals("A quand le stop-motion en post-it? :P", comment.getMessage());

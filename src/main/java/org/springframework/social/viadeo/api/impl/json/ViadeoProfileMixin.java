@@ -24,7 +24,7 @@ import org.codehaus.jackson.annotate.JsonProperty;
 /**
  * Annotated mixin to add Jackson annotations to ViadeoProfile.
  */
-@JsonIgnoreProperties(ignoreUnknown = true)
+@JsonIgnoreProperties({"type", "name"})
 abstract class ViadeoProfileMixin {
 
 	@JsonCreator
@@ -39,6 +39,9 @@ abstract class ViadeoProfileMixin {
 	
 	@JsonProperty("contact_count")
 	Long contactCount;
+	
+	@JsonProperty("distance")
+	int distance;
 	
 	@JsonProperty("headline")
 	String headline;
@@ -57,4 +60,13 @@ abstract class ViadeoProfileMixin {
 	
 	@JsonProperty("updated_time")
 	Date updatedTime;
+	
+	@JsonProperty("has_picture")
+	boolean hasPicture;
+	
+	@JsonProperty("is_premium")
+	boolean isPremium;
+	
+	@JsonProperty("premium_since")
+	Date premiumSince;
 }
