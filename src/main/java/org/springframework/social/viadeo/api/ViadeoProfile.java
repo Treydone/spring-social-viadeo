@@ -37,6 +37,8 @@ public class ViadeoProfile implements Serializable {
 	private final String firstName;
 
 	private final String lastName;
+	
+	private String name;
 
 	private final String nickName;
 
@@ -212,6 +214,13 @@ public class ViadeoProfile implements Serializable {
 	public void setPremiumSince(Date premiumSince) {
 		this.premiumSince = premiumSince;
 	}
-	
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
 	
 }

@@ -18,7 +18,7 @@ package org.springframework.social.viadeo.api.impl;
 import java.io.Serializable;
 import java.util.List;
 
-import org.springframework.social.viadeo.api.Like;
+import org.springframework.social.viadeo.api.ViadeoProfile;
 
 public class Likes implements Serializable {
 
@@ -27,15 +27,15 @@ public class Likes implements Serializable {
 	 */
 	private static final long serialVersionUID = -8748950763266683264L;
 
-	private final List<Like> likes;
+	private final List<ViadeoProfile> likes;
 
 	private int count;
 
-	public Likes(List<Like> likes) {
+	public Likes(List<ViadeoProfile> likes) {
 		this.likes = likes;
 	}
 
-	public List<Like> getLikes() {
+	public List<ViadeoProfile> getLikes() {
 		return likes;
 	}
 

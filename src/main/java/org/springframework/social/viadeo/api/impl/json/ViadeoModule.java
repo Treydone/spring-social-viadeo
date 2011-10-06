@@ -25,7 +25,6 @@ import org.springframework.social.viadeo.api.Experience;
 import org.springframework.social.viadeo.api.Group;
 import org.springframework.social.viadeo.api.InboxMessage;
 import org.springframework.social.viadeo.api.Job;
-import org.springframework.social.viadeo.api.Like;
 import org.springframework.social.viadeo.api.Location;
 import org.springframework.social.viadeo.api.News;
 import org.springframework.social.viadeo.api.Phone;
@@ -63,7 +62,6 @@ public class ViadeoModule extends SimpleModule {
 		context.setMixInAnnotations(Career.class, CareerMixin.class);
 		context.setMixInAnnotations(Comment.class, CommentMixin.class);
 		context.setMixInAnnotations(Comments.class, CommentsMixin.class);
-		context.setMixInAnnotations(Like.class, LikeMixin.class);
 		context.setMixInAnnotations(Likes.class, LikesMixin.class);
 		context.setMixInAnnotations(Job.class, JobMixin.class);
 		context.setMixInAnnotations(Company.class, CompanyMixin.class);

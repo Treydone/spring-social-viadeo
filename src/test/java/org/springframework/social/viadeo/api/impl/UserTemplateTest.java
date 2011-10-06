@@ -37,7 +37,6 @@ import org.springframework.social.viadeo.api.Comment;
 import org.springframework.social.viadeo.api.ContactCards;
 import org.springframework.social.viadeo.api.Experience;
 import org.springframework.social.viadeo.api.InboxMessage;
-import org.springframework.social.viadeo.api.Like;
 import org.springframework.social.viadeo.api.News;
 import org.springframework.social.viadeo.api.Phone;
 import org.springframework.social.viadeo.api.ViadeoProfile;
@@ -169,11 +168,10 @@ public class UserTemplateTest extends AbstractViadeoApiTest {
 		assertEquals("A quand le stop-motion en post-it? :P", comment.getMessage());
 		assertEquals("PUBLIC", comment.getPrivacy());
 
-		Like like = firstNews.getLikes().getLikes().get(0);
+		ViadeoProfile like = firstNews.getLikes().getLikes().get(0);
 		assertEquals("gEwnfuVuevkOffIvAibmkIEEkc", like.getId());
-		assertEquals("USER", like.getType());
 		assertEquals(sdf.parse("2010-07-07T21:02:42+02:00"), like.getUpdatedTime());
-		assertEquals("http://www.viadeo.com/profile/0021z6qak8or34hj", like.getLink());
+		assertEquals("http://www.viadeo.com/profile/0021z6qak8or34hj", like.getProfileUrl());
 		assertEquals("Fabrice ECAILLE", like.getName());
 
 		mockServer.verify();

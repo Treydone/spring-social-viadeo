@@ -19,7 +19,7 @@ import java.util.List;
 
 import org.codehaus.jackson.annotate.JsonCreator;
 import org.codehaus.jackson.annotate.JsonProperty;
-import org.springframework.social.viadeo.api.Like;
+import org.springframework.social.viadeo.api.ViadeoProfile;
 
 /**
  * Annotated mixin to add Jackson annotations to Likes.
@@ -27,7 +27,7 @@ import org.springframework.social.viadeo.api.Like;
 abstract class LikesMixin {
 
 	@JsonCreator
-	LikesMixin(@JsonProperty("data") List<Like> likes) {
+	LikesMixin(@JsonProperty("data") List<ViadeoProfile> likes) {
 	}
 	
 	@JsonProperty("count")
