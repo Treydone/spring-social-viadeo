@@ -26,7 +26,7 @@ import org.springframework.social.viadeo.api.Phone;
 /**
  * Annotated mixin to add Jackson annotations to ContactCards.
  */
-@JsonIgnoreProperties({ "link", "name", "type" })
+@JsonIgnoreProperties(ignoreUnknown = true)
 abstract class ContactCardsMixin {
 
 	@JsonCreator

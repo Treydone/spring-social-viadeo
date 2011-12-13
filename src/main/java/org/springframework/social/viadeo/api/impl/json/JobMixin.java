@@ -26,7 +26,7 @@ import org.springframework.social.viadeo.api.Location;
 /**
  * Annotated mixin to add Jackson annotations to Job.
  */
-@JsonIgnoreProperties({"type", "name"})
+@JsonIgnoreProperties(ignoreUnknown = true)
 abstract class JobMixin {
 
 	@JsonCreator

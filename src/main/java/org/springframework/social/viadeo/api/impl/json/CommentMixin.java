@@ -25,7 +25,7 @@ import org.springframework.social.viadeo.api.ViadeoProfile;
 /**
  * Annotated mixin to add Jackson annotations to Comment.
  */
-@JsonIgnoreProperties({ "link", "name", "type" })
+@JsonIgnoreProperties(ignoreUnknown = true)
 abstract class CommentMixin {
 
 	@JsonCreator

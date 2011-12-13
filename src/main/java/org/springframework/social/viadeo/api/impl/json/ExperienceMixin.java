@@ -23,7 +23,7 @@ import org.codehaus.jackson.annotate.JsonProperty;
 /**
  * Annotated mixin to add Jackson annotations to Experience.
  */
-@JsonIgnoreProperties({ "name", "link", "type" })
+@JsonIgnoreProperties(ignoreUnknown = true)
 abstract class ExperienceMixin {
 
 	ExperienceMixin(@JsonProperty("id") String id, @JsonProperty("position") String position, @JsonProperty("description") String description, @JsonProperty("company_name") String companyName) {

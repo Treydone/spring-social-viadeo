@@ -26,7 +26,7 @@ import org.springframework.social.viadeo.api.Experience;
 /**
  * Annotated mixin to add Jackson annotations to Career.
  */
-@JsonIgnoreProperties({ "id", "type", "name", "link" })
+@JsonIgnoreProperties(ignoreUnknown = true)
 abstract class CareerMixin {
 
 	@JsonCreator

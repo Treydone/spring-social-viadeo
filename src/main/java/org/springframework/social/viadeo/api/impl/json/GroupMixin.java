@@ -24,7 +24,7 @@ import org.codehaus.jackson.annotate.JsonProperty;
 /**
  * Annotated mixin to add Jackson annotations to Group.
  */
-@JsonIgnoreProperties({ "type" })
+@JsonIgnoreProperties(ignoreUnknown = true)
 abstract class GroupMixin {
 
 	@JsonCreator
@@ -37,7 +37,7 @@ abstract class GroupMixin {
 	@JsonProperty("member_count")
 	Integer memberCount;
 
-	@JsonProperty("Description")
+	@JsonProperty("description")
 	String description;
 
 	@JsonProperty("keywords")

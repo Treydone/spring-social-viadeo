@@ -17,6 +17,7 @@ package org.springframework.social.viadeo.api;
 
 import java.io.Serializable;
 import java.util.Date;
+import java.util.List;
 
 import org.springframework.social.viadeo.api.impl.Comments;
 import org.springframework.social.viadeo.api.impl.Likes;
@@ -50,6 +51,8 @@ public class News implements Serializable {
 	private String infeedLink;
 	
 	private String type;
+	
+	private List<String> tags;
 	
 	public News(String id, String message, ViadeoProfile from,
 			Date createdTime, Date updatedTime) {
@@ -119,5 +122,12 @@ public class News implements Serializable {
 	public void setType(String type) {
 		this.type = type;
 	}
-	
+
+	public List<String> getTags() {
+		return tags;
+	}
+
+	public void setTags(List<String> tags) {
+		this.tags = tags;
+	}
 }
