@@ -24,12 +24,17 @@ import org.codehaus.jackson.annotate.JsonProperty;
 /**
  * Annotated mixin to add Jackson annotations to ViadeoProfile.
  */
-@JsonIgnoreProperties({ "type" })
+@JsonIgnoreProperties(ignoreUnknown = true)
 abstract class ViadeoProfileMixin {
 
 	@JsonCreator
-	ViadeoProfileMixin(@JsonProperty("id") String id, @JsonProperty("gender") String gender, @JsonProperty("first_name") String firstName, @JsonProperty("last_name") String lastName,
-			@JsonProperty("nickname") String nickName, @JsonProperty("link") String profileUrl, @JsonProperty("picture_large") String imageUrl) {
+	ViadeoProfileMixin(@JsonProperty("id") String id,
+			@JsonProperty("gender") String gender,
+			@JsonProperty("first_name") String firstName,
+			@JsonProperty("last_name") String lastName,
+			@JsonProperty("nickname") String nickName,
+			@JsonProperty("link") String profileUrl,
+			@JsonProperty("picture_large") String imageUrl) {
 	}
 
 	@JsonProperty("name")

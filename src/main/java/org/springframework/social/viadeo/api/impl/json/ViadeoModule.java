@@ -48,7 +48,7 @@ import org.springframework.social.viadeo.api.impl.VisitCards;
 public class ViadeoModule extends SimpleModule {
 
 	public ViadeoModule() {
-		super("ViadeoModule", new Version(1, 0, 0, null));
+		super("ViadeoModule", new Version(1, 0, 1, null));
 	}
 
 	@Override
