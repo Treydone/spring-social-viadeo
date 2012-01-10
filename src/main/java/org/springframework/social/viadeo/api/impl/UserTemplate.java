@@ -57,7 +57,7 @@ public class UserTemplate extends AbstractViadeoOperations implements UserOperat
 
 	@Override
 	public List<ViadeoProfile> getContacts(String userId) {
-		return getContacts(userId, 0);
+		return getContacts(userId, 1);
 	}
 
 	@Override
