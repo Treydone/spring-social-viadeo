@@ -31,6 +31,8 @@ abstract class AbstractViadeoOperations {
 
 	static final String LIMIT = "limit";
 
+	static final String PAGE = "page";
+
 	static final String FULL = "full";
 
 	static final String ME = "me";

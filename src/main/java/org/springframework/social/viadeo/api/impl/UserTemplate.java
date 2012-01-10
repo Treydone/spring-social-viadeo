@@ -51,9 +51,19 @@ public class UserTemplate extends AbstractViadeoOperations implements UserOperat
 	}
 
 	@Override
+	public List<ViadeoProfile> getContacts(int page) {
+		return getContacts(ME, page);
+	}
+
+	@Override
 	public List<ViadeoProfile> getContacts(String userId) {
+		return getContacts(userId, 0);
+	}
+
+	@Override
+	public List<ViadeoProfile> getContacts(String userId, int page) {
 		requireAuthorization();
-		URI uri = buildUri(userId + "/contacts").queryParam(USER_DETAIL, FULL).queryParam(LIMIT, "20").build();
+		URI uri = buildUri(userId + "/contacts").queryParam(USER_DETAIL, FULL).queryParam(LIMIT, "20").queryParam(PAGE, Integer.toString(page)).build();
 		return get(uri, Contacts.class).getContacts();
 	}
 
