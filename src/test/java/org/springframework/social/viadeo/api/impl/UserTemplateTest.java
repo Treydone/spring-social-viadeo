@@ -115,7 +115,7 @@ public class UserTemplateTest extends AbstractViadeoApiTest {
 		mockServer.expect(requestTo(URIBuilder.fromUri("https://api.viadeo.com/me/contacts?access_token=ACCESS_TOKEN&user_detail=full&limit=20").build())).andExpect(method(GET))
 				.andRespond(withResponse(jsonResource("testdata/full-contacts-for-me"), responseHeaders));
 
-		List<ViadeoProfile> contacts = viadeo.userOperations().getContacts();
+		List<ViadeoProfile> contacts = viadeo.userOperations().getContacts(20);
 		assertNotNull(contacts);
 		assertEquals(20, contacts.size());
 		mockServer.verify();
@@ -123,7 +123,7 @@ public class UserTemplateTest extends AbstractViadeoApiTest {
 
 	@Test(expected = NotAuthorizedException.class)
 	public void getCurrentContacts_unauthorized() {
-		unauthorizedViadeo.userOperations().getContacts();
+		unauthorizedViadeo.userOperations().getContacts(20);
 	}
 
 	@Test
@@ -131,7 +131,7 @@ public class UserTemplateTest extends AbstractViadeoApiTest {
 		mockServer.expect(requestTo(URIBuilder.fromUri("https://api.viadeo.com/EjtftevbyiugaIfDfVizDgymxg/contacts?access_token=ACCESS_TOKEN&user_detail=full&limit=20").build()))
 				.andExpect(method(GET)).andRespond(withResponse(jsonResource("testdata/full-contacts-for-id"), responseHeaders));
 
-		List<ViadeoProfile> contacts = viadeo.userOperations().getContacts("EjtftevbyiugaIfDfVizDgymxg");
+		List<ViadeoProfile> contacts = viadeo.userOperations().getContacts("EjtftevbyiugaIfDfVizDgymxg", 20);
 		assertNotNull(contacts);
 		assertEquals(20, contacts.size());
 		mockServer.verify();
@@ -139,7 +139,7 @@ public class UserTemplateTest extends AbstractViadeoApiTest {
 	
 	@Test(expected = NotAuthorizedException.class)
 	public void getContactsForId_unauthorized() {
-		unauthorizedViadeo.userOperations().getContacts("EjtftevbyiugaIfDfVizDgymxg");
+		unauthorizedViadeo.userOperations().getContacts("EjtftevbyiugaIfDfVizDgymxg", 20);
 	}
 
 	@Test

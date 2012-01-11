@@ -38,38 +38,38 @@ public interface UserOperations {
 	ViadeoProfile getUserProfile(String userId);
 
 	/**
-	 * Retrieve a list of custom contacs lists belonging to the specified user.
+	 * Retrieve the num first contacts belonging to the authenticated user.
 	 * 
 	 * @throws MissingAuthorizationException if ViadeoTemplate was not created with an access token.
 	 * @return a list of contacts
 	 */
-	List<ViadeoProfile> getContacts();
+	List<ViadeoProfile> getContacts(int num);
 
 	/**
-	 * Retrieve a list of custom friend lists belonging to the authenticated user.
+	 * Retrieve the num first contacts belonging to the specified user.
 	 * 
 	 * @param userId the user's ID
 	 * @throws MissingAuthorizationException if ViadeoTemplate was not created with an access token.
 	 * @return a list of contacts
 	 */
-	List<ViadeoProfile> getContacts(String userId);
+	List<ViadeoProfile> getContacts(String userId, int num);
 
 	/**
-	 * Retrieve a list of custom contacs lists belonging to the specified user.
+	 * Retrieve the num contacts from page page belonging to the authenticated user.
 	 * 
 	 * @throws MissingAuthorizationException if ViadeoTemplate was not created with an access token.
 	 * @return a list of contacts
 	 */
-	List<ViadeoProfile> getContacts(int page);
+	List<ViadeoProfile> getContacts(int page, int num);
 
 	/**
-	 * Retrieve a list of custom friend lists belonging to the authenticated user.
+	 * Retrieve the num contacts from page page belonging to the specified user.
 	 * 
 	 * @param userId the user's ID
 	 * @throws MissingAuthorizationException if ViadeoTemplate was not created with an access token.
 	 * @return a list of contacts
 	 */
-	List<ViadeoProfile> getContacts(String userId, int page);
+	List<ViadeoProfile> getContacts(String userId, int page, int num);
 
 	/**
 	 * Retrieve a member's newsfeed i.e. a list of updates from a member's professional contacts for the authenticated user.
